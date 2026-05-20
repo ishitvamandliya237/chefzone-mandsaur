@@ -1,0 +1,30 @@
+{
+  "overview": "Premium futuristic 3D cloud kitchen website for ChefZone Mandsaur — Mandsaur's first cloud kitchen. Features immersive Three.js 3D visuals, animated canvas backgrounds, glassmorphism design, floating particles, full vegetarian menu showcase, offers, reviews, gallery, and WhatsApp ordering integration.",
+  "features": [
+    "Immersive Three.js 3D rotating food card visuals",
+    "Animated canvas/WebGL particle background",
+    "Full vegetarian menu with 8 categories and placeholder food images",
+    "Glassmorphism cards throughout",
+    "Animated offers, reviews carousel, and gallery with 3D hover zoom",
+    "WhatsApp floating button and order integration",
+    "Sticky navbar with mobile hamburger menu",
+    "Contact section with Google Map embed and social links",
+    "Neon glow effects and scroll-triggered animations",
+    "Animated loading screen",
+    "SEO optimized dark luxury restaurant aesthetic"
+  ],
+  "category": "restaurant-food",
+  "tags": [
+    "cloud-kitchen",
+    "restaurant",
+    "3d",
+    "threejs",
+    "dark-theme",
+    "glassmorphism",
+    "food",
+    "whatsapp-ordering",
+    "animations",
+    "mobile-responsive"
+  ],
+  "last_updated": "2026-05-19T12:09:11.858Z"
+}
