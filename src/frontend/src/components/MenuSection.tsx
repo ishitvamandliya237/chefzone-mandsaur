@@ -1,10 +1,11 @@
 import { motion } from "motion/react";
 
 const menuPhotos = [
-  { src: "/assets/images/menu-photo-1.png", alt: "Menu" },
   { src: "/assets/images/menu-photo-2.png", alt: "Menu" },
+  { src: "/assets/images/menu-photo-1.png", alt: "Menu" },
   { src: "/assets/images/menu-photo-3.png", alt: "Menu" },
   { src: "/assets/images/menu-photo-4.png", alt: "Menu" },
+  { src: "/assets/images/menu-photo-5.png", alt: "Menu" },
 ];
 
 const WHATSAPP_URL = "https://wa.me/918889431668";
@@ -84,7 +85,7 @@ export default function MenuSection() {
         </motion.div>
 
         {/* Menu Photo Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {menuPhotos.map((photo, index) => (
             <motion.div
               key={photo.src}

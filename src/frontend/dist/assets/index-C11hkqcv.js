@@ -79461,10 +79461,11 @@ function LoadingScreen({ onComplete }) {
   );
 }
 const menuPhotos = [
-  { src: "/assets/images/menu-photo-1.png", alt: "Menu" },
   { src: "/assets/images/menu-photo-2.png", alt: "Menu" },
+  { src: "/assets/images/menu-photo-1.png", alt: "Menu" },
   { src: "/assets/images/menu-photo-3.png", alt: "Menu" },
-  { src: "/assets/images/menu-photo-4.png", alt: "Menu" }
+  { src: "/assets/images/menu-photo-4.png", alt: "Menu" },
+  { src: "/assets/images/menu-photo-5.png", alt: "Menu" }
 ];
 const WHATSAPP_URL$1 = "https://wa.me/918889431668";
 function MenuSection() {
@@ -79553,7 +79554,7 @@ function MenuSection() {
               ]
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-6", children: menuPhotos.map((photo, index2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6", children: menuPhotos.map((photo, index2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
             motion.div,
             {
               "data-ocid": `menu.item.${index2 + 1}`,
