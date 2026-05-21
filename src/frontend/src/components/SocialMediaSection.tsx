@@ -101,7 +101,7 @@ export default function SocialMediaSection() {
       id="social"
       data-ocid="social.section"
       className="relative py-20 px-4 overflow-hidden"
-      style={{ background: "#1a1a2e" }}
+      style={{ background: "linear-gradient(135deg, #CFFAFE, #EDE9FE)" }}
     >
       {/* Background glow */}
       <div
@@ -109,7 +109,7 @@ export default function SocialMediaSection() {
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full pointer-events-none"
         style={{
           background:
-            "radial-gradient(circle, rgba(0,245,255,0.08) 0%, rgba(212,175,55,0.06) 50%, transparent 70%)",
+            "radial-gradient(circle, rgba(196,181,253,0.25) 0%, rgba(207,250,254,0.2) 50%, transparent 70%)",
           filter: "blur(80px)",
         }}
       />
@@ -126,9 +126,9 @@ export default function SocialMediaSection() {
           <span
             className="inline-block text-xs font-semibold tracking-[0.3em] uppercase mb-3 px-4 py-1.5 rounded-full"
             style={{
-              background: "rgba(0,245,255,0.15)",
-              border: "1px solid rgba(0,245,255,0.3)",
-              color: "#00F5FF",
+              background: "rgba(196,181,253,0.4)",
+              border: "1px solid rgba(196,181,253,0.6)",
+              color: "#1e1b4b",
             }}
           >
             Connect With Us
@@ -137,7 +137,7 @@ export default function SocialMediaSection() {
             className="text-4xl md:text-5xl font-bold mt-3"
             style={{
               background:
-                "linear-gradient(135deg, #1a1040 0%, #00C5CC 50%, #B8941F 100%)",
+                "linear-gradient(135deg, #1e1b4b 0%, #7C3AED 50%, #D4AF37 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",
@@ -169,22 +169,24 @@ export default function SocialMediaSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="flex flex-col items-center gap-5 p-7 rounded-2xl transition-all duration-300 group"
               style={{
-                background: "rgba(255,255,255,0.9)",
+                background: "rgba(255,255,255,0.7)",
                 border: `1px solid ${card.brandColor}55`,
                 backdropFilter: "blur(16px)",
-                boxShadow: `0 4px 20px ${card.glowColor.replace("0.5", "0.15")}, 0 0 0 0.5px rgba(255,255,255,0.5)`,
+                boxShadow: `0 4px 20px ${card.glowColor.replace("0.5", "0.15")}, 0 0 0 0.5px rgba(0,245,255,0.15)`,
               }}
               onMouseEnter={(e) => {
                 const el = e.currentTarget as HTMLAnchorElement;
                 el.style.boxShadow = `0 0 40px ${card.glowColor}, 0 0 80px ${card.glowColor.replace("0.5", "0.1")}`;
                 el.style.border = `1px solid ${card.brandColor}88`;
                 el.style.transform = "translateY(-6px) scale(1.03)";
+                el.style.background = "rgba(255,255,255,0.9)";
               }}
               onMouseLeave={(e) => {
                 const el = e.currentTarget as HTMLAnchorElement;
-                el.style.boxShadow = `0 0 20px ${card.glowColor.replace("0.5", "0.2")}`;
-                el.style.border = `1px solid ${card.brandColor}33`;
+                el.style.boxShadow = `0 4px 20px ${card.glowColor.replace("0.5", "0.15")}, 0 0 0 0.5px rgba(0,245,255,0.15)`;
+                el.style.border = `1px solid ${card.brandColor}55`;
                 el.style.transform = "translateY(0) scale(1)";
+                el.style.background = "rgba(255,255,255,0.7)";
               }}
             >
               {/* Icon */}

@@ -26,7 +26,7 @@ export default function AboutSection() {
       data-ocid="about.section"
       className="relative py-24 overflow-hidden"
       style={{
-        background: "#1a1a2e",
+        background: "linear-gradient(135deg, #CFFAFE, #EDE9FE)",
       }}
     >
       {/* Decorative blobs */}
@@ -34,14 +34,14 @@ export default function AboutSection() {
         className="absolute top-0 right-0 w-96 h-96 pointer-events-none opacity-20"
         style={{
           background:
-            "radial-gradient(circle, oklch(0.68 0.22 30 / 0.3) 0%, transparent 70%)",
+            "radial-gradient(circle, rgba(196,181,253,0.4) 0%, transparent 70%)",
         }}
       />
       <div
         className="absolute bottom-0 left-0 w-64 h-64 pointer-events-none opacity-10"
         style={{
           background:
-            "radial-gradient(circle, oklch(0.62 0.26 25 / 0.4) 0%, transparent 70%)",
+            "radial-gradient(circle, rgba(207,250,254,0.4) 0%, transparent 70%)",
         }}
       />
 
@@ -54,7 +54,10 @@ export default function AboutSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <h2 className="font-display text-4xl sm:text-5xl font-bold text-foreground mb-4">
+          <h2
+            className="font-display text-4xl sm:text-5xl font-bold mb-4"
+            style={{ color: "#1e1b4b" }}
+          >
             About <span className="gradient-warm-text">ChefZone</span>
           </h2>
           <div className="mx-auto w-24 h-1 rounded-full gradient-warm" />
@@ -70,7 +73,10 @@ export default function AboutSection() {
             transition={{ duration: 0.7 }}
             className="flex flex-col gap-8"
           >
-            <p className="text-base sm:text-lg text-muted-foreground font-body leading-relaxed">
+            <p
+              className="text-base sm:text-lg font-body leading-relaxed"
+              style={{ color: "#1e1b4b" }}
+            >
               ChefZone Mandsaur is a modern cloud kitchen built with passion for
               delicious vegetarian food and fast service. Our mission is to
               bring restaurant-quality meals directly to your doorstep with
@@ -90,7 +96,8 @@ export default function AboutSection() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1, duration: 0.4 }}
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-glow text-sm font-semibold text-primary"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-glow text-sm font-semibold"
+                  style={{ color: "#1e1b4b" }}
                 >
                   <span className="text-lg">{h.emoji}</span>
                   {h.label}
@@ -115,18 +122,26 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="glass-card rounded-3xl p-8 relative overflow-hidden"
+            className="rounded-3xl p-8 relative overflow-hidden"
+            style={{
+              background: "rgba(255,255,255,0.6)",
+              backdropFilter: "blur(20px)",
+              border: "1px solid rgba(196,181,253,0.4)",
+            }}
           >
             {/* Glow accent */}
             <div
               className="absolute -top-8 -right-8 w-40 h-40 rounded-full opacity-30 pointer-events-none"
               style={{
                 background:
-                  "radial-gradient(circle, oklch(0.68 0.22 30 / 0.6) 0%, transparent 70%)",
+                  "radial-gradient(circle, rgba(196,181,253,0.5) 0%, transparent 70%)",
               }}
             />
 
-            <h3 className="font-display text-xl font-bold text-foreground mb-6 text-center">
+            <h3
+              className="font-display text-xl font-bold mb-6 text-center"
+              style={{ color: "#1e1b4b" }}
+            >
               Our <span className="gradient-warm-text">Menu Universe</span>
             </h3>
 
@@ -139,10 +154,16 @@ export default function AboutSection() {
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.07, duration: 0.4 }}
                   className="flex flex-col items-center gap-2 p-3 rounded-2xl transition-smooth hover:scale-110 cursor-default"
-                  style={{ background: "rgba(124,58,237,0.12)" }}
+                  style={{
+                    background: "rgba(255,255,255,0.7)",
+                    border: "1px solid rgba(196,181,253,0.3)",
+                  }}
                 >
                   <span className="text-3xl">{item.emoji}</span>
-                  <span className="text-xs text-muted-foreground text-center">
+                  <span
+                    className="text-xs text-center"
+                    style={{ color: "#1e1b4b" }}
+                  >
                     {item.label}
                   </span>
                 </motion.div>

@@ -105,7 +105,9 @@ export default function ReviewsSection() {
       id="reviews"
       data-ocid="reviews.section"
       className="py-20 px-4 relative overflow-hidden"
-      style={{ background: "#1a1a2e" }}
+      style={{
+        background: "linear-gradient(135deg, #FFE4E6 0%, #EDE9FE 100%)",
+      }}
     >
       {/* bg glow */}
       <div className="absolute inset-0 pointer-events-none">
@@ -113,7 +115,7 @@ export default function ReviewsSection() {
           className="absolute bottom-0 right-0 w-[500px] h-[400px] rounded-full opacity-10"
           style={{
             background:
-              "radial-gradient(ellipse, oklch(0.62 0.26 25) 0%, transparent 70%)",
+              "radial-gradient(ellipse, rgba(212,175,55,0.3) 0%, transparent 70%)",
           }}
         />
       </div>
@@ -128,16 +130,16 @@ export default function ReviewsSection() {
           <span
             className="inline-block text-xs font-semibold tracking-[0.3em] uppercase mb-3 px-4 py-1.5 rounded-full"
             style={{
-              background: "rgba(212,175,55,0.2)",
-              border: "1px solid rgba(0,245,255,0.3)",
-              color: "#7C3AED",
+              background: "rgba(212,175,55,0.25)",
+              border: "1px solid rgba(0,245,255,0.4)",
+              color: "#1e1b4b",
             }}
           >
             ⭐ Reviews
           </span>
           <h2
             className="font-display text-4xl md:text-5xl font-bold"
-            style={{ color: "#f0f0ff" }}
+            style={{ color: "#1e1b4b" }}
           >
             What Our <span className="gradient-warm-text">Customers Say</span>
           </h2>
@@ -160,32 +162,35 @@ export default function ReviewsSection() {
                 data-ocid={`reviews.card.${current + 1}`}
                 className="rounded-2xl p-8 md:p-12"
                 style={{
-                  background: "rgba(255,255,255,0.07)",
+                  background: "rgba(255,255,255,0.7)",
                   backdropFilter: "blur(16px)",
-                  border: "1px solid rgba(0,245,255,0.3)",
+                  border: "1px solid rgba(248,113,113,0.5)",
                   boxShadow:
-                    "0 8px 40px rgba(124,58,237,0.3), 0 0 0 1px rgba(0,245,255,0.15)",
+                    "0 8px 40px rgba(124,58,237,0.15), 0 0 0 1px rgba(0,245,255,0.1)",
                 }}
               >
                 <div
                   className="text-6xl font-display leading-none mb-4 select-none"
-                  style={{ color: "rgba(212,175,55,0.4)" }}
+                  style={{ color: "rgba(212,175,55,0.6)" }}
                 >
                   &ldquo;
                 </div>
                 <p
                   className="text-lg md:text-xl leading-relaxed mb-6 font-body italic"
-                  style={{ color: "#d8d8f0" }}
+                  style={{ color: "#374151" }}
                 >
                   {reviews[current].text}
                 </p>
                 <div className="flex items-center gap-4">
                   <Initials name={reviews[current].name} />
                   <div>
-                    <p className="font-semibold text-foreground font-display">
+                    <p
+                      className="font-semibold font-display"
+                      style={{ color: "#312e81" }}
+                    >
                       {reviews[current].name}
                     </p>
-                    <p className="text-muted-foreground text-sm">
+                    <p className="text-sm" style={{ color: "#6b7280" }}>
                       {reviews[current].location}
                     </p>
                     <StarRating rating={reviews[current].rating} />
@@ -201,7 +206,12 @@ export default function ReviewsSection() {
             onClick={prev}
             data-ocid="reviews.prev_button"
             aria-label="Previous review"
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full bg-card border border-white/10 flex items-center justify-center text-foreground hover:border-orange-500 hover:text-orange-400 transition-colors hidden md:flex"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full flex items-center justify-center transition-colors hidden md:flex"
+            style={{
+              background: "rgba(255,255,255,0.7)",
+              border: "1px solid rgba(196,181,253,0.5)",
+              color: "#1e1b4b",
+            }}
           >
             ←
           </button>
@@ -210,7 +220,12 @@ export default function ReviewsSection() {
             onClick={next}
             data-ocid="reviews.next_button"
             aria-label="Next review"
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full bg-card border border-white/10 flex items-center justify-center text-foreground hover:border-orange-500 hover:text-orange-400 transition-colors hidden md:flex"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full flex items-center justify-center transition-colors hidden md:flex"
+            style={{
+              background: "rgba(255,255,255,0.7)",
+              border: "1px solid rgba(196,181,253,0.5)",
+              color: "#1e1b4b",
+            }}
           >
             →
           </button>
@@ -235,7 +250,7 @@ export default function ReviewsSection() {
                 background:
                   i === current
                     ? "linear-gradient(90deg, #D4AF37, #00F5FF)"
-                    : "oklch(0.35 0.01 50)",
+                    : "#d1d5db",
               }}
             />
           ))}
@@ -249,9 +264,9 @@ export default function ReviewsSection() {
             aria-label="Previous review"
             className="w-10 h-10 rounded-full flex items-center justify-center transition-colors"
             style={{
-              background: "#ffffff",
-              border: "1px solid #00F5FF",
-              color: "#1a1040",
+              background: "rgba(255,255,255,0.7)",
+              border: "1px solid rgba(196,181,253,0.5)",
+              color: "#1e1b4b",
             }}
           >
             ←
@@ -262,9 +277,9 @@ export default function ReviewsSection() {
             aria-label="Next review"
             className="w-10 h-10 rounded-full flex items-center justify-center transition-colors"
             style={{
-              background: "#ffffff",
-              border: "1px solid #00F5FF",
-              color: "#1a1040",
+              background: "rgba(255,255,255,0.7)",
+              border: "1px solid rgba(196,181,253,0.5)",
+              color: "#1e1b4b",
             }}
           >
             →

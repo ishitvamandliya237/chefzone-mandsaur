@@ -9,7 +9,9 @@ export default function GallerySection() {
       id="gallery"
       data-ocid="gallery.section"
       className="py-24 px-4 relative overflow-hidden"
-      style={{ background: "#0d0b1e" }}
+      style={{
+        background: "linear-gradient(135deg, #EDE9FE 0%, #CFFAFE 100%)",
+      }}
     >
       {/* bg glow */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -42,9 +44,9 @@ export default function GallerySection() {
           <span
             className="inline-block text-xs font-semibold tracking-[0.3em] uppercase mb-3 px-4 py-1.5 rounded-full"
             style={{
-              background: "rgba(212,175,55,0.3)",
-              border: "1px solid rgba(0,245,255,0.3)",
-              color: "#00F5FF",
+              background: "rgba(212,175,55,0.25)",
+              border: "1px solid rgba(0,245,255,0.4)",
+              color: "#1e1b4b",
             }}
           >
             📸 Gallery
@@ -52,16 +54,12 @@ export default function GallerySection() {
           <h2
             className="font-display text-4xl md:text-5xl font-bold mt-3"
             style={{
-              background:
-                "linear-gradient(135deg, #f0f0ff 0%, #00F5FF 60%, #D4AF37 100%)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              backgroundClip: "text",
+              color: "#1e1b4b",
             }}
           >
             Our Gallery
           </h2>
-          <p className="mt-3 text-base" style={{ color: "#b0b0d8" }}>
+          <p className="mt-3 text-base" style={{ color: "#4b5563" }}>
             Explore our delicious food and kitchen moments
           </p>
         </motion.div>
@@ -78,12 +76,11 @@ export default function GallerySection() {
             data-ocid="gallery.card"
             className="w-full max-w-lg rounded-3xl p-10 flex flex-col items-center gap-7 text-center"
             style={{
-              background:
-                "linear-gradient(135deg, rgba(255,255,255,0.07) 0%, rgba(212,175,55,0.12) 100%)",
+              background: "rgba(255,255,255,0.8)",
               backdropFilter: "blur(20px)",
-              border: "1px solid rgba(0,245,255,0.35)",
+              border: "1px solid rgba(196,181,253,0.5)",
               boxShadow:
-                "0 8px 40px rgba(124,58,237,0.12), inset 0 1px 0 rgba(0,245,255,0.15)",
+                "0 8px 40px rgba(124,58,237,0.1), inset 0 1px 0 rgba(255,255,255,0.5)",
             }}
           >
             {/* Camera icon */}
@@ -91,9 +88,9 @@ export default function GallerySection() {
               className="w-20 h-20 rounded-full flex items-center justify-center"
               style={{
                 background:
-                  "linear-gradient(135deg, rgba(212,175,55,0.4), rgba(0,245,255,0.2))",
+                  "linear-gradient(135deg, rgba(212,175,55,0.3), rgba(0,245,255,0.2))",
                 border: "2px solid rgba(0,245,255,0.3)",
-                boxShadow: "0 0 30px rgba(212,175,55,0.4)",
+                boxShadow: "0 0 20px rgba(212,175,55,0.3)",
               }}
             >
               <svg
@@ -121,11 +118,11 @@ export default function GallerySection() {
             <div>
               <h3
                 className="font-display font-bold text-2xl mb-2"
-                style={{ color: "#f0f0ff" }}
+                style={{ color: "#1e1b4b" }}
               >
                 ChefZone Gallery
               </h3>
-              <p className="font-body text-sm" style={{ color: "#b0b0d8" }}>
+              <p className="font-body text-sm" style={{ color: "#4b5563" }}>
                 Dive into our collection of food photography, kitchen visuals,
                 and delightful moments from ChefZone Mandsaur.
               </p>
@@ -143,8 +140,8 @@ export default function GallerySection() {
                   : "linear-gradient(135deg, #D4AF37, #7c3aed)",
                 color: "#fff",
                 boxShadow: hovered
-                  ? "0 0 40px rgba(212,175,55,0.8), 0 0 80px rgba(0,245,255,0.3)"
-                  : "0 0 24px rgba(212,175,55,0.5)",
+                  ? "0 0 30px rgba(212,175,55,0.6), 0 0 60px rgba(0,245,255,0.2)"
+                  : "0 0 20px rgba(212,175,55,0.4)",
                 transform: hovered ? "scale(1.04)" : "scale(1)",
                 transition: "all 0.25s ease",
               }}

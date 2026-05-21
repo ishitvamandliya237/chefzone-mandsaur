@@ -39,7 +39,7 @@ export default function FeaturesSection() {
       id="features"
       data-ocid="features.section"
       className="py-24 relative overflow-hidden"
-      style={{ background: "#141428" }}
+      style={{ background: "linear-gradient(135deg, #FEF9C3, #ECFCCB)" }}
     >
       {/* Subtle warm line accent top */}
       <div
@@ -59,10 +59,16 @@ export default function FeaturesSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <h2 className="font-display text-4xl sm:text-5xl font-bold text-foreground mb-4">
+          <h2
+            className="font-display text-4xl sm:text-5xl font-bold mb-4"
+            style={{ color: "#1e1b4b" }}
+          >
             Why Choose <span className="gradient-warm-text">ChefZone?</span>
           </h2>
-          <p className="text-muted-foreground text-base sm:text-lg max-w-xl mx-auto">
+          <p
+            className="text-base sm:text-lg max-w-xl mx-auto"
+            style={{ color: "#4c4c6c" }}
+          >
             We're not just a kitchen — we're an experience crafted for your
             satisfaction.
           </p>
@@ -81,9 +87,9 @@ export default function FeaturesSection() {
               data-ocid={`features.card.${i + 1}`}
               className="group rounded-2xl p-6 flex flex-col gap-4 transition-smooth hover:scale-[1.03] hover:border-glow cursor-default"
               style={{
-                background: "rgba(255,255,255,0.06)",
+                background: "rgba(255,255,255,0.7)",
                 backdropFilter: "blur(20px)",
-                border: "1px solid rgba(0,245,255,0.25)",
+                border: "1px solid rgba(196,181,253,0.5)",
               }}
             >
               {/* Icon circle */}
@@ -91,10 +97,16 @@ export default function FeaturesSection() {
                 {feature.emoji}
               </div>
 
-              <h3 className="font-display text-lg font-bold text-foreground">
+              <h3
+                className="font-display text-lg font-bold"
+                style={{ color: "#1e1b4b" }}
+              >
                 {feature.title}
               </h3>
-              <p className="text-sm text-muted-foreground font-body leading-relaxed">
+              <p
+                className="text-sm font-body leading-relaxed"
+                style={{ color: "#4c4c6c" }}
+              >
                 {feature.desc}
               </p>
 

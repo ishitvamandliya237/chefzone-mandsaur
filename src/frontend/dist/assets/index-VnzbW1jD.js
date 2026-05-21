@@ -26495,7 +26495,7 @@ function AboutSection() {
       "data-ocid": "about.section",
       className: "relative py-24 overflow-hidden",
       style: {
-        background: "#1a1a2e"
+        background: "linear-gradient(135deg, #CFFAFE, #EDE9FE)"
       },
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -26503,7 +26503,7 @@ function AboutSection() {
           {
             className: "absolute top-0 right-0 w-96 h-96 pointer-events-none opacity-20",
             style: {
-              background: "radial-gradient(circle, oklch(0.68 0.22 30 / 0.3) 0%, transparent 70%)"
+              background: "radial-gradient(circle, rgba(196,181,253,0.4) 0%, transparent 70%)"
             }
           }
         ),
@@ -26512,7 +26512,7 @@ function AboutSection() {
           {
             className: "absolute bottom-0 left-0 w-64 h-64 pointer-events-none opacity-10",
             style: {
-              background: "radial-gradient(circle, oklch(0.62 0.26 25 / 0.4) 0%, transparent 70%)"
+              background: "radial-gradient(circle, rgba(207,250,254,0.4) 0%, transparent 70%)"
             }
           }
         ),
@@ -26526,10 +26526,17 @@ function AboutSection() {
               transition: { duration: 0.7 },
               className: "text-center mb-16",
               children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "font-display text-4xl sm:text-5xl font-bold text-foreground mb-4", children: [
-                  "About ",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "gradient-warm-text", children: "ChefZone" })
-                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "h2",
+                  {
+                    className: "font-display text-4xl sm:text-5xl font-bold mb-4",
+                    style: { color: "#1e1b4b" },
+                    children: [
+                      "About ",
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "gradient-warm-text", children: "ChefZone" })
+                    ]
+                  }
+                ),
                 /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mx-auto w-24 h-1 rounded-full gradient-warm" })
               ]
             }
@@ -26544,7 +26551,14 @@ function AboutSection() {
                 transition: { duration: 0.7 },
                 className: "flex flex-col gap-8",
                 children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-base sm:text-lg text-muted-foreground font-body leading-relaxed", children: "ChefZone Mandsaur is a modern cloud kitchen built with passion for delicious vegetarian food and fast service. Our mission is to bring restaurant-quality meals directly to your doorstep with hygiene, freshness, and unforgettable taste. From cheesy pizzas to flavorful Indian meals, ChefZone combines premium quality with affordable pricing. Every order is prepared with care in a high-tech kitchen environment designed for speed, consistency, and customer satisfaction." }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "p",
+                    {
+                      className: "text-base sm:text-lg font-body leading-relaxed",
+                      style: { color: "#1e1b4b" },
+                      children: "ChefZone Mandsaur is a modern cloud kitchen built with passion for delicious vegetarian food and fast service. Our mission is to bring restaurant-quality meals directly to your doorstep with hygiene, freshness, and unforgettable taste. From cheesy pizzas to flavorful Indian meals, ChefZone combines premium quality with affordable pricing. Every order is prepared with care in a high-tech kitchen environment designed for speed, consistency, and customer satisfaction."
+                    }
+                  ),
                   /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-wrap gap-3", children: HIGHLIGHTS.map((h2, i2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
                     motion.span,
                     {
@@ -26552,7 +26566,8 @@ function AboutSection() {
                       whileInView: { opacity: 1, scale: 1 },
                       viewport: { once: true },
                       transition: { delay: i2 * 0.1, duration: 0.4 },
-                      className: "inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-glow text-sm font-semibold text-primary",
+                      className: "inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-glow text-sm font-semibold",
+                      style: { color: "#1e1b4b" },
                       children: [
                         /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-lg", children: h2.emoji }),
                         h2.label
@@ -26581,21 +26596,33 @@ function AboutSection() {
                 whileInView: { opacity: 1, x: 0 },
                 viewport: { once: true },
                 transition: { duration: 0.7 },
-                className: "glass-card rounded-3xl p-8 relative overflow-hidden",
+                className: "rounded-3xl p-8 relative overflow-hidden",
+                style: {
+                  background: "rgba(255,255,255,0.6)",
+                  backdropFilter: "blur(20px)",
+                  border: "1px solid rgba(196,181,253,0.4)"
+                },
                 children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsx(
                     "div",
                     {
                       className: "absolute -top-8 -right-8 w-40 h-40 rounded-full opacity-30 pointer-events-none",
                       style: {
-                        background: "radial-gradient(circle, oklch(0.68 0.22 30 / 0.6) 0%, transparent 70%)"
+                        background: "radial-gradient(circle, rgba(196,181,253,0.5) 0%, transparent 70%)"
                       }
                     }
                   ),
-                  /* @__PURE__ */ jsxRuntimeExports.jsxs("h3", { className: "font-display text-xl font-bold text-foreground mb-6 text-center", children: [
-                    "Our ",
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "gradient-warm-text", children: "Menu Universe" })
-                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "h3",
+                    {
+                      className: "font-display text-xl font-bold mb-6 text-center",
+                      style: { color: "#1e1b4b" },
+                      children: [
+                        "Our ",
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "gradient-warm-text", children: "Menu Universe" })
+                      ]
+                    }
+                  ),
                   /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-3 gap-4", children: FOOD_EMOJIS.map((item, i2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
                     motion.div,
                     {
@@ -26604,10 +26631,20 @@ function AboutSection() {
                       viewport: { once: true },
                       transition: { delay: i2 * 0.07, duration: 0.4 },
                       className: "flex flex-col items-center gap-2 p-3 rounded-2xl transition-smooth hover:scale-110 cursor-default",
-                      style: { background: "rgba(124,58,237,0.12)" },
+                      style: {
+                        background: "rgba(255,255,255,0.7)",
+                        border: "1px solid rgba(196,181,253,0.3)"
+                      },
                       children: [
                         /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-3xl", children: item.emoji }),
-                        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground text-center", children: item.label })
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(
+                          "span",
+                          {
+                            className: "text-xs text-center",
+                            style: { color: "#1e1b4b" },
+                            children: item.label
+                          }
+                        )
                       ]
                     },
                     item.label
@@ -26676,7 +26713,7 @@ function ContactSection() {
       "data-ocid": "contact.section",
       className: "relative py-24 px-4",
       style: {
-        background: "#0d0b1e"
+        background: "linear-gradient(135deg, #FEF9C3 0%, #CFFAFE 100%)"
       },
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -26684,7 +26721,7 @@ function ContactSection() {
           {
             className: "pointer-events-none absolute inset-0 opacity-100",
             style: {
-              background: "radial-gradient(ellipse 70% 40% at 50% 100%, rgba(124,58,237,0.08), transparent)"
+              background: "radial-gradient(ellipse 70% 40% at 50% 100%, rgba(124,58,237,0.06), transparent)"
             }
           }
         ),
@@ -26702,7 +26739,7 @@ function ContactSection() {
                   "span",
                   {
                     className: "inline-block text-xs font-semibold tracking-[0.3em] uppercase mb-3",
-                    style: { color: "#7C3AED" },
+                    style: { color: "#1e1b4b" },
                     children: "Reach Us"
                   }
                 ),
@@ -26711,8 +26748,7 @@ function ContactSection() {
                   {
                     className: "font-display text-4xl md:text-5xl font-bold",
                     style: {
-                      color: "#f0f0ff",
-                      textShadow: "0 0 30px rgba(0,245,255,0.25)"
+                      color: "#1e1b4b"
                     },
                     children: [
                       "Find Us &",
@@ -26734,9 +26770,9 @@ function ContactSection() {
                 transition: { duration: 0.7 },
                 className: "rounded-2xl p-8 flex flex-col gap-7",
                 style: {
-                  background: "rgba(255,255,255,0.06)",
+                  background: "rgba(255,255,255,0.7)",
                   backdropFilter: "blur(20px)",
-                  border: "1px solid rgba(124,58,237,0.3)"
+                  border: "1px solid rgba(34,211,238,0.4)"
                 },
                 "data-ocid": "contact.card",
                 children: [
@@ -26746,8 +26782,8 @@ function ContactSection() {
                       {
                         className: "w-12 h-12 rounded-xl flex items-center justify-center shrink-0",
                         style: {
-                          background: "rgba(124,58,237,0.1)",
-                          border: "1px solid rgba(124,58,237,0.25)"
+                          background: "rgba(34,211,238,0.1)",
+                          border: "1px solid rgba(34,211,238,0.3)"
                         },
                         children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
                           "svg",
@@ -26757,7 +26793,7 @@ function ContactSection() {
                             stroke: "currentColor",
                             strokeWidth: 2,
                             className: "w-5 h-5",
-                            style: { color: "#7C3AED" },
+                            style: { color: "#00F5FF" },
                             children: [
                               /* @__PURE__ */ jsxRuntimeExports.jsx("title", { children: "Phone" }),
                               /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -26778,7 +26814,7 @@ function ContactSection() {
                         "p",
                         {
                           className: "text-xs uppercase tracking-wider mb-1",
-                          style: { color: "#9090c8" },
+                          style: { color: "#6b7280" },
                           children: "Phone / WhatsApp"
                         }
                       ),
@@ -26788,7 +26824,13 @@ function ContactSection() {
                           href: "tel:+918889431668",
                           "data-ocid": "contact.phone_link",
                           className: "text-xl font-semibold font-display transition-smooth hover:opacity-80",
-                          style: { color: "#7C3AED" },
+                          style: { color: "#1e1b4b" },
+                          onMouseEnter: (e) => {
+                            e.currentTarget.style.color = "#00F5FF";
+                          },
+                          onMouseLeave: (e) => {
+                            e.currentTarget.style.color = "#1e1b4b";
+                          },
                           children: "8889431668"
                         }
                       )
@@ -26800,8 +26842,8 @@ function ContactSection() {
                       {
                         className: "w-12 h-12 rounded-xl flex items-center justify-center shrink-0",
                         style: {
-                          background: "rgba(124,58,237,0.1)",
-                          border: "1px solid rgba(124,58,237,0.25)"
+                          background: "rgba(34,211,238,0.1)",
+                          border: "1px solid rgba(34,211,238,0.3)"
                         },
                         children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
                           "svg",
@@ -26811,7 +26853,7 @@ function ContactSection() {
                             stroke: "currentColor",
                             strokeWidth: 2,
                             className: "w-5 h-5",
-                            style: { color: "#7C3AED" },
+                            style: { color: "#00F5FF" },
                             children: [
                               /* @__PURE__ */ jsxRuntimeExports.jsx("title", { children: "Clock" }),
                               /* @__PURE__ */ jsxRuntimeExports.jsx("circle", { cx: "12", cy: "12", r: "10" }),
@@ -26826,7 +26868,7 @@ function ContactSection() {
                         "p",
                         {
                           className: "text-xs uppercase tracking-wider mb-1",
-                          style: { color: "#9090c8" },
+                          style: { color: "#6b7280" },
                           children: "Opening Hours"
                         }
                       ),
@@ -26834,7 +26876,7 @@ function ContactSection() {
                         "p",
                         {
                           className: "text-lg font-semibold font-display",
-                          style: { color: "#f0f0ff" },
+                          style: { color: "#1e1b4b" },
                           children: "Mon–Sun: 10:00 AM – 3:00 AM"
                         }
                       )
@@ -26845,7 +26887,7 @@ function ContactSection() {
                     {
                       className: "h-px w-full",
                       style: {
-                        background: "linear-gradient(to right, transparent, rgba(124,58,237,0.3), transparent)"
+                        background: "linear-gradient(to right, transparent, rgba(34,211,238,0.3), transparent)"
                       }
                     }
                   ),
@@ -26854,7 +26896,7 @@ function ContactSection() {
                       "p",
                       {
                         className: "text-xs uppercase tracking-wider mb-4",
-                        style: { color: "#9090c8" },
+                        style: { color: "#6b7280" },
                         children: "Find Us On"
                       }
                     ),
@@ -26925,8 +26967,8 @@ function ContactSection() {
                 transition: { duration: 0.7, delay: 0.15 },
                 className: "rounded-2xl overflow-hidden",
                 style: {
-                  border: "1px solid rgba(0,245,255,0.3)",
-                  boxShadow: "0 8px 30px rgba(124,58,237,0.1)",
+                  border: "1px solid rgba(34,211,238,0.4)",
+                  boxShadow: "0 8px 30px rgba(124,58,237,0.08)",
                   minHeight: "420px"
                 },
                 "data-ocid": "contact.map",
@@ -26990,7 +27032,7 @@ function FeaturesSection() {
       id: "features",
       "data-ocid": "features.section",
       className: "py-24 relative overflow-hidden",
-      style: { background: "#141428" },
+      style: { background: "linear-gradient(135deg, #FEF9C3, #ECFCCB)" },
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
@@ -27011,11 +27053,25 @@ function FeaturesSection() {
               transition: { duration: 0.7 },
               className: "text-center mb-16",
               children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "font-display text-4xl sm:text-5xl font-bold text-foreground mb-4", children: [
-                  "Why Choose ",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "gradient-warm-text", children: "ChefZone?" })
-                ] }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground text-base sm:text-lg max-w-xl mx-auto", children: "We're not just a kitchen — we're an experience crafted for your satisfaction." }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "h2",
+                  {
+                    className: "font-display text-4xl sm:text-5xl font-bold mb-4",
+                    style: { color: "#1e1b4b" },
+                    children: [
+                      "Why Choose ",
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "gradient-warm-text", children: "ChefZone?" })
+                    ]
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "p",
+                  {
+                    className: "text-base sm:text-lg max-w-xl mx-auto",
+                    style: { color: "#4c4c6c" },
+                    children: "We're not just a kitchen — we're an experience crafted for your satisfaction."
+                  }
+                ),
                 /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mx-auto w-24 h-1 rounded-full gradient-warm mt-4" })
               ]
             }
@@ -27030,14 +27086,28 @@ function FeaturesSection() {
               "data-ocid": `features.card.${i2 + 1}`,
               className: "group rounded-2xl p-6 flex flex-col gap-4 transition-smooth hover:scale-[1.03] hover:border-glow cursor-default",
               style: {
-                background: "rgba(255,255,255,0.06)",
+                background: "rgba(255,255,255,0.7)",
                 backdropFilter: "blur(20px)",
-                border: "1px solid rgba(0,245,255,0.25)"
+                border: "1px solid rgba(196,181,253,0.5)"
               },
               children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-14 h-14 rounded-2xl flex items-center justify-center text-3xl gradient-warm opacity-90 group-hover:scale-110 transition-smooth", children: feature.emoji }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display text-lg font-bold text-foreground", children: feature.title }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground font-body leading-relaxed", children: feature.desc }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "h3",
+                  {
+                    className: "font-display text-lg font-bold",
+                    style: { color: "#1e1b4b" },
+                    children: feature.title
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "p",
+                  {
+                    className: "text-sm font-body leading-relaxed",
+                    style: { color: "#4c4c6c" },
+                    children: feature.desc
+                  }
+                ),
                 /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mt-auto h-px w-0 group-hover:w-full gradient-warm rounded-full transition-all duration-500" })
               ]
             },
@@ -27125,7 +27195,7 @@ function Footer() {
     {
       "data-ocid": "footer.section",
       className: "relative pt-1",
-      style: { background: "#0f0f1a" },
+      style: { background: "linear-gradient(135deg, #1e1b4b, #312e81)" },
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
@@ -27290,7 +27360,9 @@ function GallerySection() {
       id: "gallery",
       "data-ocid": "gallery.section",
       className: "py-24 px-4 relative overflow-hidden",
-      style: { background: "#0d0b1e" },
+      style: {
+        background: "linear-gradient(135deg, #EDE9FE 0%, #CFFAFE 100%)"
+      },
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "absolute inset-0 pointer-events-none overflow-hidden", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -27329,9 +27401,9 @@ function GallerySection() {
                   {
                     className: "inline-block text-xs font-semibold tracking-[0.3em] uppercase mb-3 px-4 py-1.5 rounded-full",
                     style: {
-                      background: "rgba(212,175,55,0.3)",
-                      border: "1px solid rgba(0,245,255,0.3)",
-                      color: "#00F5FF"
+                      background: "rgba(212,175,55,0.25)",
+                      border: "1px solid rgba(0,245,255,0.4)",
+                      color: "#1e1b4b"
                     },
                     children: "📸 Gallery"
                   }
@@ -27341,15 +27413,12 @@ function GallerySection() {
                   {
                     className: "font-display text-4xl md:text-5xl font-bold mt-3",
                     style: {
-                      background: "linear-gradient(135deg, #f0f0ff 0%, #00F5FF 60%, #D4AF37 100%)",
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
-                      backgroundClip: "text"
+                      color: "#1e1b4b"
                     },
                     children: "Our Gallery"
                   }
                 ),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-3 text-base", style: { color: "#b0b0d8" }, children: "Explore our delicious food and kitchen moments" })
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-3 text-base", style: { color: "#4b5563" }, children: "Explore our delicious food and kitchen moments" })
               ]
             }
           ),
@@ -27367,10 +27436,10 @@ function GallerySection() {
                   "data-ocid": "gallery.card",
                   className: "w-full max-w-lg rounded-3xl p-10 flex flex-col items-center gap-7 text-center",
                   style: {
-                    background: "linear-gradient(135deg, rgba(255,255,255,0.07) 0%, rgba(212,175,55,0.12) 100%)",
+                    background: "rgba(255,255,255,0.8)",
                     backdropFilter: "blur(20px)",
-                    border: "1px solid rgba(0,245,255,0.35)",
-                    boxShadow: "0 8px 40px rgba(124,58,237,0.12), inset 0 1px 0 rgba(0,245,255,0.15)"
+                    border: "1px solid rgba(196,181,253,0.5)",
+                    boxShadow: "0 8px 40px rgba(124,58,237,0.1), inset 0 1px 0 rgba(255,255,255,0.5)"
                   },
                   children: [
                     /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -27378,9 +27447,9 @@ function GallerySection() {
                       {
                         className: "w-20 h-20 rounded-full flex items-center justify-center",
                         style: {
-                          background: "linear-gradient(135deg, rgba(212,175,55,0.4), rgba(0,245,255,0.2))",
+                          background: "linear-gradient(135deg, rgba(212,175,55,0.3), rgba(0,245,255,0.2))",
                           border: "2px solid rgba(0,245,255,0.3)",
-                          boxShadow: "0 0 30px rgba(212,175,55,0.4)"
+                          boxShadow: "0 0 20px rgba(212,175,55,0.3)"
                         },
                         children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
                           "svg",
@@ -27419,11 +27488,11 @@ function GallerySection() {
                         "h3",
                         {
                           className: "font-display font-bold text-2xl mb-2",
-                          style: { color: "#f0f0ff" },
+                          style: { color: "#1e1b4b" },
                           children: "ChefZone Gallery"
                         }
                       ),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-sm", style: { color: "#b0b0d8" }, children: "Dive into our collection of food photography, kitchen visuals, and delightful moments from ChefZone Mandsaur." })
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-sm", style: { color: "#4b5563" }, children: "Dive into our collection of food photography, kitchen visuals, and delightful moments from ChefZone Mandsaur." })
                     ] }),
                     /* @__PURE__ */ jsxRuntimeExports.jsxs(
                       "a",
@@ -27436,7 +27505,7 @@ function GallerySection() {
                         style: {
                           background: hovered ? "linear-gradient(135deg, #00F5FF, #D4AF37)" : "linear-gradient(135deg, #D4AF37, #7c3aed)",
                           color: "#fff",
-                          boxShadow: hovered ? "0 0 40px rgba(212,175,55,0.8), 0 0 80px rgba(0,245,255,0.3)" : "0 0 24px rgba(212,175,55,0.5)",
+                          boxShadow: hovered ? "0 0 30px rgba(212,175,55,0.6), 0 0 60px rgba(0,245,255,0.2)" : "0 0 20px rgba(212,175,55,0.4)",
                           transform: hovered ? "scale(1.04)" : "scale(1)",
                           transition: "all 0.25s ease"
                         },
@@ -78984,7 +79053,7 @@ function HeroSection() {
       "data-ocid": "home.section",
       className: "relative min-h-screen flex items-center overflow-hidden",
       style: {
-        background: "#0f0f1a"
+        background: "linear-gradient(135deg, #EDE9FE 0%, #CFFAFE 50%, #FEF9C3 100%)"
       },
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -78992,7 +79061,7 @@ function HeroSection() {
           {
             className: "absolute inset-0 pointer-events-none",
             style: {
-              background: "radial-gradient(ellipse 80% 60% at 60% 40%, oklch(0.68 0.22 30 / 0.08) 0%, transparent 70%)"
+              background: "radial-gradient(ellipse 80% 60% at 60% 40%, rgba(212,175,55,0.12) 0%, transparent 70%)"
             }
           }
         ),
@@ -79011,28 +79080,52 @@ function HeroSection() {
                     initial: { opacity: 0, y: -10 },
                     animate: { opacity: 1, y: 0 },
                     transition: { delay: 0.2, duration: 0.5 },
-                    children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase glass-card border-glow text-primary", children: "🍕 Now Open in Mandsaur" })
+                    children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "span",
+                      {
+                        className: "inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase glass-card border-glow",
+                        style: { color: "#7C3AED" },
+                        children: "🍕 Now Open in Mandsaur"
+                      }
+                    )
                   }
                 ),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("h1", { className: "font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-foreground", children: [
-                  "Mandsaur's First",
-                  " ",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "gradient-warm-text text-shadow-glow", children: "Premium" }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
-                  "Cloud Kitchen"
-                ] }),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-base sm:text-lg text-muted-foreground font-body", children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-primary font-semibold", children: "Fresh" }),
-                  " •",
-                  " ",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-primary font-semibold", children: "Fast" }),
-                  " •",
-                  " ",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-primary font-semibold", children: "Fully Veg" }),
-                  " •",
-                  " ",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-primary font-semibold", children: "Delivered with Love" })
-                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "h1",
+                  {
+                    className: "font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight",
+                    style: { color: "#1e1b4b" },
+                    children: [
+                      "Mandsaur's First",
+                      " ",
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "gradient-warm-text text-shadow-glow", children: "Premium" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
+                      "Cloud Kitchen"
+                    ]
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "p",
+                  {
+                    className: "text-base sm:text-lg font-body",
+                    style: { color: "#4c1d95" },
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-semibold", style: { color: "#7C3AED" }, children: "Fresh" }),
+                      " ",
+                      "•",
+                      " ",
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-semibold", style: { color: "#7C3AED" }, children: "Fast" }),
+                      " ",
+                      "•",
+                      " ",
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-semibold", style: { color: "#7C3AED" }, children: "Fully Veg" }),
+                      " ",
+                      "•",
+                      " ",
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-semibold", style: { color: "#7C3AED" }, children: "Delivered with Love" })
+                    ]
+                  }
+                ),
                 /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-wrap gap-4 pt-2", children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsxs(
                     "a",
@@ -79067,7 +79160,8 @@ function HeroSection() {
                       type: "button",
                       onClick: scrollToMenu,
                       "data-ocid": "hero.explore_menu_button",
-                      className: "inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-semibold text-foreground glass-card border-glow transition-smooth hover:scale-105 hover:glow-orange",
+                      className: "inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-semibold glass-card border-glow transition-smooth hover:scale-105 hover:glow-orange",
+                      style: { color: "#1e1b4b" },
                       children: "Explore Menu ↓"
                     }
                   )
@@ -79076,9 +79170,20 @@ function HeroSection() {
                   "div",
                   {
                     className: "glass-card rounded-xl px-3 py-3 flex flex-col items-center text-center gap-1",
+                    style: {
+                      background: "rgba(255,255,255,0.7)",
+                      border: "1px solid rgba(196,181,253,0.5)"
+                    },
                     children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-display font-bold text-lg text-primary", children: stat.number }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground", children: stat.label })
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "span",
+                        {
+                          className: "font-display font-bold text-lg",
+                          style: { color: "#7C3AED" },
+                          children: stat.number
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs", style: { color: "#4c1d95" }, children: stat.label })
                     ]
                   },
                   stat.label
@@ -79128,7 +79233,7 @@ function JourneySection() {
       "data-ocid": "journey.section",
       className: "relative py-24 px-4 overflow-hidden",
       style: {
-        background: "#141428"
+        background: "linear-gradient(135deg, #ECFCCB 0%, #FEF9C3 100%)"
       },
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -79137,7 +79242,7 @@ function JourneySection() {
             "aria-hidden": "true",
             className: "absolute top-0 left-1/4 w-[600px] h-[400px] rounded-full pointer-events-none",
             style: {
-              background: "radial-gradient(circle, rgba(212,175,55,0.18) 0%, transparent 70%)",
+              background: "radial-gradient(circle, rgba(212,175,55,0.25) 0%, transparent 70%)",
               filter: "blur(60px)"
             }
           }
@@ -79148,7 +79253,7 @@ function JourneySection() {
             "aria-hidden": "true",
             className: "absolute bottom-0 right-1/4 w-[500px] h-[300px] rounded-full pointer-events-none",
             style: {
-              background: "radial-gradient(circle, rgba(0,245,255,0.12) 0%, transparent 70%)",
+              background: "radial-gradient(circle, rgba(0,245,255,0.18) 0%, transparent 70%)",
               filter: "blur(60px)"
             }
           }
@@ -79168,9 +79273,9 @@ function JourneySection() {
                   {
                     className: "inline-block text-xs font-semibold tracking-[0.3em] uppercase mb-3 px-4 py-1.5 rounded-full",
                     style: {
-                      background: "rgba(212,175,55,0.3)",
-                      border: "1px solid rgba(0,245,255,0.3)",
-                      color: "#00F5FF"
+                      background: "rgba(212,175,55,0.25)",
+                      border: "1px solid rgba(0,245,255,0.4)",
+                      color: "#1e1b4b"
                     },
                     children: "Our Story"
                   }
@@ -79179,13 +79284,7 @@ function JourneySection() {
                   "h2",
                   {
                     className: "font-display text-4xl md:text-5xl font-bold mt-3",
-                    style: {
-                      background: "linear-gradient(135deg, #c8c8f0 0%, #00F5FF 50%, #D4AF37 100%)",
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
-                      backgroundClip: "text",
-                      textShadow: "none"
-                    },
+                    style: { color: "#1e1b4b" },
                     children: "My Journey"
                   }
                 ),
@@ -79216,20 +79315,20 @@ function JourneySection() {
                     {
                       className: "rounded-2xl p-7 flex flex-col gap-5",
                       style: {
-                        background: "rgba(255,255,255,0.07)",
+                        background: "rgba(255,255,255,0.7)",
                         backdropFilter: "blur(16px)",
-                        border: "1px solid rgba(0,245,255,0.25)"
+                        border: "1px solid rgba(196,181,253,0.5)"
                       },
                       children: [
                         /* @__PURE__ */ jsxRuntimeExports.jsxs(
                           "p",
                           {
                             className: "font-body text-base leading-relaxed",
-                            style: { color: "#d0d0ee" },
+                            style: { color: "#1e1b4b" },
                             children: [
                               "ChefZone ek passion-driven cloud kitchen hai, jo ghar ke swaad aur quality ko har customer tak pahunchane ke vision ke saath shuru hua. Is journey ki shuruaat",
                               " ",
-                              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-semibold", style: { color: "#00F5FF" }, children: "Jasbeer Kaur aur Dilip Singh Narang (Lucky)" }),
+                              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-semibold", style: { color: "#D4AF37" }, children: "Jasbeer Kaur aur Dilip Singh Narang (Lucky)" }),
                               " ",
                               "ne milkar ki, jahan traditional cooking experience aur modern culinary ideas ka perfect blend dekhne ko milta hai."
                             ]
@@ -79239,11 +79338,11 @@ function JourneySection() {
                           "p",
                           {
                             className: "font-body text-base leading-relaxed",
-                            style: { color: "#d0d0ee" },
+                            style: { color: "#1e1b4b" },
                             children: [
                               "Food ke prati gehre lagav aur hospitality industry ke experience ne is sapne ko janam diya.",
                               " ",
-                              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-semibold", style: { color: "#00F5FF" }, children: "Udaipur mein hotel management ki padhai" }),
+                              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-semibold", style: { color: "#D4AF37" }, children: "Udaipur mein hotel management ki padhai" }),
                               " ",
                               "aur Radisson jaisi five-star property mein kaam karne ke baad, Mandsaur ke logon ke liye kuch alag aur unique shuru karne ka vision bana."
                             ]
@@ -79253,9 +79352,9 @@ function JourneySection() {
                           "p",
                           {
                             className: "font-body text-base leading-relaxed",
-                            style: { color: "#d0d0ee" },
+                            style: { color: "#1e1b4b" },
                             children: [
-                              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-semibold", style: { color: "#00F5FF" }, children: "10 February 2025" }),
+                              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-semibold", style: { color: "#D4AF37" }, children: "10 February 2025" }),
                               " ",
                               "ko ChefZone ki shuruaat hui, aur bina kisi promotion ke pehle hi din pehla order milna is journey ka yaadgaar pal bana. Tab se lekar aaj tak, ChefZone har customer tak fresh, hygienic aur delicious food pyaar ke saath pahunchata aa raha hai. Naye kitchen expansion aur thali system ke saath, yeh safar ab aur bhi aage badh raha hai."
                             ]
@@ -79273,8 +79372,8 @@ function JourneySection() {
                       transition: { duration: 0.4, delay: i2 * 0.08 },
                       className: "flex items-center gap-3 px-4 py-3 rounded-xl",
                       style: {
-                        background: "rgba(255,255,255,0.07)",
-                        border: "1px solid rgba(124,58,237,0.4)"
+                        background: "rgba(255,255,255,0.7)",
+                        border: "1px solid rgba(196,181,253,0.5)"
                       },
                       children: [
                         /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xl flex-shrink-0", children: val.icon }),
@@ -79282,7 +79381,7 @@ function JourneySection() {
                           "span",
                           {
                             className: "font-body text-sm font-medium",
-                            style: { color: "#d0d0ee" },
+                            style: { color: "#1e1b4b" },
                             children: val.text
                           }
                         )
@@ -79307,7 +79406,7 @@ function JourneySection() {
                   {
                     className: "relative w-full max-w-md",
                     style: {
-                      filter: "drop-shadow(0 0 40px rgba(212,175,55,0.6))"
+                      filter: "drop-shadow(0 0 30px rgba(212,175,55,0.4))"
                     },
                     children: [
                       /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -79315,7 +79414,7 @@ function JourneySection() {
                         {
                           className: "absolute -inset-3 rounded-3xl",
                           style: {
-                            background: "linear-gradient(135deg, rgba(212,175,55,0.5), rgba(0,245,255,0.3))",
+                            background: "linear-gradient(135deg, rgba(212,175,55,0.4), rgba(0,245,255,0.25))",
                             filter: "blur(12px)",
                             zIndex: 0
                           }
@@ -79329,7 +79428,7 @@ function JourneySection() {
                           className: "relative w-full rounded-2xl object-cover",
                           style: {
                             border: "2px solid rgba(0,245,255,0.4)",
-                            boxShadow: "0 0 40px rgba(212,175,55,0.4), 0 20px 60px rgba(0,0,0,0.5)",
+                            boxShadow: "0 0 30px rgba(212,175,55,0.3), 0 20px 40px rgba(0,0,0,0.15)",
                             zIndex: 1
                           }
                         }
@@ -79341,7 +79440,7 @@ function JourneySection() {
                           style: {
                             background: "linear-gradient(135deg, #D4AF37, rgba(0,245,255,0.9))",
                             color: "#fff",
-                            boxShadow: "0 4px 20px rgba(212,175,55,0.5)",
+                            boxShadow: "0 4px 20px rgba(212,175,55,0.4)",
                             zIndex: 2
                           },
                           children: "Jasbeer Kaur & Lucky — Founders"
@@ -79354,152 +79453,6 @@ function JourneySection() {
             )
           ] })
         ] })
-      ]
-    }
-  );
-}
-function LoadingScreen({ onComplete }) {
-  const [progress2, setProgress] = reactExports.useState(0);
-  const [dotCount, setDotCount] = reactExports.useState(1);
-  const [visible, setVisible] = reactExports.useState(true);
-  const intervalRef = reactExports.useRef(null);
-  const dotIntervalRef = reactExports.useRef(null);
-  const timeoutRef = reactExports.useRef(null);
-  reactExports.useEffect(() => {
-    const start = Date.now();
-    const duration = 2e3;
-    intervalRef.current = setInterval(() => {
-      const elapsed = Date.now() - start;
-      const pct = Math.min(100, Math.round(elapsed / duration * 100));
-      setProgress(pct);
-      if (pct >= 100 && intervalRef.current) {
-        clearInterval(intervalRef.current);
-      }
-    }, 30);
-    dotIntervalRef.current = setInterval(() => {
-      setDotCount((c2) => c2 >= 3 ? 1 : c2 + 1);
-    }, 400);
-    timeoutRef.current = setTimeout(() => {
-      setVisible(false);
-      setTimeout(onComplete, 400);
-    }, 2500);
-    return () => {
-      if (intervalRef.current) clearInterval(intervalRef.current);
-      if (dotIntervalRef.current) clearInterval(dotIntervalRef.current);
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    };
-  }, [onComplete]);
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    "div",
-    {
-      "data-ocid": "loading.screen",
-      className: "fixed inset-0 z-[9999] flex flex-col items-center justify-center",
-      style: {
-        background: "#ffffff",
-        transition: "opacity 0.4s ease",
-        opacity: visible ? 1 : 0,
-        pointerEvents: visible ? "all" : "none"
-      },
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "div",
-          {
-            className: "pointer-events-none absolute inset-0",
-            style: {
-              background: "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(0,245,255,0.25), transparent)"
-            }
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          "div",
-          {
-            className: "relative mb-8",
-            style: {
-              animation: "logoPulse 1.5s ease-in-out infinite"
-            },
-            children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("style", { children: `
-          @keyframes logoPulse {
-            0%, 100% { transform: scale(1); filter: drop-shadow(0 0 12px rgba(0,245,255,0.5)); }
-            50% { transform: scale(1.08); filter: drop-shadow(0 0 28px rgba(0,245,255,0.8)); }
-          }
-          @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(12px); }
-            to { opacity: 1; transform: translateY(0); }
-          }
-        ` }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "div",
-                {
-                  className: "w-24 h-24 rounded-full overflow-hidden",
-                  style: {
-                    border: "3px solid rgba(0,245,255,0.6)"
-                  },
-                  children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "img",
-                    {
-                      src: "/assets/images/chefzone-logo.png",
-                      alt: "ChefZone logo",
-                      className: "w-full h-full object-cover",
-                      onError: (e) => {
-                        const el = e.currentTarget.parentElement;
-                        if (el) {
-                          el.innerHTML = '<div class="w-full h-full flex items-center justify-center font-bold text-3xl" style="background:linear-gradient(135deg,#D4AF37,#00F5FF);color:#fff;font-family:var(--font-display)">CZ</div>';
-                        }
-                      }
-                    }
-                  )
-                }
-              )
-            ]
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "h1",
-          {
-            className: "font-display text-3xl font-bold text-foreground mb-2",
-            style: {
-              animation: "fadeInUp 0.6s ease both",
-              animationDelay: "0.2s",
-              textShadow: "0 0 20px rgba(0,245,255,0.4)"
-            },
-            children: "ChefZone Mandsaur"
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "p",
-          {
-            className: "text-sm text-muted-foreground mb-12",
-            style: {
-              animation: "fadeInUp 0.6s ease both",
-              animationDelay: "0.4s"
-            },
-            children: "Mandsaur's First Cloud Kitchen"
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-base font-display mb-4", style: { color: "#00F5FF" }, children: [
-          "Loading",
-          ".".repeat(dotCount)
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "div",
-          {
-            className: "absolute bottom-0 left-0 w-full h-1",
-            style: { background: "rgba(0,0,0,0.08)" },
-            children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "div",
-              {
-                className: "h-full",
-                style: {
-                  width: `${progress2}%`,
-                  background: "linear-gradient(90deg, #D4AF37, #00F5FF)",
-                  boxShadow: "0 0 12px rgba(0,245,255,0.6)",
-                  transition: "width 0.05s linear"
-                }
-              }
-            )
-          }
-        )
       ]
     }
   );
@@ -79716,9 +79669,9 @@ function MenuCardComponent({ card, idx }) {
       transition: { duration: 0.5, delay: idx * 0.07 },
       className: "rounded-2xl overflow-hidden",
       style: {
-        background: "rgba(255,255,255,0.06)",
-        border: "1.5px solid rgba(0,245,255,0.35)",
-        boxShadow: "0 4px 24px rgba(0,245,255,0.08), 0 1px 0 rgba(0,245,255,0.1) inset",
+        background: "rgba(255,255,255,0.7)",
+        border: "1px solid rgba(196,181,253,0.5)",
+        boxShadow: "0 4px 24px rgba(196,181,253,0.1), 0 1px 0 rgba(255,255,255,0.5) inset",
         backdropFilter: "blur(16px)"
       },
       children: [
@@ -79729,7 +79682,7 @@ function MenuCardComponent({ card, idx }) {
             type: "button",
             "data-ocid": `menu.card.${idx + 1}.toggle`,
             className: "w-full flex items-center justify-between px-6 py-5 text-left focus:outline-none",
-            style: { background: open ? "rgba(0,245,255,0.06)" : "transparent" },
+            style: { background: open ? "rgba(196,181,253,0.25)" : "transparent" },
             onClick: () => setOpen((o) => !o),
             "aria-expanded": open,
             children: [
@@ -79739,9 +79692,9 @@ function MenuCardComponent({ card, idx }) {
                   {
                     className: "text-3xl w-12 h-12 rounded-xl flex items-center justify-center shrink-0",
                     style: {
-                      background: "rgba(255,255,255,0.08)",
-                      border: "1px solid rgba(0,245,255,0.25)",
-                      boxShadow: "0 2px 8px rgba(0,245,255,0.15)"
+                      background: "rgba(255,255,255,0.85)",
+                      border: "1px solid rgba(196,181,253,0.4)",
+                      boxShadow: "0 2px 8px rgba(196,181,253,0.15)"
                     },
                     children: card.emoji
                   }
@@ -79751,7 +79704,7 @@ function MenuCardComponent({ card, idx }) {
                     "h3",
                     {
                       className: "text-lg font-bold font-display",
-                      style: { color: "#D4AF37" },
+                      style: { color: "#1e1b4b" },
                       children: card.title
                     }
                   ),
@@ -79759,7 +79712,7 @@ function MenuCardComponent({ card, idx }) {
                     "p",
                     {
                       className: "text-xs mt-0.5 font-medium",
-                      style: { color: "#a080e8" },
+                      style: { color: "#7C3AED" },
                       children: [
                         totalItems,
                         " items"
@@ -79773,9 +79726,9 @@ function MenuCardComponent({ card, idx }) {
                 {
                   className: "text-lg font-bold transition-transform duration-300 shrink-0 w-8 h-8 rounded-full flex items-center justify-center",
                   style: {
-                    color: "#00B8CC",
-                    background: "rgba(0,245,255,0.1)",
-                    border: "1px solid rgba(0,245,255,0.3)",
+                    color: "#1e1b4b",
+                    background: "rgba(196,181,253,0.3)",
+                    border: "1px solid rgba(196,181,253,0.5)",
                     transform: open ? "rotate(180deg)" : "rotate(0deg)"
                   },
                   "aria-hidden": "true",
@@ -79799,7 +79752,7 @@ function MenuCardComponent({ card, idx }) {
                 {
                   className: "h-px mx-6",
                   style: {
-                    background: "linear-gradient(90deg, transparent, rgba(0,245,255,0.4), transparent)"
+                    background: "linear-gradient(90deg, transparent, rgba(196,181,253,0.6), transparent)"
                   }
                 }
               ),
@@ -79819,7 +79772,7 @@ function MenuCardComponent({ card, idx }) {
                       "h4",
                       {
                         className: "text-sm font-bold uppercase tracking-wider",
-                        style: { color: "#a080e8" },
+                        style: { color: "#1e1b4b" },
                         children: sub.title
                       }
                     )
@@ -79836,9 +79789,9 @@ function MenuCardComponent({ card, idx }) {
                             {
                               className: "shrink-0 text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center",
                               style: {
-                                background: "rgba(0,245,255,0.12)",
-                                color: "#00B8CC",
-                                border: "1px solid rgba(0,245,255,0.25)"
+                                background: "rgba(196,181,253,0.3)",
+                                color: "#7C3AED",
+                                border: "1px solid rgba(196,181,253,0.4)"
                               },
                               children: itemIdx + 1
                             }
@@ -79847,7 +79800,7 @@ function MenuCardComponent({ card, idx }) {
                             "span",
                             {
                               className: "text-sm leading-relaxed truncate",
-                              style: { color: "#d8d8f0" },
+                              style: { color: "#1e1b4b" },
                               children: item.name
                             }
                           )
@@ -79856,7 +79809,7 @@ function MenuCardComponent({ card, idx }) {
                           "span",
                           {
                             className: "shrink-0 text-sm font-semibold",
-                            style: { color: "#00B8CC" },
+                            style: { color: "#7C3AED" },
                             children: item.price
                           }
                         )
@@ -79913,7 +79866,9 @@ function MenuSection() {
       id: "menu",
       "data-ocid": "menu.section",
       className: "relative py-20 px-4 overflow-hidden",
-      style: { background: "#0d0b1e" },
+      style: {
+        background: "linear-gradient(135deg, #EDE9FE 0%, #CFFAFE 100%)"
+      },
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
@@ -79921,7 +79876,7 @@ function MenuSection() {
             "aria-hidden": "true",
             className: "absolute top-0 left-1/4 w-[500px] h-[400px] rounded-full pointer-events-none",
             style: {
-              background: "radial-gradient(circle, rgba(212,175,55,0.12) 0%, transparent 70%)",
+              background: "radial-gradient(circle, rgba(196,181,253,0.25) 0%, transparent 70%)",
               filter: "blur(60px)"
             }
           }
@@ -79932,7 +79887,7 @@ function MenuSection() {
             "aria-hidden": "true",
             className: "absolute bottom-0 right-1/4 w-[400px] h-[300px] rounded-full pointer-events-none",
             style: {
-              background: "radial-gradient(circle, rgba(0,245,255,0.08) 0%, transparent 70%)",
+              background: "radial-gradient(circle, rgba(207,250,254,0.25) 0%, transparent 70%)",
               filter: "blur(60px)"
             }
           }
@@ -79952,9 +79907,9 @@ function MenuSection() {
                   {
                     className: "inline-block text-xs font-semibold tracking-[0.3em] uppercase mb-3 px-4 py-1.5 rounded-full",
                     style: {
-                      background: "rgba(212,175,55,0.2)",
-                      border: "1px solid rgba(0,245,255,0.3)",
-                      color: "#b0b0e8"
+                      background: "rgba(196,181,253,0.4)",
+                      border: "1px solid rgba(196,181,253,0.6)",
+                      color: "#1e1b4b"
                     },
                     children: "Full Menu"
                   }
@@ -79964,7 +79919,7 @@ function MenuSection() {
                   {
                     className: "text-4xl md:text-5xl font-bold mt-3",
                     style: {
-                      background: "linear-gradient(135deg, #f0f0ff 0%, #00F5FF 50%, #D4AF37 100%)",
+                      background: "linear-gradient(135deg, #1e1b4b 0%, #7C3AED 50%, #D4AF37 100%)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
                       backgroundClip: "text"
@@ -79976,7 +79931,7 @@ function MenuSection() {
                   "p",
                   {
                     className: "mt-2 text-sm uppercase tracking-widest",
-                    style: { color: "#a080e8" },
+                    style: { color: "#1e1b4b" },
                     children: "100% Pure Veg • Fresh • Delicious"
                   }
                 ),
@@ -79985,11 +79940,11 @@ function MenuSection() {
                   {
                     className: "mx-auto mt-4 h-0.5 w-28 rounded-full",
                     style: {
-                      background: "linear-gradient(90deg, transparent, #D4AF37, #00F5FF, transparent)"
+                      background: "linear-gradient(90deg, transparent, #D4AF37, #7C3AED, transparent)"
                     }
                   }
                 ),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-3 text-xs", style: { color: "#a080e8" }, children: "Click on a category to expand the menu" })
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-3 text-xs", style: { color: "#1e1b4b" }, children: "Click on a category to expand the menu" })
               ]
             }
           ),
@@ -80028,23 +79983,23 @@ function Navbar() {
         "data-ocid": "navbar",
         className: "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         style: {
-          background: isScrolled ? "rgba(10,10,26,0.95)" : "rgba(10,10,26,0.75)",
+          background: isScrolled ? "rgba(245,240,255,0.85)" : "rgba(245,240,255,0.6)",
           backdropFilter: "blur(20px)",
-          borderBottom: "1px solid rgba(0,245,255,0.25)",
-          boxShadow: isScrolled ? "0 4px 30px rgba(0,245,255,0.12)" : "none"
+          borderBottom: "1px solid rgba(196,181,253,0.4)",
+          boxShadow: isScrolled ? "0 4px 30px rgba(124,58,237,0.12)" : "none"
         },
-        children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between h-16 md:h-20", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between items-center h-16 md:h-20", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center gap-3", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
             "a",
             {
               href: "#home",
               "data-ocid": "navbar.logo_link",
-              className: "flex items-center gap-3 flex-shrink-0",
+              className: "flex items-center gap-3",
               children: [
                 logoError ? /* @__PURE__ */ jsxRuntimeExports.jsx(
                   "div",
                   {
-                    className: "w-11 h-11 rounded-full flex items-center justify-center text-white font-bold text-base",
+                    className: "w-14 h-14 rounded-full flex items-center justify-center text-white font-bold text-base",
                     style: {
                       background: "linear-gradient(135deg, #D4AF37, #00F5FF)",
                       boxShadow: "0 0 16px rgba(212,175,55,0.6)"
@@ -80052,13 +80007,25 @@ function Navbar() {
                     children: "CZ"
                   }
                 ) : /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "img",
+                  "div",
                   {
-                    src: "/assets/images/chefzone-logo.png",
-                    alt: "ChefZone",
-                    className: "w-11 h-11 rounded-full object-cover",
-                    style: { boxShadow: "0 0 16px rgba(212,175,55,0.6)" },
-                    onError: () => setLogoError(true)
+                    className: "w-14 h-14 flex items-center justify-center",
+                    style: { background: "transparent" },
+                    children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "img",
+                      {
+                        src: "/assets/images/chefzone-logo.png",
+                        alt: "ChefZone",
+                        className: "w-full h-full object-contain",
+                        style: {
+                          background: "transparent",
+                          display: "block",
+                          width: "100%",
+                          height: "100%"
+                        },
+                        onError: () => setLogoError(true)
+                      }
+                    )
                   }
                 ),
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -80071,25 +80038,25 @@ function Navbar() {
                 )
               ]
             }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "hidden md:flex items-center gap-1", children: NAV_LINKS.map((link) => /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+          ) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "hidden md:flex justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "flex items-center gap-1", children: NAV_LINKS.map((link) => /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
             "a",
             {
               href: link.href,
               "data-ocid": `navbar.${link.label.toLowerCase().replace(/ /g, "_")}_link`,
               className: "px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200",
-              style: { color: "#c8c8f0" },
+              style: { color: "#1e1b4b" },
               onMouseEnter: (e) => {
-                e.currentTarget.style.color = "#00F5FF";
-                e.currentTarget.style.textShadow = "0 0 12px rgba(0,245,255,0.5)";
+                e.currentTarget.style.color = "#7C3AED";
+                e.currentTarget.style.textShadow = "0 0 12px rgba(124,58,237,0.3)";
               },
               onMouseLeave: (e) => {
-                e.currentTarget.style.color = "#c8c8f0";
+                e.currentTarget.style.color = "#1e1b4b";
                 e.currentTarget.style.textShadow = "none";
               },
               children: link.label
             }
-          ) }, link.href)) }),
+          ) }, link.href)) }) }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsxs(
               "a",
@@ -80219,7 +80186,7 @@ function Navbar() {
         "data-ocid": "navbar.mobile_menu",
         className: "fixed inset-0 z-40 flex flex-col md:hidden transition-all duration-300",
         style: {
-          background: "rgba(255,255,255,0.98)",
+          background: "rgba(245,240,255,0.97)",
           backdropFilter: "blur(24px)",
           opacity: isMenuOpen ? 1 : 0,
           pointerEvents: isMenuOpen ? "auto" : "none"
@@ -80231,13 +80198,13 @@ function Navbar() {
               href: link.href,
               "data-ocid": `navbar.mobile_${link.label.toLowerCase().replace(/ /g, "_")}_link`,
               className: "text-2xl font-bold transition-all duration-200",
-              style: { color: "#1a1040" },
+              style: { color: "#1e1b4b" },
               onClick: closeMenu,
               onMouseEnter: (e) => {
-                e.currentTarget.style.color = "#00B8CC";
+                e.currentTarget.style.color = "#7C3AED";
               },
               onMouseLeave: (e) => {
-                e.currentTarget.style.color = "#1a1040";
+                e.currentTarget.style.color = "#1e1b4b";
               },
               children: link.label
             },
@@ -80473,14 +80440,16 @@ function ReviewsSection() {
       id: "reviews",
       "data-ocid": "reviews.section",
       className: "py-20 px-4 relative overflow-hidden",
-      style: { background: "#1a1a2e" },
+      style: {
+        background: "linear-gradient(135deg, #FFE4E6 0%, #EDE9FE 100%)"
+      },
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 pointer-events-none", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
           {
             className: "absolute bottom-0 right-0 w-[500px] h-[400px] rounded-full opacity-10",
             style: {
-              background: "radial-gradient(ellipse, oklch(0.62 0.26 25) 0%, transparent 70%)"
+              background: "radial-gradient(ellipse, rgba(212,175,55,0.3) 0%, transparent 70%)"
             }
           }
         ) }),
@@ -80498,9 +80467,9 @@ function ReviewsSection() {
                   {
                     className: "inline-block text-xs font-semibold tracking-[0.3em] uppercase mb-3 px-4 py-1.5 rounded-full",
                     style: {
-                      background: "rgba(212,175,55,0.2)",
-                      border: "1px solid rgba(0,245,255,0.3)",
-                      color: "#7C3AED"
+                      background: "rgba(212,175,55,0.25)",
+                      border: "1px solid rgba(0,245,255,0.4)",
+                      color: "#1e1b4b"
                     },
                     children: "⭐ Reviews"
                   }
@@ -80509,7 +80478,7 @@ function ReviewsSection() {
                   "h2",
                   {
                     className: "font-display text-4xl md:text-5xl font-bold",
-                    style: { color: "#f0f0ff" },
+                    style: { color: "#1e1b4b" },
                     children: [
                       "What Our ",
                       /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "gradient-warm-text", children: "Customers Say" })
@@ -80536,17 +80505,17 @@ function ReviewsSection() {
                     "data-ocid": `reviews.card.${current + 1}`,
                     className: "rounded-2xl p-8 md:p-12",
                     style: {
-                      background: "rgba(255,255,255,0.07)",
+                      background: "rgba(255,255,255,0.7)",
                       backdropFilter: "blur(16px)",
-                      border: "1px solid rgba(0,245,255,0.3)",
-                      boxShadow: "0 8px 40px rgba(124,58,237,0.3), 0 0 0 1px rgba(0,245,255,0.15)"
+                      border: "1px solid rgba(248,113,113,0.5)",
+                      boxShadow: "0 8px 40px rgba(124,58,237,0.15), 0 0 0 1px rgba(0,245,255,0.1)"
                     },
                     children: [
                       /* @__PURE__ */ jsxRuntimeExports.jsx(
                         "div",
                         {
                           className: "text-6xl font-display leading-none mb-4 select-none",
-                          style: { color: "rgba(212,175,55,0.4)" },
+                          style: { color: "rgba(212,175,55,0.6)" },
                           children: "“"
                         }
                       ),
@@ -80554,15 +80523,22 @@ function ReviewsSection() {
                         "p",
                         {
                           className: "text-lg md:text-xl leading-relaxed mb-6 font-body italic",
-                          style: { color: "#d8d8f0" },
+                          style: { color: "#374151" },
                           children: reviews[current].text
                         }
                       ),
                       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-4", children: [
                         /* @__PURE__ */ jsxRuntimeExports.jsx(Initials, { name: reviews[current].name }),
                         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-                          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-semibold text-foreground font-display", children: reviews[current].name }),
-                          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground text-sm", children: reviews[current].location }),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "p",
+                            {
+                              className: "font-semibold font-display",
+                              style: { color: "#312e81" },
+                              children: reviews[current].name
+                            }
+                          ),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm", style: { color: "#6b7280" }, children: reviews[current].location }),
                           /* @__PURE__ */ jsxRuntimeExports.jsx(StarRating, { rating: reviews[current].rating })
                         ] })
                       ] })
@@ -80577,7 +80553,12 @@ function ReviewsSection() {
                     onClick: prev,
                     "data-ocid": "reviews.prev_button",
                     "aria-label": "Previous review",
-                    className: "absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full bg-card border border-white/10 flex items-center justify-center text-foreground hover:border-orange-500 hover:text-orange-400 transition-colors hidden md:flex",
+                    className: "absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full flex items-center justify-center transition-colors hidden md:flex",
+                    style: {
+                      background: "rgba(255,255,255,0.7)",
+                      border: "1px solid rgba(196,181,253,0.5)",
+                      color: "#1e1b4b"
+                    },
                     children: "←"
                   }
                 ),
@@ -80588,7 +80569,12 @@ function ReviewsSection() {
                     onClick: next,
                     "data-ocid": "reviews.next_button",
                     "aria-label": "Next review",
-                    className: "absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full bg-card border border-white/10 flex items-center justify-center text-foreground hover:border-orange-500 hover:text-orange-400 transition-colors hidden md:flex",
+                    className: "absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full flex items-center justify-center transition-colors hidden md:flex",
+                    style: {
+                      background: "rgba(255,255,255,0.7)",
+                      border: "1px solid rgba(196,181,253,0.5)",
+                      color: "#1e1b4b"
+                    },
                     children: "→"
                   }
                 )
@@ -80611,7 +80597,7 @@ function ReviewsSection() {
                   style: {
                     width: i2 === current ? "28px" : "10px",
                     height: "10px",
-                    background: i2 === current ? "linear-gradient(90deg, #D4AF37, #00F5FF)" : "oklch(0.35 0.01 50)"
+                    background: i2 === current ? "linear-gradient(90deg, #D4AF37, #00F5FF)" : "#d1d5db"
                   }
                 },
                 review.name
@@ -80627,9 +80613,9 @@ function ReviewsSection() {
                 "aria-label": "Previous review",
                 className: "w-10 h-10 rounded-full flex items-center justify-center transition-colors",
                 style: {
-                  background: "#ffffff",
-                  border: "1px solid #00F5FF",
-                  color: "#1a1040"
+                  background: "rgba(255,255,255,0.7)",
+                  border: "1px solid rgba(196,181,253,0.5)",
+                  color: "#1e1b4b"
                 },
                 children: "←"
               }
@@ -80642,9 +80628,9 @@ function ReviewsSection() {
                 "aria-label": "Next review",
                 className: "w-10 h-10 rounded-full flex items-center justify-center transition-colors",
                 style: {
-                  background: "#ffffff",
-                  border: "1px solid #00F5FF",
-                  color: "#1a1040"
+                  background: "rgba(255,255,255,0.7)",
+                  border: "1px solid rgba(196,181,253,0.5)",
+                  color: "#1e1b4b"
                 },
                 children: "→"
               }
@@ -80765,7 +80751,7 @@ function SocialMediaSection() {
       id: "social",
       "data-ocid": "social.section",
       className: "relative py-20 px-4 overflow-hidden",
-      style: { background: "#1a1a2e" },
+      style: { background: "linear-gradient(135deg, #CFFAFE, #EDE9FE)" },
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
@@ -80773,7 +80759,7 @@ function SocialMediaSection() {
             "aria-hidden": "true",
             className: "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full pointer-events-none",
             style: {
-              background: "radial-gradient(circle, rgba(0,245,255,0.08) 0%, rgba(212,175,55,0.06) 50%, transparent 70%)",
+              background: "radial-gradient(circle, rgba(196,181,253,0.25) 0%, rgba(207,250,254,0.2) 50%, transparent 70%)",
               filter: "blur(80px)"
             }
           }
@@ -80793,9 +80779,9 @@ function SocialMediaSection() {
                   {
                     className: "inline-block text-xs font-semibold tracking-[0.3em] uppercase mb-3 px-4 py-1.5 rounded-full",
                     style: {
-                      background: "rgba(0,245,255,0.15)",
-                      border: "1px solid rgba(0,245,255,0.3)",
-                      color: "#00F5FF"
+                      background: "rgba(196,181,253,0.4)",
+                      border: "1px solid rgba(196,181,253,0.6)",
+                      color: "#1e1b4b"
                     },
                     children: "Connect With Us"
                   }
@@ -80805,7 +80791,7 @@ function SocialMediaSection() {
                   {
                     className: "text-4xl md:text-5xl font-bold mt-3",
                     style: {
-                      background: "linear-gradient(135deg, #1a1040 0%, #00C5CC 50%, #B8941F 100%)",
+                      background: "linear-gradient(135deg, #1e1b4b 0%, #7C3AED 50%, #D4AF37 100%)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
                       backgroundClip: "text"
@@ -80838,22 +80824,24 @@ function SocialMediaSection() {
               transition: { duration: 0.5, delay: index2 * 0.1 },
               className: "flex flex-col items-center gap-5 p-7 rounded-2xl transition-all duration-300 group",
               style: {
-                background: "rgba(255,255,255,0.9)",
+                background: "rgba(255,255,255,0.7)",
                 border: `1px solid ${card.brandColor}55`,
                 backdropFilter: "blur(16px)",
-                boxShadow: `0 4px 20px ${card.glowColor.replace("0.5", "0.15")}, 0 0 0 0.5px rgba(255,255,255,0.5)`
+                boxShadow: `0 4px 20px ${card.glowColor.replace("0.5", "0.15")}, 0 0 0 0.5px rgba(0,245,255,0.15)`
               },
               onMouseEnter: (e) => {
                 const el = e.currentTarget;
                 el.style.boxShadow = `0 0 40px ${card.glowColor}, 0 0 80px ${card.glowColor.replace("0.5", "0.1")}`;
                 el.style.border = `1px solid ${card.brandColor}88`;
                 el.style.transform = "translateY(-6px) scale(1.03)";
+                el.style.background = "rgba(255,255,255,0.9)";
               },
               onMouseLeave: (e) => {
                 const el = e.currentTarget;
-                el.style.boxShadow = `0 0 20px ${card.glowColor.replace("0.5", "0.2")}`;
-                el.style.border = `1px solid ${card.brandColor}33`;
+                el.style.boxShadow = `0 4px 20px ${card.glowColor.replace("0.5", "0.15")}, 0 0 0 0.5px rgba(0,245,255,0.15)`;
+                el.style.border = `1px solid ${card.brandColor}55`;
                 el.style.transform = "translateY(0) scale(1)";
+                el.style.background = "rgba(255,255,255,0.7)";
               },
               children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -81037,36 +81025,32 @@ function WhatsAppFloat() {
   );
 }
 function App() {
-  const [loading2, setLoading] = reactExports.useState(true);
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
-    loading2 && /* @__PURE__ */ jsxRuntimeExports.jsx(LoadingScreen, { onComplete: () => setLoading(false) }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs(
-      "div",
-      {
-        className: "relative min-h-screen",
-        style: {
-          background: "linear-gradient(135deg, #1e1b3a 0%, #252045 50%, #1e1c38 100%)"
-        },
-        children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(ParticleCanvas, {}),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Navbar, {}),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "relative z-10", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(HeroSection, {}),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(MenuSection, {}),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(FeaturesSection, {}),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(AboutSection, {}),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(JourneySection, {}),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(ReviewsSection, {}),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(GallerySection, {}),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(SocialMediaSection, {}),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(ContactSection, {})
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Footer, {}),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(WhatsAppFloat, {})
-        ]
-      }
-    )
-  ] });
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "div",
+    {
+      className: "relative min-h-screen",
+      style: {
+        background: "linear-gradient(135deg, #f5f0ff 0%, #e0f7fa 50%, #fff8e1 100%)"
+      },
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(ParticleCanvas, {}),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Navbar, {}),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "relative z-10", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(HeroSection, {}),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(MenuSection, {}),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(FeaturesSection, {}),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(AboutSection, {}),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(JourneySection, {}),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(ReviewsSection, {}),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(GallerySection, {}),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(SocialMediaSection, {}),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(ContactSection, {})
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Footer, {}),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(WhatsAppFloat, {})
+      ]
+    }
+  );
 }
 BigInt.prototype.toJSON = function() {
   return this.toString();

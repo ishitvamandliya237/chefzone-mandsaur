@@ -70,6 +70,11 @@ export default {
         "chefzone-orange": "oklch(0.68 0.22 30)",
         "chefzone-red": "oklch(0.62 0.26 25)",
         "chefzone-warm": "oklch(0.75 0.18 45)",
+        lavender: "#C4B5FD",
+        coral: "#F87171",
+        turquoise: "#22D3EE",
+        butter: "#FDE68A",
+        pear: "#D9F99D",
       },
       fontFamily: {
         display: ["var(--font-display)", "serif"],

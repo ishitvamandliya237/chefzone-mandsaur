@@ -54,7 +54,7 @@ export default function ContactSection() {
       data-ocid="contact.section"
       className="relative py-24 px-4"
       style={{
-        background: "#0d0b1e",
+        background: "linear-gradient(135deg, #FEF9C3 0%, #CFFAFE 100%)",
       }}
     >
       {/* Ambient glow */}
@@ -62,7 +62,7 @@ export default function ContactSection() {
         className="pointer-events-none absolute inset-0 opacity-100"
         style={{
           background:
-            "radial-gradient(ellipse 70% 40% at 50% 100%, rgba(124,58,237,0.08), transparent)",
+            "radial-gradient(ellipse 70% 40% at 50% 100%, rgba(124,58,237,0.06), transparent)",
         }}
       />
 
@@ -77,15 +77,14 @@ export default function ContactSection() {
         >
           <span
             className="inline-block text-xs font-semibold tracking-[0.3em] uppercase mb-3"
-            style={{ color: "#7C3AED" }}
+            style={{ color: "#1e1b4b" }}
           >
             Reach Us
           </span>
           <h2
             className="font-display text-4xl md:text-5xl font-bold"
             style={{
-              color: "#f0f0ff",
-              textShadow: "0 0 30px rgba(0,245,255,0.25)",
+              color: "#1e1b4b",
             }}
           >
             Find Us &amp;{" "}
@@ -103,9 +102,9 @@ export default function ContactSection() {
             transition={{ duration: 0.7 }}
             className="rounded-2xl p-8 flex flex-col gap-7"
             style={{
-              background: "rgba(255,255,255,0.06)",
+              background: "rgba(255,255,255,0.7)",
               backdropFilter: "blur(20px)",
-              border: "1px solid rgba(124,58,237,0.3)",
+              border: "1px solid rgba(34,211,238,0.4)",
             }}
             data-ocid="contact.card"
           >
@@ -114,8 +113,8 @@ export default function ContactSection() {
               <div
                 className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
                 style={{
-                  background: "rgba(124,58,237,0.1)",
-                  border: "1px solid rgba(124,58,237,0.25)",
+                  background: "rgba(34,211,238,0.1)",
+                  border: "1px solid rgba(34,211,238,0.3)",
                 }}
               >
                 <svg
@@ -124,7 +123,7 @@ export default function ContactSection() {
                   stroke="currentColor"
                   strokeWidth={2}
                   className="w-5 h-5"
-                  style={{ color: "#7C3AED" }}
+                  style={{ color: "#00F5FF" }}
                 >
                   <title>Phone</title>
                   <path
@@ -137,7 +136,7 @@ export default function ContactSection() {
               <div>
                 <p
                   className="text-xs uppercase tracking-wider mb-1"
-                  style={{ color: "#9090c8" }}
+                  style={{ color: "#6b7280" }}
                 >
                   Phone / WhatsApp
                 </p>
@@ -145,7 +144,15 @@ export default function ContactSection() {
                   href="tel:+918889431668"
                   data-ocid="contact.phone_link"
                   className="text-xl font-semibold font-display transition-smooth hover:opacity-80"
-                  style={{ color: "#7C3AED" }}
+                  style={{ color: "#1e1b4b" }}
+                  onMouseEnter={(e) => {
+                    (e.currentTarget as HTMLAnchorElement).style.color =
+                      "#00F5FF";
+                  }}
+                  onMouseLeave={(e) => {
+                    (e.currentTarget as HTMLAnchorElement).style.color =
+                      "#1e1b4b";
+                  }}
                 >
                   8889431668
                 </a>
@@ -157,8 +164,8 @@ export default function ContactSection() {
               <div
                 className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
                 style={{
-                  background: "rgba(124,58,237,0.1)",
-                  border: "1px solid rgba(124,58,237,0.25)",
+                  background: "rgba(34,211,238,0.1)",
+                  border: "1px solid rgba(34,211,238,0.3)",
                 }}
               >
                 <svg
@@ -167,7 +174,7 @@ export default function ContactSection() {
                   stroke="currentColor"
                   strokeWidth={2}
                   className="w-5 h-5"
-                  style={{ color: "#7C3AED" }}
+                  style={{ color: "#00F5FF" }}
                 >
                   <title>Clock</title>
                   <circle cx="12" cy="12" r="10" />
@@ -177,13 +184,13 @@ export default function ContactSection() {
               <div>
                 <p
                   className="text-xs uppercase tracking-wider mb-1"
-                  style={{ color: "#9090c8" }}
+                  style={{ color: "#6b7280" }}
                 >
                   Opening Hours
                 </p>
                 <p
                   className="text-lg font-semibold font-display"
-                  style={{ color: "#f0f0ff" }}
+                  style={{ color: "#1e1b4b" }}
                 >
                   Mon–Sun: 10:00 AM – 3:00 AM
                 </p>
@@ -195,7 +202,7 @@ export default function ContactSection() {
               className="h-px w-full"
               style={{
                 background:
-                  "linear-gradient(to right, transparent, rgba(124,58,237,0.3), transparent)",
+                  "linear-gradient(to right, transparent, rgba(34,211,238,0.3), transparent)",
               }}
             />
 
@@ -203,7 +210,7 @@ export default function ContactSection() {
             <div>
               <p
                 className="text-xs uppercase tracking-wider mb-4"
-                style={{ color: "#9090c8" }}
+                style={{ color: "#6b7280" }}
               >
                 Find Us On
               </p>
@@ -274,8 +281,8 @@ export default function ContactSection() {
             transition={{ duration: 0.7, delay: 0.15 }}
             className="rounded-2xl overflow-hidden"
             style={{
-              border: "1px solid rgba(0,245,255,0.3)",
-              boxShadow: "0 8px 30px rgba(124,58,237,0.1)",
+              border: "1px solid rgba(34,211,238,0.4)",
+              boxShadow: "0 8px 30px rgba(124,58,237,0.08)",
               minHeight: "420px",
             }}
             data-ocid="contact.map"

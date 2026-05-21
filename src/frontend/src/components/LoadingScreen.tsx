@@ -46,9 +46,10 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
   return (
     <div
       data-ocid="loading.screen"
-      className="fixed inset-0 z-[9999] flex flex-col items-center justify-center"
+      className="fixed inset-0 z-[9999] flex flex-col items-center justify-center min-h-screen w-full"
       style={{
-        background: "#ffffff",
+        background:
+          "linear-gradient(135deg, #f0e6ff 0%, #e0f7fa 50%, #fff8e1 100%)",
         transition: "opacity 0.4s ease",
         opacity: visible ? 1 : 0,
         pointerEvents: visible ? "all" : "none",
@@ -59,13 +60,13 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(0,245,255,0.25), transparent)",
+            "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(196,181,253,0.25), transparent)",
         }}
       />
 
       {/* Logo */}
       <div
-        className="relative mb-8"
+        className="relative mx-auto"
         style={{
           animation: "logoPulse 1.5s ease-in-out infinite",
         }}
@@ -81,20 +82,29 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
           }
         `}</style>
         <div
-          className="w-24 h-24 rounded-full overflow-hidden"
+          className="w-28 h-28 rounded-full overflow-hidden ring-2 ring-[#22D3EE]"
           style={{
-            border: "3px solid rgba(0,245,255,0.6)",
+            border: "3px solid rgba(34,211,238,0.6)",
+            boxShadow:
+              "0 0 40px rgba(34,211,238,0.4), 0 0 80px rgba(34,211,238,0.2)",
+            background: "transparent",
           }}
         >
           <img
             src="/assets/images/chefzone-logo.png"
             alt="ChefZone logo"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
+            style={{
+              background: "transparent",
+              display: "block",
+              width: "100%",
+              height: "100%",
+            }}
             onError={(e) => {
               const el = e.currentTarget.parentElement;
               if (el) {
                 el.innerHTML =
-                  '<div class="w-full h-full flex items-center justify-center font-bold text-3xl" style="background:linear-gradient(135deg,#D4AF37,#00F5FF);color:#fff;font-family:var(--font-display)">CZ</div>';
+                  '<div class="w-full h-full flex items-center justify-center font-bold text-3xl" style="background:linear-gradient(135deg,#D4AF37,#22D3EE);color:#fff;font-family:var(--font-display)">CZ</div>';
               }
             }}
           />
@@ -103,11 +113,12 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
 
       {/* Name */}
       <h1
-        className="font-display text-3xl font-bold text-foreground mb-2"
+        className="font-display text-3xl font-bold text-center mb-2 mt-6"
         style={{
           animation: "fadeInUp 0.6s ease both",
           animationDelay: "0.2s",
-          textShadow: "0 0 20px rgba(0,245,255,0.4)",
+          color: "#1e1b4b",
+          textShadow: "0 0 20px rgba(124,58,237,0.2)",
         }}
       >
         ChefZone Mandsaur
@@ -115,30 +126,34 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
 
       {/* Tagline */}
       <p
-        className="text-sm text-muted-foreground mb-12"
+        className="text-sm text-center mb-12 mt-2"
         style={{
           animation: "fadeInUp 0.6s ease both",
           animationDelay: "0.4s",
+          color: "#7C3AED",
         }}
       >
         Mandsaur&apos;s First Cloud Kitchen
       </p>
 
       {/* Loading dots */}
-      <p className="text-base font-display mb-4" style={{ color: "#00F5FF" }}>
+      <p
+        className="text-base font-display mb-4 text-center"
+        style={{ color: "#1e1b4b" }}
+      >
         Loading{".".repeat(dotCount)}
       </p>
 
       {/* Progress bar */}
       <div
         className="absolute bottom-0 left-0 w-full h-1"
-        style={{ background: "rgba(0,0,0,0.08)" }}
+        style={{ background: "rgba(124,58,237,0.12)" }}
       >
         <div
           className="h-full"
           style={{
             width: `${progress}%`,
-            background: "linear-gradient(90deg, #D4AF37, #00F5FF)",
+            background: "linear-gradient(90deg, #D4AF37, #22D3EE, #C4B5FD)",
             boxShadow: "0 0 12px rgba(0,245,255,0.6)",
             transition: "width 0.05s linear",
           }}

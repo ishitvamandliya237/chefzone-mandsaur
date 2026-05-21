@@ -34,77 +34,93 @@ export default function Navbar() {
         className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
         style={{
           background: isScrolled
-            ? "rgba(10,10,26,0.95)"
-            : "rgba(10,10,26,0.75)",
+            ? "rgba(245,240,255,0.85)"
+            : "rgba(245,240,255,0.6)",
           backdropFilter: "blur(20px)",
-          borderBottom: "1px solid rgba(0,245,255,0.25)",
-          boxShadow: isScrolled ? "0 4px 30px rgba(0,245,255,0.12)" : "none",
+          borderBottom: "1px solid rgba(196,181,253,0.4)",
+          boxShadow: isScrolled ? "0 4px 30px rgba(124,58,237,0.12)" : "none",
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 md:h-20">
-            {/* Logo */}
-            <a
-              href="#home"
-              data-ocid="navbar.logo_link"
-              className="flex items-center gap-3 flex-shrink-0"
-            >
-              {logoError ? (
-                <div
-                  className="w-11 h-11 rounded-full flex items-center justify-center text-white font-bold text-base"
-                  style={{
-                    background: "linear-gradient(135deg, #D4AF37, #00F5FF)",
-                    boxShadow: "0 0 16px rgba(212,175,55,0.6)",
-                  }}
-                >
-                  CZ
-                </div>
-              ) : (
-                <img
-                  src="/assets/images/chefzone-logo.png"
-                  alt="ChefZone"
-                  className="w-11 h-11 rounded-full object-cover"
-                  style={{ boxShadow: "0 0 16px rgba(212,175,55,0.6)" }}
-                  onError={() => setLogoError(true)}
-                />
-              )}
-              <span
-                className="font-bold text-lg hidden sm:block"
-                style={{ color: "#00F5FF" }}
+          <div className="flex justify-between items-center h-16 md:h-20">
+            {/* Left: Logo */}
+            <div className="flex items-center gap-3">
+              <a
+                href="#home"
+                data-ocid="navbar.logo_link"
+                className="flex items-center gap-3"
               >
-                ChefZone
-              </span>
-            </a>
-
-            {/* Desktop Nav */}
-            <ul className="hidden md:flex items-center gap-1">
-              {NAV_LINKS.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    data-ocid={`navbar.${link.label.toLowerCase().replace(/ /g, "_")}_link`}
-                    className="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200"
-                    style={{ color: "#c8c8f0" }}
-                    onMouseEnter={(e) => {
-                      (e.currentTarget as HTMLAnchorElement).style.color =
-                        "#00F5FF";
-                      (e.currentTarget as HTMLAnchorElement).style.textShadow =
-                        "0 0 12px rgba(0,245,255,0.5)";
-                    }}
-                    onMouseLeave={(e) => {
-                      (e.currentTarget as HTMLAnchorElement).style.color =
-                        "#c8c8f0";
-                      (e.currentTarget as HTMLAnchorElement).style.textShadow =
-                        "none";
+                {logoError ? (
+                  <div
+                    className="w-14 h-14 rounded-full flex items-center justify-center text-white font-bold text-base"
+                    style={{
+                      background: "linear-gradient(135deg, #D4AF37, #00F5FF)",
+                      boxShadow: "0 0 16px rgba(212,175,55,0.6)",
                     }}
                   >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
+                    CZ
+                  </div>
+                ) : (
+                  <div
+                    className="w-14 h-14 flex items-center justify-center"
+                    style={{ background: "transparent" }}
+                  >
+                    <img
+                      src="/assets/images/chefzone-logo.png"
+                      alt="ChefZone"
+                      className="w-full h-full object-contain"
+                      style={{
+                        background: "transparent",
+                        display: "block",
+                        width: "100%",
+                        height: "100%",
+                      }}
+                      onError={() => setLogoError(true)}
+                    />
+                  </div>
+                )}
+                <span
+                  className="font-bold text-lg hidden sm:block"
+                  style={{ color: "#00F5FF" }}
+                >
+                  ChefZone
+                </span>
+              </a>
+            </div>
 
-            {/* CTA Buttons + Hamburger */}
+            {/* Center: Desktop Nav */}
+            <div className="hidden md:flex justify-center">
+              <ul className="flex items-center gap-1">
+                {NAV_LINKS.map((link) => (
+                  <li key={link.href}>
+                    <a
+                      href={link.href}
+                      data-ocid={`navbar.${link.label.toLowerCase().replace(/ /g, "_")}_link`}
+                      className="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200"
+                      style={{ color: "#1e1b4b" }}
+                      onMouseEnter={(e) => {
+                        (e.currentTarget as HTMLAnchorElement).style.color =
+                          "#7C3AED";
+                        (
+                          e.currentTarget as HTMLAnchorElement
+                        ).style.textShadow = "0 0 12px rgba(124,58,237,0.3)";
+                      }}
+                      onMouseLeave={(e) => {
+                        (e.currentTarget as HTMLAnchorElement).style.color =
+                          "#1e1b4b";
+                        (
+                          e.currentTarget as HTMLAnchorElement
+                        ).style.textShadow = "none";
+                      }}
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Right: CTA Buttons + Hamburger */}
             <div className="flex items-center gap-2">
               {/* WhatsApp CTA */}
               <a
@@ -223,7 +239,7 @@ export default function Navbar() {
         data-ocid="navbar.mobile_menu"
         className="fixed inset-0 z-40 flex flex-col md:hidden transition-all duration-300"
         style={{
-          background: "rgba(255,255,255,0.98)",
+          background: "rgba(245,240,255,0.97)",
           backdropFilter: "blur(24px)",
           opacity: isMenuOpen ? 1 : 0,
           pointerEvents: isMenuOpen ? "auto" : "none",
@@ -236,13 +252,13 @@ export default function Navbar() {
               href={link.href}
               data-ocid={`navbar.mobile_${link.label.toLowerCase().replace(/ /g, "_")}_link`}
               className="text-2xl font-bold transition-all duration-200"
-              style={{ color: "#1a1040" }}
+              style={{ color: "#1e1b4b" }}
               onClick={closeMenu}
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLAnchorElement).style.color = "#00B8CC";
+                (e.currentTarget as HTMLAnchorElement).style.color = "#7C3AED";
               }}
               onMouseLeave={(e) => {
-                (e.currentTarget as HTMLAnchorElement).style.color = "#1a1040";
+                (e.currentTarget as HTMLAnchorElement).style.color = "#1e1b4b";
               }}
             >
               {link.label}

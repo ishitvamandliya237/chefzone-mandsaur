@@ -228,10 +228,10 @@ function MenuCardComponent({ card, idx }: { card: MenuCard; idx: number }) {
       transition={{ duration: 0.5, delay: idx * 0.07 }}
       className="rounded-2xl overflow-hidden"
       style={{
-        background: "rgba(255,255,255,0.06)",
-        border: "1.5px solid rgba(0,245,255,0.35)",
+        background: "rgba(255,255,255,0.7)",
+        border: "1px solid rgba(196,181,253,0.5)",
         boxShadow:
-          "0 4px 24px rgba(0,245,255,0.08), 0 1px 0 rgba(0,245,255,0.1) inset",
+          "0 4px 24px rgba(196,181,253,0.1), 0 1px 0 rgba(255,255,255,0.5) inset",
         backdropFilter: "blur(16px)",
       }}
     >
@@ -240,7 +240,7 @@ function MenuCardComponent({ card, idx }: { card: MenuCard; idx: number }) {
         type="button"
         data-ocid={`menu.card.${idx + 1}.toggle`}
         className="w-full flex items-center justify-between px-6 py-5 text-left focus:outline-none"
-        style={{ background: open ? "rgba(0,245,255,0.06)" : "transparent" }}
+        style={{ background: open ? "rgba(196,181,253,0.25)" : "transparent" }}
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
       >
@@ -248,9 +248,9 @@ function MenuCardComponent({ card, idx }: { card: MenuCard; idx: number }) {
           <span
             className="text-3xl w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
             style={{
-              background: "rgba(255,255,255,0.08)",
-              border: "1px solid rgba(0,245,255,0.25)",
-              boxShadow: "0 2px 8px rgba(0,245,255,0.15)",
+              background: "rgba(255,255,255,0.85)",
+              border: "1px solid rgba(196,181,253,0.4)",
+              boxShadow: "0 2px 8px rgba(196,181,253,0.15)",
             }}
           >
             {card.emoji}
@@ -258,13 +258,13 @@ function MenuCardComponent({ card, idx }: { card: MenuCard; idx: number }) {
           <div>
             <h3
               className="text-lg font-bold font-display"
-              style={{ color: "#D4AF37" }}
+              style={{ color: "#1e1b4b" }}
             >
               {card.title}
             </h3>
             <p
               className="text-xs mt-0.5 font-medium"
-              style={{ color: "#a080e8" }}
+              style={{ color: "#7C3AED" }}
             >
               {totalItems} items
             </p>
@@ -273,9 +273,9 @@ function MenuCardComponent({ card, idx }: { card: MenuCard; idx: number }) {
         <span
           className="text-lg font-bold transition-transform duration-300 shrink-0 w-8 h-8 rounded-full flex items-center justify-center"
           style={{
-            color: "#00B8CC",
-            background: "rgba(0,245,255,0.1)",
-            border: "1px solid rgba(0,245,255,0.3)",
+            color: "#1e1b4b",
+            background: "rgba(196,181,253,0.3)",
+            border: "1px solid rgba(196,181,253,0.5)",
             transform: open ? "rotate(180deg)" : "rotate(0deg)",
           }}
           aria-hidden="true"
@@ -298,7 +298,7 @@ function MenuCardComponent({ card, idx }: { card: MenuCard; idx: number }) {
               className="h-px mx-6"
               style={{
                 background:
-                  "linear-gradient(90deg, transparent, rgba(0,245,255,0.4), transparent)",
+                  "linear-gradient(90deg, transparent, rgba(196,181,253,0.6), transparent)",
               }}
             />
             <div className="px-6 pb-6 pt-4">
@@ -313,7 +313,7 @@ function MenuCardComponent({ card, idx }: { card: MenuCard; idx: number }) {
                     />
                     <h4
                       className="text-sm font-bold uppercase tracking-wider"
-                      style={{ color: "#a080e8" }}
+                      style={{ color: "#1e1b4b" }}
                     >
                       {sub.title}
                     </h4>
@@ -329,23 +329,23 @@ function MenuCardComponent({ card, idx }: { card: MenuCard; idx: number }) {
                           <span
                             className="shrink-0 text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center"
                             style={{
-                              background: "rgba(0,245,255,0.12)",
-                              color: "#00B8CC",
-                              border: "1px solid rgba(0,245,255,0.25)",
+                              background: "rgba(196,181,253,0.3)",
+                              color: "#7C3AED",
+                              border: "1px solid rgba(196,181,253,0.4)",
                             }}
                           >
                             {itemIdx + 1}
                           </span>
                           <span
                             className="text-sm leading-relaxed truncate"
-                            style={{ color: "#d8d8f0" }}
+                            style={{ color: "#1e1b4b" }}
                           >
                             {item.name}
                           </span>
                         </span>
                         <span
                           className="shrink-0 text-sm font-semibold"
-                          style={{ color: "#00B8CC" }}
+                          style={{ color: "#7C3AED" }}
                         >
                           {item.price}
                         </span>
@@ -392,14 +392,16 @@ export default function MenuSection() {
       id="menu"
       data-ocid="menu.section"
       className="relative py-20 px-4 overflow-hidden"
-      style={{ background: "#0d0b1e" }}
+      style={{
+        background: "linear-gradient(135deg, #EDE9FE 0%, #CFFAFE 100%)",
+      }}
     >
       <div
         aria-hidden="true"
         className="absolute top-0 left-1/4 w-[500px] h-[400px] rounded-full pointer-events-none"
         style={{
           background:
-            "radial-gradient(circle, rgba(212,175,55,0.12) 0%, transparent 70%)",
+            "radial-gradient(circle, rgba(196,181,253,0.25) 0%, transparent 70%)",
           filter: "blur(60px)",
         }}
       />
@@ -408,7 +410,7 @@ export default function MenuSection() {
         className="absolute bottom-0 right-1/4 w-[400px] h-[300px] rounded-full pointer-events-none"
         style={{
           background:
-            "radial-gradient(circle, rgba(0,245,255,0.08) 0%, transparent 70%)",
+            "radial-gradient(circle, rgba(207,250,254,0.25) 0%, transparent 70%)",
           filter: "blur(60px)",
         }}
       />
@@ -424,9 +426,9 @@ export default function MenuSection() {
           <span
             className="inline-block text-xs font-semibold tracking-[0.3em] uppercase mb-3 px-4 py-1.5 rounded-full"
             style={{
-              background: "rgba(212,175,55,0.2)",
-              border: "1px solid rgba(0,245,255,0.3)",
-              color: "#b0b0e8",
+              background: "rgba(196,181,253,0.4)",
+              border: "1px solid rgba(196,181,253,0.6)",
+              color: "#1e1b4b",
             }}
           >
             Full Menu
@@ -435,7 +437,7 @@ export default function MenuSection() {
             className="text-4xl md:text-5xl font-bold mt-3"
             style={{
               background:
-                "linear-gradient(135deg, #f0f0ff 0%, #00F5FF 50%, #D4AF37 100%)",
+                "linear-gradient(135deg, #1e1b4b 0%, #7C3AED 50%, #D4AF37 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",
@@ -445,7 +447,7 @@ export default function MenuSection() {
           </h2>
           <p
             className="mt-2 text-sm uppercase tracking-widest"
-            style={{ color: "#a080e8" }}
+            style={{ color: "#1e1b4b" }}
           >
             100% Pure Veg &bull; Fresh &bull; Delicious
           </p>
@@ -453,10 +455,10 @@ export default function MenuSection() {
             className="mx-auto mt-4 h-0.5 w-28 rounded-full"
             style={{
               background:
-                "linear-gradient(90deg, transparent, #D4AF37, #00F5FF, transparent)",
+                "linear-gradient(90deg, transparent, #D4AF37, #7C3AED, transparent)",
             }}
           />
-          <p className="mt-3 text-xs" style={{ color: "#a080e8" }}>
+          <p className="mt-3 text-xs" style={{ color: "#1e1b4b" }}>
             Click on a category to expand the menu
           </p>
         </motion.div>

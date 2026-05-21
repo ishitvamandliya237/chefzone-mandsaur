@@ -97,7 +97,8 @@ export default function HeroSection() {
       data-ocid="home.section"
       className="relative min-h-screen flex items-center overflow-hidden"
       style={{
-        background: "#0f0f1a",
+        background:
+          "linear-gradient(135deg, #EDE9FE 0%, #CFFAFE 50%, #FEF9C3 100%)",
       }}
     >
       {/* Warm gradient overlay */}
@@ -105,7 +106,7 @@ export default function HeroSection() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 80% 60% at 60% 40%, oklch(0.68 0.22 30 / 0.08) 0%, transparent 70%)",
+            "radial-gradient(ellipse 80% 60% at 60% 40%, rgba(212,175,55,0.12) 0%, transparent 70%)",
         }}
       />
 
@@ -123,24 +124,42 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.5 }}
           >
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase glass-card border-glow text-primary">
+            <span
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase glass-card border-glow"
+              style={{ color: "#7C3AED" }}
+            >
               🍕 Now Open in Mandsaur
             </span>
           </motion.div>
 
           {/* Heading */}
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
+          <h1
+            className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight"
+            style={{ color: "#1e1b4b" }}
+          >
             Mandsaur's First{" "}
             <span className="gradient-warm-text text-shadow-glow">Premium</span>
             <br />
             Cloud Kitchen
           </h1>
 
-          <p className="text-base sm:text-lg text-muted-foreground font-body">
-            <span className="text-primary font-semibold">Fresh</span> •{" "}
-            <span className="text-primary font-semibold">Fast</span> •{" "}
-            <span className="text-primary font-semibold">Fully Veg</span> •{" "}
-            <span className="text-primary font-semibold">
+          <p
+            className="text-base sm:text-lg font-body"
+            style={{ color: "#4c1d95" }}
+          >
+            <span className="font-semibold" style={{ color: "#7C3AED" }}>
+              Fresh
+            </span>{" "}
+            •{" "}
+            <span className="font-semibold" style={{ color: "#7C3AED" }}>
+              Fast
+            </span>{" "}
+            •{" "}
+            <span className="font-semibold" style={{ color: "#7C3AED" }}>
+              Fully Veg
+            </span>{" "}
+            •{" "}
+            <span className="font-semibold" style={{ color: "#7C3AED" }}>
               Delivered with Love
             </span>
           </p>
@@ -170,7 +189,8 @@ export default function HeroSection() {
               type="button"
               onClick={scrollToMenu}
               data-ocid="hero.explore_menu_button"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-semibold text-foreground glass-card border-glow transition-smooth hover:scale-105 hover:glow-orange"
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-semibold glass-card border-glow transition-smooth hover:scale-105 hover:glow-orange"
+              style={{ color: "#1e1b4b" }}
             >
               Explore Menu ↓
             </button>
@@ -182,11 +202,18 @@ export default function HeroSection() {
               <div
                 key={stat.label}
                 className="glass-card rounded-xl px-3 py-3 flex flex-col items-center text-center gap-1"
+                style={{
+                  background: "rgba(255,255,255,0.7)",
+                  border: "1px solid rgba(196,181,253,0.5)",
+                }}
               >
-                <span className="font-display font-bold text-lg text-primary">
+                <span
+                  className="font-display font-bold text-lg"
+                  style={{ color: "#7C3AED" }}
+                >
                   {stat.number}
                 </span>
-                <span className="text-xs text-muted-foreground">
+                <span className="text-xs" style={{ color: "#4c1d95" }}>
                   {stat.label}
                 </span>
               </div>

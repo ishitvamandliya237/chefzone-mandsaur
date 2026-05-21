@@ -15,16 +15,16 @@ export default function JourneySection() {
       data-ocid="journey.section"
       className="relative py-24 px-4 overflow-hidden"
       style={{
-        background: "#141428",
+        background: "linear-gradient(135deg, #ECFCCB 0%, #FEF9C3 100%)",
       }}
     >
-      {/* Ambient purple glow blobs */}
+      {/* Ambient glow blobs */}
       <div
         aria-hidden="true"
         className="absolute top-0 left-1/4 w-[600px] h-[400px] rounded-full pointer-events-none"
         style={{
           background:
-            "radial-gradient(circle, rgba(212,175,55,0.18) 0%, transparent 70%)",
+            "radial-gradient(circle, rgba(212,175,55,0.25) 0%, transparent 70%)",
           filter: "blur(60px)",
         }}
       />
@@ -33,7 +33,7 @@ export default function JourneySection() {
         className="absolute bottom-0 right-1/4 w-[500px] h-[300px] rounded-full pointer-events-none"
         style={{
           background:
-            "radial-gradient(circle, rgba(0,245,255,0.12) 0%, transparent 70%)",
+            "radial-gradient(circle, rgba(0,245,255,0.18) 0%, transparent 70%)",
           filter: "blur(60px)",
         }}
       />
@@ -50,23 +50,16 @@ export default function JourneySection() {
           <span
             className="inline-block text-xs font-semibold tracking-[0.3em] uppercase mb-3 px-4 py-1.5 rounded-full"
             style={{
-              background: "rgba(212,175,55,0.3)",
-              border: "1px solid rgba(0,245,255,0.3)",
-              color: "#00F5FF",
+              background: "rgba(212,175,55,0.25)",
+              border: "1px solid rgba(0,245,255,0.4)",
+              color: "#1e1b4b",
             }}
           >
             Our Story
           </span>
           <h2
             className="font-display text-4xl md:text-5xl font-bold mt-3"
-            style={{
-              background:
-                "linear-gradient(135deg, #c8c8f0 0%, #00F5FF 50%, #D4AF37 100%)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              backgroundClip: "text",
-              textShadow: "none",
-            }}
+            style={{ color: "#1e1b4b" }}
           >
             My Journey
           </h2>
@@ -92,19 +85,19 @@ export default function JourneySection() {
             <div
               className="rounded-2xl p-7 flex flex-col gap-5"
               style={{
-                background: "rgba(255,255,255,0.07)",
+                background: "rgba(255,255,255,0.7)",
                 backdropFilter: "blur(16px)",
-                border: "1px solid rgba(0,245,255,0.25)",
+                border: "1px solid rgba(196,181,253,0.5)",
               }}
             >
               <p
                 className="font-body text-base leading-relaxed"
-                style={{ color: "#d0d0ee" }}
+                style={{ color: "#1e1b4b" }}
               >
                 ChefZone ek passion-driven cloud kitchen hai, jo ghar ke swaad
                 aur quality ko har customer tak pahunchane ke vision ke saath
                 shuru hua. Is journey ki shuruaat{" "}
-                <span className="font-semibold" style={{ color: "#00F5FF" }}>
+                <span className="font-semibold" style={{ color: "#D4AF37" }}>
                   Jasbeer Kaur aur Dilip Singh Narang (Lucky)
                 </span>{" "}
                 ne milkar ki, jahan traditional cooking experience aur modern
@@ -112,11 +105,11 @@ export default function JourneySection() {
               </p>
               <p
                 className="font-body text-base leading-relaxed"
-                style={{ color: "#d0d0ee" }}
+                style={{ color: "#1e1b4b" }}
               >
                 Food ke prati gehre lagav aur hospitality industry ke experience
                 ne is sapne ko janam diya.{" "}
-                <span className="font-semibold" style={{ color: "#00F5FF" }}>
+                <span className="font-semibold" style={{ color: "#D4AF37" }}>
                   Udaipur mein hotel management ki padhai
                 </span>{" "}
                 aur Radisson jaisi five-star property mein kaam karne ke baad,
@@ -125,9 +118,9 @@ export default function JourneySection() {
               </p>
               <p
                 className="font-body text-base leading-relaxed"
-                style={{ color: "#d0d0ee" }}
+                style={{ color: "#1e1b4b" }}
               >
-                <span className="font-semibold" style={{ color: "#00F5FF" }}>
+                <span className="font-semibold" style={{ color: "#D4AF37" }}>
                   10 February 2025
                 </span>{" "}
                 ko ChefZone ki shuruaat hui, aur bina kisi promotion ke pehle hi
@@ -150,14 +143,14 @@ export default function JourneySection() {
                   transition={{ duration: 0.4, delay: i * 0.08 }}
                   className="flex items-center gap-3 px-4 py-3 rounded-xl"
                   style={{
-                    background: "rgba(255,255,255,0.07)",
-                    border: "1px solid rgba(124,58,237,0.4)",
+                    background: "rgba(255,255,255,0.7)",
+                    border: "1px solid rgba(196,181,253,0.5)",
                   }}
                 >
                   <span className="text-xl flex-shrink-0">{val.icon}</span>
                   <span
                     className="font-body text-sm font-medium"
-                    style={{ color: "#d0d0ee" }}
+                    style={{ color: "#1e1b4b" }}
                   >
                     {val.text}
                   </span>
@@ -178,7 +171,7 @@ export default function JourneySection() {
             <div
               className="relative w-full max-w-md"
               style={{
-                filter: "drop-shadow(0 0 40px rgba(212,175,55,0.6))",
+                filter: "drop-shadow(0 0 30px rgba(212,175,55,0.4))",
               }}
             >
               {/* Decorative glow ring */}
@@ -186,7 +179,7 @@ export default function JourneySection() {
                 className="absolute -inset-3 rounded-3xl"
                 style={{
                   background:
-                    "linear-gradient(135deg, rgba(212,175,55,0.5), rgba(0,245,255,0.3))",
+                    "linear-gradient(135deg, rgba(212,175,55,0.4), rgba(0,245,255,0.25))",
                   filter: "blur(12px)",
                   zIndex: 0,
                 }}
@@ -198,7 +191,7 @@ export default function JourneySection() {
                 style={{
                   border: "2px solid rgba(0,245,255,0.4)",
                   boxShadow:
-                    "0 0 40px rgba(212,175,55,0.4), 0 20px 60px rgba(0,0,0,0.5)",
+                    "0 0 30px rgba(212,175,55,0.3), 0 20px 40px rgba(0,0,0,0.15)",
                   zIndex: 1,
                 }}
               />
@@ -209,7 +202,7 @@ export default function JourneySection() {
                   background:
                     "linear-gradient(135deg, #D4AF37, rgba(0,245,255,0.9))",
                   color: "#fff",
-                  boxShadow: "0 4px 20px rgba(212,175,55,0.5)",
+                  boxShadow: "0 4px 20px rgba(212,175,55,0.4)",
                   zIndex: 2,
                 }}
               >
