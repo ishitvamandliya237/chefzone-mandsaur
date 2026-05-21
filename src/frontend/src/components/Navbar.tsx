@@ -7,6 +7,7 @@ const NAV_LINKS = [
   { label: "Menu", href: "#menu" },
   { label: "Reviews", href: "#reviews" },
   { label: "Gallery", href: "#gallery" },
+  { label: "Social", href: "#social" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -32,10 +33,12 @@ export default function Navbar() {
         data-ocid="navbar"
         className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
         style={{
-          background: isScrolled ? "rgba(5,5,16,0.92)" : "transparent",
-          backdropFilter: isScrolled ? "blur(20px)" : "none",
-          borderBottom: isScrolled ? "1px solid rgba(212,175,55,0.3)" : "none",
-          boxShadow: isScrolled ? "0 4px 30px rgba(212,175,55,0.2)" : "none",
+          background: isScrolled
+            ? "rgba(10,10,26,0.95)"
+            : "rgba(10,10,26,0.75)",
+          backdropFilter: "blur(20px)",
+          borderBottom: "1px solid rgba(0,245,255,0.25)",
+          boxShadow: isScrolled ? "0 4px 30px rgba(0,245,255,0.12)" : "none",
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -58,7 +61,7 @@ export default function Navbar() {
                 </div>
               ) : (
                 <img
-                  src="/assets/logo.png"
+                  src="/assets/images/chefzone-logo.png"
                   alt="ChefZone"
                   className="w-11 h-11 rounded-full object-cover"
                   style={{ boxShadow: "0 0 16px rgba(212,175,55,0.6)" }}
@@ -81,16 +84,16 @@ export default function Navbar() {
                     href={link.href}
                     data-ocid={`navbar.${link.label.toLowerCase().replace(/ /g, "_")}_link`}
                     className="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200"
-                    style={{ color: "#B0E0E6" }}
+                    style={{ color: "#c8c8f0" }}
                     onMouseEnter={(e) => {
                       (e.currentTarget as HTMLAnchorElement).style.color =
                         "#00F5FF";
                       (e.currentTarget as HTMLAnchorElement).style.textShadow =
-                        "0 0 12px rgba(0,245,255,0.6)";
+                        "0 0 12px rgba(0,245,255,0.5)";
                     }}
                     onMouseLeave={(e) => {
                       (e.currentTarget as HTMLAnchorElement).style.color =
-                        "#B0E0E6";
+                        "#c8c8f0";
                       (e.currentTarget as HTMLAnchorElement).style.textShadow =
                         "none";
                     }}
@@ -184,7 +187,7 @@ export default function Navbar() {
                 type="button"
                 data-ocid="navbar.hamburger_button"
                 className="md:hidden flex flex-col gap-1.5 p-2 rounded-lg transition-all duration-200"
-                style={{ color: "#00F5FF" }}
+                style={{ color: "#7C3AED" }}
                 aria-label="Toggle mobile menu"
                 aria-expanded={isMenuOpen}
                 onClick={() => setIsMenuOpen((v) => !v)}
@@ -220,7 +223,7 @@ export default function Navbar() {
         data-ocid="navbar.mobile_menu"
         className="fixed inset-0 z-40 flex flex-col md:hidden transition-all duration-300"
         style={{
-          background: "rgba(5,5,16,0.97)",
+          background: "rgba(255,255,255,0.98)",
           backdropFilter: "blur(24px)",
           opacity: isMenuOpen ? 1 : 0,
           pointerEvents: isMenuOpen ? "auto" : "none",
@@ -233,13 +236,13 @@ export default function Navbar() {
               href={link.href}
               data-ocid={`navbar.mobile_${link.label.toLowerCase().replace(/ /g, "_")}_link`}
               className="text-2xl font-bold transition-all duration-200"
-              style={{ color: "#B0E0E6" }}
+              style={{ color: "#1a1040" }}
               onClick={closeMenu}
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLAnchorElement).style.color = "#00F5FF";
+                (e.currentTarget as HTMLAnchorElement).style.color = "#00B8CC";
               }}
               onMouseLeave={(e) => {
-                (e.currentTarget as HTMLAnchorElement).style.color = "#B0E0E6";
+                (e.currentTarget as HTMLAnchorElement).style.color = "#1a1040";
               }}
             >
               {link.label}

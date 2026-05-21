@@ -11,6 +11,7 @@ import MenuSection from "./components/MenuSection";
 import Navbar from "./components/Navbar";
 import ParticleCanvas from "./components/ParticleCanvas";
 import ReviewsSection from "./components/ReviewsSection";
+import SocialMediaSection from "./components/SocialMediaSection";
 import WhatsAppFloat from "./components/WhatsAppFloat";
 
 export default function App() {
@@ -19,17 +20,24 @@ export default function App() {
   return (
     <>
       {loading && <LoadingScreen onComplete={() => setLoading(false)} />}
-      <div className="relative min-h-screen" style={{ background: "#050510" }}>
+      <div
+        className="relative min-h-screen"
+        style={{
+          background:
+            "linear-gradient(135deg, #1e1b3a 0%, #252045 50%, #1e1c38 100%)",
+        }}
+      >
         <ParticleCanvas />
         <Navbar />
         <main className="relative z-10">
           <HeroSection />
+          <MenuSection />
           <FeaturesSection />
           <AboutSection />
           <JourneySection />
-          <MenuSection />
           <ReviewsSection />
           <GallerySection />
+          <SocialMediaSection />
           <ContactSection />
         </main>
         <Footer />

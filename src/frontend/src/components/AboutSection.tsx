@@ -26,8 +26,7 @@ export default function AboutSection() {
       data-ocid="about.section"
       className="relative py-24 overflow-hidden"
       style={{
-        background:
-          "linear-gradient(160deg, oklch(0.10 0.01 50) 0%, oklch(0.14 0.015 40) 50%, oklch(0.10 0.01 50) 100%)",
+        background: "#1a1a2e",
       }}
     >
       {/* Decorative blobs */}
@@ -140,7 +139,7 @@ export default function AboutSection() {
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.07, duration: 0.4 }}
                   className="flex flex-col items-center gap-2 p-3 rounded-2xl transition-smooth hover:scale-110 cursor-default"
-                  style={{ background: "oklch(0.18 0.015 50 / 0.6)" }}
+                  style={{ background: "rgba(124,58,237,0.12)" }}
                 >
                   <span className="text-3xl">{item.emoji}</span>
                   <span className="text-xs text-muted-foreground text-center">

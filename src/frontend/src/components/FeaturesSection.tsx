@@ -39,7 +39,7 @@ export default function FeaturesSection() {
       id="features"
       data-ocid="features.section"
       className="py-24 relative overflow-hidden"
-      style={{ background: "#050510" }}
+      style={{ background: "#141428" }}
     >
       {/* Subtle warm line accent top */}
       <div
@@ -79,7 +79,12 @@ export default function FeaturesSection() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.6 }}
               data-ocid={`features.card.${i + 1}`}
-              className="group glass-card rounded-2xl p-6 flex flex-col gap-4 transition-smooth hover:scale-[1.03] hover:glow-orange hover:border-glow cursor-default"
+              className="group rounded-2xl p-6 flex flex-col gap-4 transition-smooth hover:scale-[1.03] hover:border-glow cursor-default"
+              style={{
+                background: "rgba(255,255,255,0.06)",
+                backdropFilter: "blur(20px)",
+                border: "1px solid rgba(0,245,255,0.25)",
+              }}
             >
               {/* Icon circle */}
               <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-3xl gradient-warm opacity-90 group-hover:scale-110 transition-smooth">

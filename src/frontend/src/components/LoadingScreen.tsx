@@ -48,7 +48,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
       data-ocid="loading.screen"
       className="fixed inset-0 z-[9999] flex flex-col items-center justify-center"
       style={{
-        background: "#050510",
+        background: "#ffffff",
         transition: "opacity 0.4s ease",
         opacity: visible ? 1 : 0,
         pointerEvents: visible ? "all" : "none",
@@ -59,7 +59,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(0,245,255,0.12), transparent)",
+            "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(0,245,255,0.25), transparent)",
         }}
       />
 
@@ -87,7 +87,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
           }}
         >
           <img
-            src="/assets/generated/chefzone-logo-circle.dim_200x200.png"
+            src="/assets/images/chefzone-logo.png"
             alt="ChefZone logo"
             className="w-full h-full object-cover"
             onError={(e) => {
@@ -132,7 +132,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
       {/* Progress bar */}
       <div
         className="absolute bottom-0 left-0 w-full h-1"
-        style={{ background: "rgba(255,255,255,0.08)" }}
+        style={{ background: "rgba(0,0,0,0.08)" }}
       >
         <div
           className="h-full"

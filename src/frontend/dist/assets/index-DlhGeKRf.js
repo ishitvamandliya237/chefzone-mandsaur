@@ -26495,7 +26495,7 @@ function AboutSection() {
       "data-ocid": "about.section",
       className: "relative py-24 overflow-hidden",
       style: {
-        background: "linear-gradient(160deg, oklch(0.10 0.01 50) 0%, oklch(0.14 0.015 40) 50%, oklch(0.10 0.01 50) 100%)"
+        background: "#1a1a2e"
       },
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -26604,7 +26604,7 @@ function AboutSection() {
                       viewport: { once: true },
                       transition: { delay: i2 * 0.07, duration: 0.4 },
                       className: "flex flex-col items-center gap-2 p-3 rounded-2xl transition-smooth hover:scale-110 cursor-default",
-                      style: { background: "oklch(0.18 0.015 50 / 0.6)" },
+                      style: { background: "rgba(124,58,237,0.12)" },
                       children: [
                         /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-3xl", children: item.emoji }),
                         /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground text-center", children: item.label })
@@ -26675,14 +26675,16 @@ function ContactSection() {
       id: "contact",
       "data-ocid": "contact.section",
       className: "relative py-24 px-4",
-      style: { background: "oklch(0.08 0.01 50)" },
+      style: {
+        background: "#0d0b1e"
+      },
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
           {
-            className: "pointer-events-none absolute inset-0 opacity-20",
+            className: "pointer-events-none absolute inset-0 opacity-100",
             style: {
-              background: "radial-gradient(ellipse 70% 40% at 50% 100%, oklch(0.68 0.22 30 / 0.4), transparent)"
+              background: "radial-gradient(ellipse 70% 40% at 50% 100%, rgba(124,58,237,0.08), transparent)"
             }
           }
         ),
@@ -26700,16 +26702,17 @@ function ContactSection() {
                   "span",
                   {
                     className: "inline-block text-xs font-semibold tracking-[0.3em] uppercase mb-3",
-                    style: { color: "oklch(0.68 0.22 30)" },
+                    style: { color: "#7C3AED" },
                     children: "Reach Us"
                   }
                 ),
                 /* @__PURE__ */ jsxRuntimeExports.jsxs(
                   "h2",
                   {
-                    className: "font-display text-4xl md:text-5xl font-bold text-foreground",
+                    className: "font-display text-4xl md:text-5xl font-bold",
                     style: {
-                      textShadow: "0 0 30px oklch(0.68 0.22 30 / 0.4)"
+                      color: "#f0f0ff",
+                      textShadow: "0 0 30px rgba(0,245,255,0.25)"
                     },
                     children: [
                       "Find Us &",
@@ -26729,7 +26732,12 @@ function ContactSection() {
                 whileInView: { opacity: 1, x: 0 },
                 viewport: { once: true },
                 transition: { duration: 0.7 },
-                className: "glass-card rounded-2xl p-8 flex flex-col gap-7",
+                className: "rounded-2xl p-8 flex flex-col gap-7",
+                style: {
+                  background: "rgba(255,255,255,0.06)",
+                  backdropFilter: "blur(20px)",
+                  border: "1px solid rgba(124,58,237,0.3)"
+                },
                 "data-ocid": "contact.card",
                 children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-4", children: [
@@ -26738,8 +26746,8 @@ function ContactSection() {
                       {
                         className: "w-12 h-12 rounded-xl flex items-center justify-center shrink-0",
                         style: {
-                          background: "linear-gradient(135deg, oklch(0.68 0.22 30 / 0.25), oklch(0.62 0.26 25 / 0.15))",
-                          border: "1px solid oklch(0.68 0.22 30 / 0.3)"
+                          background: "rgba(124,58,237,0.1)",
+                          border: "1px solid rgba(124,58,237,0.25)"
                         },
                         children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
                           "svg",
@@ -26749,7 +26757,7 @@ function ContactSection() {
                             stroke: "currentColor",
                             strokeWidth: 2,
                             className: "w-5 h-5",
-                            style: { color: "oklch(0.68 0.22 30)" },
+                            style: { color: "#7C3AED" },
                             children: [
                               /* @__PURE__ */ jsxRuntimeExports.jsx("title", { children: "Phone" }),
                               /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -26766,14 +26774,21 @@ function ContactSection() {
                       }
                     ),
                     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground uppercase tracking-wider mb-1", children: "Phone / WhatsApp" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "p",
+                        {
+                          className: "text-xs uppercase tracking-wider mb-1",
+                          style: { color: "#9090c8" },
+                          children: "Phone / WhatsApp"
+                        }
+                      ),
                       /* @__PURE__ */ jsxRuntimeExports.jsx(
                         "a",
                         {
                           href: "tel:+918889431668",
                           "data-ocid": "contact.phone_link",
-                          className: "text-xl font-semibold font-display text-foreground transition-smooth hover:text-shadow-glow",
-                          style: { color: "oklch(0.68 0.22 30)" },
+                          className: "text-xl font-semibold font-display transition-smooth hover:opacity-80",
+                          style: { color: "#7C3AED" },
                           children: "8889431668"
                         }
                       )
@@ -26785,8 +26800,8 @@ function ContactSection() {
                       {
                         className: "w-12 h-12 rounded-xl flex items-center justify-center shrink-0",
                         style: {
-                          background: "linear-gradient(135deg, oklch(0.68 0.22 30 / 0.25), oklch(0.62 0.26 25 / 0.15))",
-                          border: "1px solid oklch(0.68 0.22 30 / 0.3)"
+                          background: "rgba(124,58,237,0.1)",
+                          border: "1px solid rgba(124,58,237,0.25)"
                         },
                         children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
                           "svg",
@@ -26796,7 +26811,7 @@ function ContactSection() {
                             stroke: "currentColor",
                             strokeWidth: 2,
                             className: "w-5 h-5",
-                            style: { color: "oklch(0.68 0.22 30)" },
+                            style: { color: "#7C3AED" },
                             children: [
                               /* @__PURE__ */ jsxRuntimeExports.jsx("title", { children: "Clock" }),
                               /* @__PURE__ */ jsxRuntimeExports.jsx("circle", { cx: "12", cy: "12", r: "10" }),
@@ -26807,8 +26822,22 @@ function ContactSection() {
                       }
                     ),
                     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground uppercase tracking-wider mb-1", children: "Opening Hours" }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-lg font-semibold font-display text-foreground", children: "Mon–Sun: 7:00 AM – 3:00 AM" })
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "p",
+                        {
+                          className: "text-xs uppercase tracking-wider mb-1",
+                          style: { color: "#9090c8" },
+                          children: "Opening Hours"
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "p",
+                        {
+                          className: "text-lg font-semibold font-display",
+                          style: { color: "#f0f0ff" },
+                          children: "Mon–Sun: 10:00 AM – 3:00 AM"
+                        }
+                      )
                     ] })
                   ] }),
                   /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -26816,12 +26845,19 @@ function ContactSection() {
                     {
                       className: "h-px w-full",
                       style: {
-                        background: "linear-gradient(to right, transparent, oklch(0.68 0.22 30 / 0.3), transparent)"
+                        background: "linear-gradient(to right, transparent, rgba(124,58,237,0.3), transparent)"
                       }
                     }
                   ),
                   /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground uppercase tracking-wider mb-4", children: "Find Us On" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "p",
+                      {
+                        className: "text-xs uppercase tracking-wider mb-4",
+                        style: { color: "#9090c8" },
+                        children: "Find Us On"
+                      }
+                    ),
                     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-wrap gap-3", children: SOCIAL_LINKS$1.map((s) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
                       "a",
                       {
@@ -26856,9 +26892,9 @@ function ContactSection() {
                       target: "_blank",
                       rel: "noopener noreferrer",
                       "data-ocid": "contact.whatsapp_button",
-                      className: "mt-2 flex items-center justify-center gap-3 py-4 px-6 rounded-2xl font-bold text-lg font-display transition-smooth glow-orange",
+                      className: "mt-2 flex items-center justify-center gap-3 py-4 px-6 rounded-2xl font-bold text-lg font-display transition-smooth",
                       style: {
-                        background: "linear-gradient(135deg, oklch(0.68 0.22 30), oklch(0.62 0.26 25))",
+                        background: "linear-gradient(135deg, #25D366, #128C7E)",
                         color: "#fff"
                       },
                       onMouseEnter: (e) => {
@@ -26889,8 +26925,8 @@ function ContactSection() {
                 transition: { duration: 0.7, delay: 0.15 },
                 className: "rounded-2xl overflow-hidden",
                 style: {
-                  border: "1px solid oklch(0.68 0.22 30 / 0.25)",
-                  boxShadow: "0 0 30px oklch(0.68 0.22 30 / 0.15)",
+                  border: "1px solid rgba(0,245,255,0.3)",
+                  boxShadow: "0 8px 30px rgba(124,58,237,0.1)",
                   minHeight: "420px"
                 },
                 "data-ocid": "contact.map",
@@ -26898,7 +26934,7 @@ function ContactSection() {
                   "iframe",
                   {
                     title: "ChefZone Mandsaur Location",
-                    src: "https://maps.google.com/maps?q=33H9+2JQ,+Saket+Nagar,+Nai+Abaadi,+Mandsaur,+Madhya+Pradesh+458001&output=embed",
+                    src: "https://maps.google.com/maps?q=Chefzone+Mandsaur,+33H9%2B2JQ,+Saket+Nagar,+Nai+Abaadi,+Mandsaur,+Madhya+Pradesh+458001&output=embed",
                     width: "100%",
                     height: "100%",
                     style: { border: 0, minHeight: "420px", display: "block" },
@@ -26954,7 +26990,7 @@ function FeaturesSection() {
       id: "features",
       "data-ocid": "features.section",
       className: "py-24 relative overflow-hidden",
-      style: { background: "#050510" },
+      style: { background: "#141428" },
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
@@ -26992,7 +27028,12 @@ function FeaturesSection() {
               viewport: { once: true },
               transition: { delay: i2 * 0.1, duration: 0.6 },
               "data-ocid": `features.card.${i2 + 1}`,
-              className: "group glass-card rounded-2xl p-6 flex flex-col gap-4 transition-smooth hover:scale-[1.03] hover:glow-orange hover:border-glow cursor-default",
+              className: "group rounded-2xl p-6 flex flex-col gap-4 transition-smooth hover:scale-[1.03] hover:border-glow cursor-default",
+              style: {
+                background: "rgba(255,255,255,0.06)",
+                backdropFilter: "blur(20px)",
+                border: "1px solid rgba(0,245,255,0.25)"
+              },
               children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-14 h-14 rounded-2xl flex items-center justify-center text-3xl gradient-warm opacity-90 group-hover:scale-110 transition-smooth", children: feature.emoji }),
                 /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display text-lg font-bold text-foreground", children: feature.title }),
@@ -27084,7 +27125,7 @@ function Footer() {
     {
       "data-ocid": "footer.section",
       className: "relative pt-1",
-      style: { background: "#050510" },
+      style: { background: "#0f0f1a" },
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
@@ -27249,7 +27290,7 @@ function GallerySection() {
       id: "gallery",
       "data-ocid": "gallery.section",
       className: "py-24 px-4 relative overflow-hidden",
-      style: { background: "#050510" },
+      style: { background: "#0d0b1e" },
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "absolute inset-0 pointer-events-none overflow-hidden", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -27300,7 +27341,7 @@ function GallerySection() {
                   {
                     className: "font-display text-4xl md:text-5xl font-bold mt-3",
                     style: {
-                      background: "linear-gradient(135deg, #ffffff 0%, #00F5FF 60%, #D4AF37 100%)",
+                      background: "linear-gradient(135deg, #f0f0ff 0%, #00F5FF 60%, #D4AF37 100%)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
                       backgroundClip: "text"
@@ -27308,7 +27349,7 @@ function GallerySection() {
                     children: "Our Gallery"
                   }
                 ),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-3 text-base", style: { color: "#B0E0E6" }, children: "Explore our delicious food and kitchen moments" })
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-3 text-base", style: { color: "#b0b0d8" }, children: "Explore our delicious food and kitchen moments" })
               ]
             }
           ),
@@ -27326,10 +27367,10 @@ function GallerySection() {
                   "data-ocid": "gallery.card",
                   className: "w-full max-w-lg rounded-3xl p-10 flex flex-col items-center gap-7 text-center",
                   style: {
-                    background: "linear-gradient(135deg, rgba(5,5,16,0.8) 0%, rgba(212,175,55,0.2) 100%)",
+                    background: "linear-gradient(135deg, rgba(255,255,255,0.07) 0%, rgba(212,175,55,0.12) 100%)",
                     backdropFilter: "blur(20px)",
-                    border: "1px solid rgba(0,245,255,0.2)",
-                    boxShadow: "0 0 60px rgba(212,175,55,0.3), inset 0 1px 0 rgba(0,245,255,0.1)"
+                    border: "1px solid rgba(0,245,255,0.35)",
+                    boxShadow: "0 8px 40px rgba(124,58,237,0.12), inset 0 1px 0 rgba(0,245,255,0.15)"
                   },
                   children: [
                     /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -27378,11 +27419,11 @@ function GallerySection() {
                         "h3",
                         {
                           className: "font-display font-bold text-2xl mb-2",
-                          style: { color: "#ffffff" },
+                          style: { color: "#f0f0ff" },
                           children: "ChefZone Gallery"
                         }
                       ),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-sm", style: { color: "#B0E0E6" }, children: "Dive into our collection of food photography, kitchen visuals, and delightful moments from ChefZone Mandsaur." })
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-sm", style: { color: "#b0b0d8" }, children: "Dive into our collection of food photography, kitchen visuals, and delightful moments from ChefZone Mandsaur." })
                     ] }),
                     /* @__PURE__ */ jsxRuntimeExports.jsxs(
                       "a",
@@ -78942,6 +78983,9 @@ function HeroSection() {
       id: "home",
       "data-ocid": "home.section",
       className: "relative min-h-screen flex items-center overflow-hidden",
+      style: {
+        background: "#0f0f1a"
+      },
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
@@ -79084,7 +79128,7 @@ function JourneySection() {
       "data-ocid": "journey.section",
       className: "relative py-24 px-4 overflow-hidden",
       style: {
-        background: "linear-gradient(180deg, #050510 0%, #050510 50%, #050510 100%)"
+        background: "#141428"
       },
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -79136,7 +79180,7 @@ function JourneySection() {
                   {
                     className: "font-display text-4xl md:text-5xl font-bold mt-3",
                     style: {
-                      background: "linear-gradient(135deg, #ffffff 0%, #00F5FF 50%, #D4AF37 100%)",
+                      background: "linear-gradient(135deg, #c8c8f0 0%, #00F5FF 50%, #D4AF37 100%)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
                       backgroundClip: "text",
@@ -79172,16 +79216,16 @@ function JourneySection() {
                     {
                       className: "rounded-2xl p-7 flex flex-col gap-5",
                       style: {
-                        background: "rgba(212,175,55,0.12)",
+                        background: "rgba(255,255,255,0.07)",
                         backdropFilter: "blur(16px)",
-                        border: "1px solid rgba(0,245,255,0.15)"
+                        border: "1px solid rgba(0,245,255,0.25)"
                       },
                       children: [
                         /* @__PURE__ */ jsxRuntimeExports.jsxs(
                           "p",
                           {
                             className: "font-body text-base leading-relaxed",
-                            style: { color: "#B0E0E6" },
+                            style: { color: "#d0d0ee" },
                             children: [
                               "ChefZone ek passion-driven cloud kitchen hai, jo ghar ke swaad aur quality ko har customer tak pahunchane ke vision ke saath shuru hua. Is journey ki shuruaat",
                               " ",
@@ -79195,7 +79239,7 @@ function JourneySection() {
                           "p",
                           {
                             className: "font-body text-base leading-relaxed",
-                            style: { color: "#B0E0E6" },
+                            style: { color: "#d0d0ee" },
                             children: [
                               "Food ke prati gehre lagav aur hospitality industry ke experience ne is sapne ko janam diya.",
                               " ",
@@ -79209,7 +79253,7 @@ function JourneySection() {
                           "p",
                           {
                             className: "font-body text-base leading-relaxed",
-                            style: { color: "#B0E0E6" },
+                            style: { color: "#d0d0ee" },
                             children: [
                               /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-semibold", style: { color: "#00F5FF" }, children: "10 February 2025" }),
                               " ",
@@ -79229,8 +79273,8 @@ function JourneySection() {
                       transition: { duration: 0.4, delay: i2 * 0.08 },
                       className: "flex items-center gap-3 px-4 py-3 rounded-xl",
                       style: {
-                        background: "rgba(212,175,55,0.15)",
-                        border: "1px solid rgba(212,175,55,0.3)"
+                        background: "rgba(255,255,255,0.07)",
+                        border: "1px solid rgba(124,58,237,0.4)"
                       },
                       children: [
                         /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xl flex-shrink-0", children: val.icon }),
@@ -79238,7 +79282,7 @@ function JourneySection() {
                           "span",
                           {
                             className: "font-body text-sm font-medium",
-                            style: { color: "#B0E0E6" },
+                            style: { color: "#d0d0ee" },
                             children: val.text
                           }
                         )
@@ -79351,7 +79395,7 @@ function LoadingScreen({ onComplete }) {
       "data-ocid": "loading.screen",
       className: "fixed inset-0 z-[9999] flex flex-col items-center justify-center",
       style: {
-        background: "#050510",
+        background: "#ffffff",
         transition: "opacity 0.4s ease",
         opacity: visible ? 1 : 0,
         pointerEvents: visible ? "all" : "none"
@@ -79362,7 +79406,7 @@ function LoadingScreen({ onComplete }) {
           {
             className: "pointer-events-none absolute inset-0",
             style: {
-              background: "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(0,245,255,0.12), transparent)"
+              background: "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(0,245,255,0.25), transparent)"
             }
           }
         ),
@@ -79394,7 +79438,7 @@ function LoadingScreen({ onComplete }) {
                   children: /* @__PURE__ */ jsxRuntimeExports.jsx(
                     "img",
                     {
-                      src: "/assets/generated/chefzone-logo-circle.dim_200x200.png",
+                      src: "/assets/images/chefzone-logo.png",
                       alt: "ChefZone logo",
                       className: "w-full h-full object-cover",
                       onError: (e) => {
@@ -79441,7 +79485,7 @@ function LoadingScreen({ onComplete }) {
           "div",
           {
             className: "absolute bottom-0 left-0 w-full h-1",
-            style: { background: "rgba(255,255,255,0.08)" },
+            style: { background: "rgba(0,0,0,0.08)" },
             children: /* @__PURE__ */ jsxRuntimeExports.jsx(
               "div",
               {
@@ -79460,14 +79504,408 @@ function LoadingScreen({ onComplete }) {
     }
   );
 }
-const menuPhotos = [
-  { src: "/assets/images/menu-photo-2.png", alt: "Menu" },
-  { src: "/assets/images/menu-photo-1.png", alt: "Menu" },
-  { src: "/assets/images/menu-photo-3.png", alt: "Menu" },
-  { src: "/assets/images/menu-photo-4.png", alt: "Menu" },
-  { src: "/assets/images/menu-photo-5.png", alt: "Menu" }
-];
 const WHATSAPP_URL$1 = "https://wa.me/918889431668";
+const MENU_CARDS = [
+  {
+    id: "pizza",
+    title: "Pizza Junction",
+    emoji: "🍕",
+    gradient: "linear-gradient(135deg, #00F5FF, #7C3AED)",
+    subsections: [
+      {
+        title: "Classic Pizza 8 Inch",
+        items: [
+          { name: "Cheese Onion Pizza", price: "₹110" },
+          { name: "Cheese Capsicum Pizza", price: "₹110" },
+          { name: "Cheese Tomato Pizza", price: "₹110" },
+          { name: "Cheese Corn Pizza", price: "₹120" },
+          { name: "Cheese Tomato Capsicum Pizza", price: "₹120" },
+          { name: "Cheese Onion Capsicum Pizza", price: "₹120" },
+          { name: "Cheese Onion Tomato Pizza", price: "₹120" }
+        ]
+      },
+      {
+        title: "Premium Pizza 8 Inch",
+        items: [
+          { name: "Vegetable Cheese Pizza", price: "₹130" },
+          { name: "Classic Paneer Pizza", price: "₹160" },
+          { name: "Margherita Pizza", price: "₹170" },
+          { name: "Cheese Paneer Onion Pizza", price: "₹170" },
+          { name: "Double Cheese Margherita Pizza", price: "₹180" },
+          { name: "Fully Loaded Pizza", price: "₹180" }
+        ]
+      },
+      {
+        title: "Paneer Special",
+        items: [
+          { name: "Chilly Paneer Pizza", price: "₹190" },
+          { name: "Peppy Paneer Pizza", price: "₹190" },
+          { name: "Black Olives Paneer Pizza", price: "₹190" },
+          { name: "Jalapeno Paneer Pizza", price: "₹190" },
+          { name: "Green Olives Paneer Pizza", price: "₹190" }
+        ]
+      },
+      {
+        title: "ChefZone Choice",
+        items: [
+          { name: "Cheese Burst", price: "₹180" },
+          { name: "Farm House Pizza", price: "₹190" },
+          { name: "ChefZone Special Pizza", price: "₹200" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "burgers",
+    title: "Burgers & Sandwiches",
+    emoji: "🍔",
+    gradient: "linear-gradient(135deg, #D4AF37, #7C3AED)",
+    subsections: [
+      {
+        title: "Burgers Zone",
+        items: [
+          { name: "Aloo Tikki Burger", price: "₹70" },
+          { name: "Cheesy Aloo Tikki Burger", price: "₹80" },
+          { name: "Spicy Cheesy Burger", price: "₹90" },
+          { name: "Cheesy Schezwan Burger", price: "₹100" },
+          { name: "Double Tikki Burger", price: "₹110" },
+          { name: "Mexican Burger", price: "₹120" },
+          { name: "Cheese Mexican Burger", price: "₹130" },
+          { name: "Cheesy Double Tikki Burger", price: "₹140" },
+          { name: "Paneer Masala Burger", price: "₹160" },
+          { name: "Cheesy Paneer Masala Burger", price: "₹180" },
+          { name: "Paneer Masala Tikki Burger", price: "₹200" },
+          { name: "Cheesy Paneer Masala Tikki Burger", price: "₹220" },
+          { name: "ChefZone Special Burger", price: "₹250" }
+        ]
+      },
+      {
+        title: "Classic Sandwich",
+        items: [
+          { name: "Cheese Chutney Sandwich", price: "₹50" },
+          { name: "Plain Veg Sandwich", price: "₹50" },
+          { name: "Veg Grilled Sandwich", price: "₹80" },
+          { name: "Cheese Veg Sandwich", price: "₹110" },
+          { name: "Double Layer Cheese Chutney Sandwich", price: "₹270" }
+        ]
+      },
+      {
+        title: "Premium Sandwich",
+        items: [
+          { name: "Masala Sandwich", price: "₹100" },
+          { name: "Grilled Cheese Sandwich", price: "₹100" },
+          { name: "Corn Cheese Sandwich", price: "₹120" },
+          { name: "Cheese Masala Sandwich", price: "₹120" },
+          { name: "Paneer Masala Sandwich", price: "₹140" }
+        ]
+      },
+      {
+        title: "Chef Choice",
+        items: [
+          { name: "Jain Sandwich", price: "₹90" },
+          { name: "Indori Masala Sandwich", price: "₹120" },
+          { name: "Cheese Indori Masala Sandwich", price: "₹140" },
+          { name: "Cheese Paneer Masala Sandwich", price: "₹150" },
+          { name: "ChefZone Special Sandwich", price: "₹170" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "momos",
+    title: "Momos Zone",
+    emoji: "🥟",
+    gradient: "linear-gradient(135deg, #7C3AED, #00F5FF)",
+    subsections: [
+      {
+        title: "Steamed Momos 8 Pcs",
+        items: [
+          { name: "Veg Steam", price: "₹90" },
+          { name: "Cheese Corn Steam", price: "₹120" },
+          { name: "Paneer Steam", price: "₹120" }
+        ]
+      },
+      {
+        title: "Fried Momos 8 Pcs",
+        items: [
+          { name: "Veg Fried", price: "₹100" },
+          { name: "Cheese Corn Fried", price: "₹140" },
+          { name: "Paneer Fried", price: "₹140" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "fries",
+    title: "French Fries",
+    emoji: "🍟",
+    gradient: "linear-gradient(135deg, #D4AF37, #00F5FF)",
+    subsections: [
+      {
+        title: "French Fries",
+        items: [
+          { name: "Plain French Fries", price: "₹70" },
+          { name: "Salty French Fries", price: "₹80" },
+          { name: "Peri Peri French Fries", price: "₹90" },
+          { name: "Tandoori Mayo French Fries", price: "₹120" },
+          { name: "Cheesy French Fries", price: "₹150" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "maggie",
+    title: "Maggie Zone",
+    emoji: "🍜",
+    gradient: "linear-gradient(135deg, #00F5FF, #D4AF37)",
+    subsections: [
+      {
+        title: "Maggie Zone",
+        items: [
+          { name: "Plain Maggie", price: "₹50" },
+          { name: "Masala Maggie", price: "₹80" },
+          { name: "Schezwan Maggie", price: "₹90" },
+          { name: "Cheese Corn Maggie", price: "₹90" },
+          { name: "Cheesy Spicy Maggie", price: "₹90" },
+          { name: "Creamy Cheesy Maggie", price: "₹90" },
+          { name: "Cheesy Masala Maggie", price: "₹90" },
+          { name: "Cheesy Schezwan Maggie", price: "₹100" },
+          { name: "Paneer Masala Maggie", price: "₹100" },
+          { name: "Cheese Paneer Masala Maggie", price: "₹120" },
+          { name: "ChefZone Special Maggie", price: "₹150" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "pasta",
+    title: "Pasta",
+    emoji: "🍝",
+    gradient: "linear-gradient(135deg, #7C3AED, #D4AF37)",
+    subsections: [
+      {
+        title: "Classic Pasta",
+        items: [
+          { name: "Red Sauce Pasta", price: "₹150" },
+          { name: "White Sauce Pasta", price: "₹150" }
+        ]
+      },
+      {
+        title: "Premium Pasta",
+        items: [
+          { name: "Italian White Sauce Pasta", price: "₹200" },
+          { name: "Italian Red Sauce Pasta", price: "₹200" }
+        ]
+      }
+    ]
+  }
+];
+function MenuCardComponent({ card, idx }) {
+  const [open, setOpen] = reactExports.useState(false);
+  const totalItems = card.subsections.reduce(
+    (sum, s) => sum + s.items.length,
+    0
+  );
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    motion.div,
+    {
+      "data-ocid": `menu.card.${idx + 1}`,
+      initial: { opacity: 0, y: 30 },
+      whileInView: { opacity: 1, y: 0 },
+      viewport: { once: true },
+      transition: { duration: 0.5, delay: idx * 0.07 },
+      className: "rounded-2xl overflow-hidden",
+      style: {
+        background: "rgba(255,255,255,0.06)",
+        border: "1.5px solid rgba(0,245,255,0.35)",
+        boxShadow: "0 4px 24px rgba(0,245,255,0.08), 0 1px 0 rgba(0,245,255,0.1) inset",
+        backdropFilter: "blur(16px)"
+      },
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-1 w-full", style: { background: card.gradient } }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "button",
+          {
+            type: "button",
+            "data-ocid": `menu.card.${idx + 1}.toggle`,
+            className: "w-full flex items-center justify-between px-6 py-5 text-left focus:outline-none",
+            style: { background: open ? "rgba(0,245,255,0.06)" : "transparent" },
+            onClick: () => setOpen((o) => !o),
+            "aria-expanded": open,
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-4", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "span",
+                  {
+                    className: "text-3xl w-12 h-12 rounded-xl flex items-center justify-center shrink-0",
+                    style: {
+                      background: "rgba(255,255,255,0.08)",
+                      border: "1px solid rgba(0,245,255,0.25)",
+                      boxShadow: "0 2px 8px rgba(0,245,255,0.15)"
+                    },
+                    children: card.emoji
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "h3",
+                    {
+                      className: "text-lg font-bold font-display",
+                      style: { color: "#D4AF37" },
+                      children: card.title
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "p",
+                    {
+                      className: "text-xs mt-0.5 font-medium",
+                      style: { color: "#a080e8" },
+                      children: [
+                        totalItems,
+                        " items"
+                      ]
+                    }
+                  )
+                ] })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "span",
+                {
+                  className: "text-lg font-bold transition-transform duration-300 shrink-0 w-8 h-8 rounded-full flex items-center justify-center",
+                  style: {
+                    color: "#00B8CC",
+                    background: "rgba(0,245,255,0.1)",
+                    border: "1px solid rgba(0,245,255,0.3)",
+                    transform: open ? "rotate(180deg)" : "rotate(0deg)"
+                  },
+                  "aria-hidden": "true",
+                  children: "↓"
+                }
+              )
+            ]
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(AnimatePresence, { initial: false, children: open && /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          motion.div,
+          {
+            initial: { height: 0, opacity: 0 },
+            animate: { height: "auto", opacity: 1 },
+            exit: { height: 0, opacity: 0 },
+            transition: { duration: 0.3, ease: "easeInOut" },
+            style: { overflow: "hidden" },
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "div",
+                {
+                  className: "h-px mx-6",
+                  style: {
+                    background: "linear-gradient(90deg, transparent, rgba(0,245,255,0.4), transparent)"
+                  }
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "px-6 pb-6 pt-4", children: [
+                card.subsections.map((sub, subIdx) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: subIdx > 0 ? "mt-6" : "", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 mb-3", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "div",
+                      {
+                        className: "h-4 w-1 rounded-full shrink-0",
+                        style: {
+                          background: "linear-gradient(180deg, #00F5FF, #7C3AED)"
+                        }
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "h4",
+                      {
+                        className: "text-sm font-bold uppercase tracking-wider",
+                        style: { color: "#a080e8" },
+                        children: sub.title
+                      }
+                    )
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("ol", { className: "space-y-2", children: sub.items.map((item, itemIdx) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "li",
+                    {
+                      "data-ocid": `menu.card.${idx + 1}.sub.${subIdx + 1}.item.${itemIdx + 1}`,
+                      className: "flex items-center justify-between gap-3",
+                      children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "flex items-center gap-2 min-w-0", children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "span",
+                            {
+                              className: "shrink-0 text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center",
+                              style: {
+                                background: "rgba(0,245,255,0.12)",
+                                color: "#00B8CC",
+                                border: "1px solid rgba(0,245,255,0.25)"
+                              },
+                              children: itemIdx + 1
+                            }
+                          ),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "span",
+                            {
+                              className: "text-sm leading-relaxed truncate",
+                              style: { color: "#d8d8f0" },
+                              children: item.name
+                            }
+                          )
+                        ] }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(
+                          "span",
+                          {
+                            className: "shrink-0 text-sm font-semibold",
+                            style: { color: "#00B8CC" },
+                            children: item.price
+                          }
+                        )
+                      ]
+                    },
+                    `${sub.title}-${itemIdx}`
+                  )) })
+                ] }, sub.title)),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "a",
+                  {
+                    href: WHATSAPP_URL$1,
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    "data-ocid": `menu.card.${idx + 1}.order_button`,
+                    className: "mt-6 flex items-center justify-center gap-2 w-full py-3 rounded-xl font-semibold text-white text-sm transition-all duration-200 hover:scale-[1.02] hover:shadow-lg",
+                    style: {
+                      background: "linear-gradient(135deg, #25D366, #128C7E)",
+                      boxShadow: "0 0 16px rgba(37,211,102,0.35)"
+                    },
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                        "svg",
+                        {
+                          xmlns: "http://www.w3.org/2000/svg",
+                          className: "w-4 h-4",
+                          viewBox: "0 0 24 24",
+                          fill: "currentColor",
+                          "aria-hidden": "true",
+                          children: [
+                            /* @__PURE__ */ jsxRuntimeExports.jsx("title", { children: "WhatsApp" }),
+                            /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" }),
+                            /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.852L0 24l6.332-1.51A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.806 9.806 0 01-5.017-1.376l-.36-.214-3.726.888.921-3.617-.235-.372A9.794 9.794 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z" })
+                          ]
+                        }
+                      ),
+                      "Order on WhatsApp"
+                    ]
+                  }
+                )
+              ] })
+            ]
+          },
+          "content"
+        ) })
+      ]
+    }
+  );
+}
 function MenuSection() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "section",
@@ -79475,7 +79913,7 @@ function MenuSection() {
       id: "menu",
       "data-ocid": "menu.section",
       className: "relative py-20 px-4 overflow-hidden",
-      style: { background: "#050510" },
+      style: { background: "#0d0b1e" },
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
@@ -79483,7 +79921,7 @@ function MenuSection() {
             "aria-hidden": "true",
             className: "absolute top-0 left-1/4 w-[500px] h-[400px] rounded-full pointer-events-none",
             style: {
-              background: "radial-gradient(circle, rgba(212,175,55,0.18) 0%, transparent 70%)",
+              background: "radial-gradient(circle, rgba(212,175,55,0.12) 0%, transparent 70%)",
               filter: "blur(60px)"
             }
           }
@@ -79494,16 +79932,16 @@ function MenuSection() {
             "aria-hidden": "true",
             className: "absolute bottom-0 right-1/4 w-[400px] h-[300px] rounded-full pointer-events-none",
             style: {
-              background: "radial-gradient(circle, rgba(0,245,255,0.1) 0%, transparent 70%)",
+              background: "radial-gradient(circle, rgba(0,245,255,0.08) 0%, transparent 70%)",
               filter: "blur(60px)"
             }
           }
         ),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative z-10 max-w-5xl mx-auto", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative z-10 max-w-4xl mx-auto", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(
             motion.div,
             {
-              className: "text-center mb-12",
+              className: "text-center mb-14",
               initial: { opacity: 0, y: -20 },
               whileInView: { opacity: 1, y: 0 },
               viewport: { once: true },
@@ -79514,9 +79952,9 @@ function MenuSection() {
                   {
                     className: "inline-block text-xs font-semibold tracking-[0.3em] uppercase mb-3 px-4 py-1.5 rounded-full",
                     style: {
-                      background: "rgba(212,175,55,0.3)",
+                      background: "rgba(212,175,55,0.2)",
                       border: "1px solid rgba(0,245,255,0.3)",
-                      color: "#00F5FF"
+                      color: "#b0b0e8"
                     },
                     children: "Full Menu"
                   }
@@ -79526,7 +79964,7 @@ function MenuSection() {
                   {
                     className: "text-4xl md:text-5xl font-bold mt-3",
                     style: {
-                      background: "linear-gradient(135deg, #ffffff 0%, #00F5FF 50%, #D4AF37 100%)",
+                      background: "linear-gradient(135deg, #f0f0ff 0%, #00F5FF 50%, #D4AF37 100%)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
                       backgroundClip: "text"
@@ -79538,8 +79976,8 @@ function MenuSection() {
                   "p",
                   {
                     className: "mt-2 text-sm uppercase tracking-widest",
-                    style: { color: "#B0E0E6" },
-                    children: "Explore our premium vegetarian menu"
+                    style: { color: "#a080e8" },
+                    children: "100% Pure Veg • Fresh • Delicious"
                   }
                 ),
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -79550,103 +79988,12 @@ function MenuSection() {
                       background: "linear-gradient(90deg, transparent, #D4AF37, #00F5FF, transparent)"
                     }
                   }
-                )
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-3 text-xs", style: { color: "#a080e8" }, children: "Click on a category to expand the menu" })
               ]
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6", children: menuPhotos.map((photo, index2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            motion.div,
-            {
-              "data-ocid": `menu.item.${index2 + 1}`,
-              initial: { opacity: 0, y: 20 },
-              whileInView: { opacity: 1, y: 0 },
-              viewport: { once: true },
-              transition: { duration: 0.4, delay: index2 * 0.1 },
-              className: "relative overflow-hidden rounded-2xl group",
-              style: {
-                border: "1px solid rgba(0,245,255,0.4)",
-                boxShadow: "0 0 20px rgba(0,245,255,0.25), 0 0 40px rgba(212,175,55,0.15)",
-                backdropFilter: "blur(12px)"
-              },
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "img",
-                  {
-                    src: photo.src,
-                    alt: photo.alt,
-                    className: "w-full h-auto object-cover transform transition-all duration-300 group-hover:scale-105",
-                    loading: "lazy"
-                  }
-                ),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "div",
-                  {
-                    className: "absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300",
-                    style: {
-                      boxShadow: "inset 0 0 40px rgba(0,245,255,0.3)"
-                    }
-                  }
-                )
-              ]
-            },
-            photo.src
-          )) }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            motion.div,
-            {
-              className: "mt-12 rounded-2xl p-8 flex flex-col items-center justify-center gap-5 text-center",
-              initial: { opacity: 0, y: 20 },
-              whileInView: { opacity: 1, y: 0 },
-              viewport: { once: true },
-              transition: { duration: 0.5 },
-              style: {
-                background: "rgba(212,175,55,0.15)",
-                border: "1px solid rgba(212,175,55,0.4)",
-                backdropFilter: "blur(12px)"
-              },
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-lg font-bold", style: { color: "#ffffff" }, children: "Hungry? Place Your Order Now!" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm", style: { color: "#B0E0E6" }, children: "Fresh • Hygienic • Delivered with Love" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                  "a",
-                  {
-                    href: WHATSAPP_URL$1,
-                    target: "_blank",
-                    rel: "noopener noreferrer",
-                    "data-ocid": "menu.cta_order_button",
-                    className: "flex items-center gap-2 px-8 py-3.5 rounded-full font-bold text-white transition-all duration-200",
-                    style: {
-                      background: "linear-gradient(135deg, #D4AF37, #00F5FF)",
-                      boxShadow: "0 0 24px rgba(212,175,55,0.5), 0 0 12px rgba(0,245,255,0.4)"
-                    },
-                    onMouseEnter: (e) => {
-                      e.currentTarget.style.boxShadow = "0 0 36px rgba(212,175,55,0.8), 0 0 18px rgba(0,245,255,0.6)";
-                    },
-                    onMouseLeave: (e) => {
-                      e.currentTarget.style.boxShadow = "0 0 24px rgba(212,175,55,0.5), 0 0 12px rgba(0,245,255,0.4)";
-                    },
-                    children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                        "svg",
-                        {
-                          xmlns: "http://www.w3.org/2000/svg",
-                          className: "w-5 h-5",
-                          viewBox: "0 0 24 24",
-                          fill: "currentColor",
-                          "aria-hidden": "true",
-                          children: [
-                            /* @__PURE__ */ jsxRuntimeExports.jsx("title", { children: "WhatsApp" }),
-                            /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" })
-                          ]
-                        }
-                      ),
-                      "Order on WhatsApp"
-                    ]
-                  }
-                )
-              ]
-            }
-          )
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-4", children: MENU_CARDS.map((card, idx) => /* @__PURE__ */ jsxRuntimeExports.jsx(MenuCardComponent, { card, idx }, card.id)) })
         ] })
       ]
     }
@@ -79659,6 +80006,7 @@ const NAV_LINKS = [
   { label: "Menu", href: "#menu" },
   { label: "Reviews", href: "#reviews" },
   { label: "Gallery", href: "#gallery" },
+  { label: "Social", href: "#social" },
   { label: "Contact", href: "#contact" }
 ];
 const WHATSAPP_URL = "https://wa.me/918889431668";
@@ -79680,10 +80028,10 @@ function Navbar() {
         "data-ocid": "navbar",
         className: "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         style: {
-          background: isScrolled ? "rgba(5,5,16,0.92)" : "transparent",
-          backdropFilter: isScrolled ? "blur(20px)" : "none",
-          borderBottom: isScrolled ? "1px solid rgba(212,175,55,0.3)" : "none",
-          boxShadow: isScrolled ? "0 4px 30px rgba(212,175,55,0.2)" : "none"
+          background: isScrolled ? "rgba(10,10,26,0.95)" : "rgba(10,10,26,0.75)",
+          backdropFilter: "blur(20px)",
+          borderBottom: "1px solid rgba(0,245,255,0.25)",
+          boxShadow: isScrolled ? "0 4px 30px rgba(0,245,255,0.12)" : "none"
         },
         children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between h-16 md:h-20", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(
@@ -79706,7 +80054,7 @@ function Navbar() {
                 ) : /* @__PURE__ */ jsxRuntimeExports.jsx(
                   "img",
                   {
-                    src: "/assets/logo.png",
+                    src: "/assets/images/chefzone-logo.png",
                     alt: "ChefZone",
                     className: "w-11 h-11 rounded-full object-cover",
                     style: { boxShadow: "0 0 16px rgba(212,175,55,0.6)" },
@@ -79730,13 +80078,13 @@ function Navbar() {
               href: link.href,
               "data-ocid": `navbar.${link.label.toLowerCase().replace(/ /g, "_")}_link`,
               className: "px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200",
-              style: { color: "#B0E0E6" },
+              style: { color: "#c8c8f0" },
               onMouseEnter: (e) => {
                 e.currentTarget.style.color = "#00F5FF";
-                e.currentTarget.style.textShadow = "0 0 12px rgba(0,245,255,0.6)";
+                e.currentTarget.style.textShadow = "0 0 12px rgba(0,245,255,0.5)";
               },
               onMouseLeave: (e) => {
-                e.currentTarget.style.color = "#B0E0E6";
+                e.currentTarget.style.color = "#c8c8f0";
                 e.currentTarget.style.textShadow = "none";
               },
               children: link.label
@@ -79828,7 +80176,7 @@ function Navbar() {
                 type: "button",
                 "data-ocid": "navbar.hamburger_button",
                 className: "md:hidden flex flex-col gap-1.5 p-2 rounded-lg transition-all duration-200",
-                style: { color: "#00F5FF" },
+                style: { color: "#7C3AED" },
                 "aria-label": "Toggle mobile menu",
                 "aria-expanded": isMenuOpen,
                 onClick: () => setIsMenuOpen((v) => !v),
@@ -79871,7 +80219,7 @@ function Navbar() {
         "data-ocid": "navbar.mobile_menu",
         className: "fixed inset-0 z-40 flex flex-col md:hidden transition-all duration-300",
         style: {
-          background: "rgba(5,5,16,0.97)",
+          background: "rgba(255,255,255,0.98)",
           backdropFilter: "blur(24px)",
           opacity: isMenuOpen ? 1 : 0,
           pointerEvents: isMenuOpen ? "auto" : "none"
@@ -79883,13 +80231,13 @@ function Navbar() {
               href: link.href,
               "data-ocid": `navbar.mobile_${link.label.toLowerCase().replace(/ /g, "_")}_link`,
               className: "text-2xl font-bold transition-all duration-200",
-              style: { color: "#B0E0E6" },
+              style: { color: "#1a1040" },
               onClick: closeMenu,
               onMouseEnter: (e) => {
-                e.currentTarget.style.color = "#00F5FF";
+                e.currentTarget.style.color = "#00B8CC";
               },
               onMouseLeave: (e) => {
-                e.currentTarget.style.color = "#B0E0E6";
+                e.currentTarget.style.color = "#1a1040";
               },
               children: link.label
             },
@@ -80125,6 +80473,7 @@ function ReviewsSection() {
       id: "reviews",
       "data-ocid": "reviews.section",
       className: "py-20 px-4 relative overflow-hidden",
+      style: { background: "#1a1a2e" },
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 pointer-events-none", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
@@ -80144,12 +80493,29 @@ function ReviewsSection() {
               viewport: { once: true },
               className: "text-center mb-12",
               children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "inline-block bg-gradient-to-r from-orange-500 to-red-600 text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-4", children: "⭐ Reviews" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "font-display text-4xl md:text-5xl font-bold text-foreground", children: [
-                  "What Our",
-                  " ",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent", children: "Customers Say" })
-                ] })
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "span",
+                  {
+                    className: "inline-block text-xs font-semibold tracking-[0.3em] uppercase mb-3 px-4 py-1.5 rounded-full",
+                    style: {
+                      background: "rgba(212,175,55,0.2)",
+                      border: "1px solid rgba(0,245,255,0.3)",
+                      color: "#7C3AED"
+                    },
+                    children: "⭐ Reviews"
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "h2",
+                  {
+                    className: "font-display text-4xl md:text-5xl font-bold",
+                    style: { color: "#f0f0ff" },
+                    children: [
+                      "What Our ",
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "gradient-warm-text", children: "Customers Say" })
+                    ]
+                  }
+                )
               ]
             }
           ),
@@ -80168,13 +80534,30 @@ function ReviewsSection() {
                     exit: { opacity: 0, x: -60 },
                     transition: { duration: 0.4 },
                     "data-ocid": `reviews.card.${current + 1}`,
-                    className: "backdrop-blur-md bg-white/5 border border-white/10 rounded-2xl p-8 md:p-12",
+                    className: "rounded-2xl p-8 md:p-12",
                     style: {
-                      boxShadow: "0 8px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(251,113,20,0.15)"
+                      background: "rgba(255,255,255,0.07)",
+                      backdropFilter: "blur(16px)",
+                      border: "1px solid rgba(0,245,255,0.3)",
+                      boxShadow: "0 8px 40px rgba(124,58,237,0.3), 0 0 0 1px rgba(0,245,255,0.15)"
                     },
                     children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-6xl text-orange-400/30 font-display leading-none mb-4 select-none", children: "“" }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-foreground text-lg md:text-xl leading-relaxed mb-6 font-body italic", children: reviews[current].text }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "div",
+                        {
+                          className: "text-6xl font-display leading-none mb-4 select-none",
+                          style: { color: "rgba(212,175,55,0.4)" },
+                          children: "“"
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "p",
+                        {
+                          className: "text-lg md:text-xl leading-relaxed mb-6 font-body italic",
+                          style: { color: "#d8d8f0" },
+                          children: reviews[current].text
+                        }
+                      ),
                       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-4", children: [
                         /* @__PURE__ */ jsxRuntimeExports.jsx(Initials, { name: reviews[current].name }),
                         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
@@ -80241,9 +80624,13 @@ function ReviewsSection() {
               {
                 type: "button",
                 onClick: prev,
-                "data-ocid": "reviews.prev_button_mobile",
                 "aria-label": "Previous review",
-                className: "w-10 h-10 rounded-full bg-card border border-white/10 flex items-center justify-center text-foreground hover:border-orange-500 hover:text-orange-400 transition-colors",
+                className: "w-10 h-10 rounded-full flex items-center justify-center transition-colors",
+                style: {
+                  background: "#ffffff",
+                  border: "1px solid #00F5FF",
+                  color: "#1a1040"
+                },
                 children: "←"
               }
             ),
@@ -80252,13 +80639,259 @@ function ReviewsSection() {
               {
                 type: "button",
                 onClick: next,
-                "data-ocid": "reviews.next_button_mobile",
                 "aria-label": "Next review",
-                className: "w-10 h-10 rounded-full bg-card border border-white/10 flex items-center justify-center text-foreground hover:border-orange-500 hover:text-orange-400 transition-colors",
+                className: "w-10 h-10 rounded-full flex items-center justify-center transition-colors",
+                style: {
+                  background: "#ffffff",
+                  border: "1px solid #00F5FF",
+                  color: "#1a1040"
+                },
                 children: "→"
               }
             )
           ] })
+        ] })
+      ]
+    }
+  );
+}
+const SOCIAL_CARDS = [
+  {
+    id: "whatsapp",
+    name: "WhatsApp",
+    cta: "Chat on WhatsApp",
+    href: "https://wa.me/918889431668",
+    brandColor: "#25D366",
+    glowColor: "rgba(37,211,102,0.5)",
+    glowHover: "rgba(37,211,102,0.8)",
+    icon: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      "svg",
+      {
+        viewBox: "0 0 24 24",
+        fill: "currentColor",
+        className: "w-12 h-12",
+        "aria-hidden": "true",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("title", { children: "WhatsApp" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" })
+        ]
+      }
+    )
+  },
+  {
+    id: "instagram",
+    name: "Instagram",
+    cta: "Follow Us",
+    href: "https://www.instagram.com/chefzone_mandsaur",
+    brandColor: "#E1306C",
+    glowColor: "rgba(225,48,108,0.5)",
+    glowHover: "rgba(225,48,108,0.8)",
+    icon: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      "svg",
+      {
+        viewBox: "0 0 24 24",
+        fill: "currentColor",
+        className: "w-12 h-12",
+        "aria-hidden": "true",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("title", { children: "Instagram" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("defs", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("linearGradient", { id: "ig-grad", x1: "0%", y1: "100%", x2: "100%", y2: "0%", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "0%", stopColor: "#FFDC80" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "25%", stopColor: "#FCAF45" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "50%", stopColor: "#F77737" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "75%", stopColor: "#C13584" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "100%", stopColor: "#833AB4" })
+          ] }) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "path",
+            {
+              fill: "url(#ig-grad)",
+              d: "M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+            }
+          )
+        ]
+      }
+    )
+  },
+  {
+    id: "facebook",
+    name: "Facebook",
+    cta: "Follow Us",
+    href: "https://www.facebook.com/people/ChefZone-Mandsaur/61572917747575/",
+    brandColor: "#1877F2",
+    glowColor: "rgba(24,119,242,0.5)",
+    glowHover: "rgba(24,119,242,0.8)",
+    icon: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      "svg",
+      {
+        viewBox: "0 0 24 24",
+        fill: "#1877F2",
+        className: "w-12 h-12",
+        "aria-hidden": "true",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("title", { children: "Facebook" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" })
+        ]
+      }
+    )
+  },
+  {
+    id: "youtube",
+    name: "YouTube",
+    cta: "Subscribe",
+    href: "https://youtube.com/@chefzonemandsaur?si=-rCoBrG9CFGxLK7U",
+    brandColor: "#FF0000",
+    glowColor: "rgba(255,0,0,0.5)",
+    glowHover: "rgba(255,0,0,0.8)",
+    icon: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      "svg",
+      {
+        viewBox: "0 0 24 24",
+        fill: "#FF0000",
+        className: "w-12 h-12",
+        "aria-hidden": "true",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("title", { children: "YouTube" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" })
+        ]
+      }
+    )
+  }
+];
+function SocialMediaSection() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "section",
+    {
+      id: "social",
+      "data-ocid": "social.section",
+      className: "relative py-20 px-4 overflow-hidden",
+      style: { background: "#1a1a2e" },
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            "aria-hidden": "true",
+            className: "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full pointer-events-none",
+            style: {
+              background: "radial-gradient(circle, rgba(0,245,255,0.08) 0%, rgba(212,175,55,0.06) 50%, transparent 70%)",
+              filter: "blur(80px)"
+            }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative z-10 max-w-5xl mx-auto", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            motion.div,
+            {
+              className: "text-center mb-12",
+              initial: { opacity: 0, y: -20 },
+              whileInView: { opacity: 1, y: 0 },
+              viewport: { once: true },
+              transition: { duration: 0.6 },
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "span",
+                  {
+                    className: "inline-block text-xs font-semibold tracking-[0.3em] uppercase mb-3 px-4 py-1.5 rounded-full",
+                    style: {
+                      background: "rgba(0,245,255,0.15)",
+                      border: "1px solid rgba(0,245,255,0.3)",
+                      color: "#00F5FF"
+                    },
+                    children: "Connect With Us"
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "h2",
+                  {
+                    className: "text-4xl md:text-5xl font-bold mt-3",
+                    style: {
+                      background: "linear-gradient(135deg, #1a1040 0%, #00C5CC 50%, #B8941F 100%)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                      backgroundClip: "text"
+                    },
+                    children: "Find Us On Social Media"
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "div",
+                  {
+                    className: "mx-auto mt-4 h-0.5 w-28 rounded-full",
+                    style: {
+                      background: "linear-gradient(90deg, transparent, #00F5FF, #D4AF37, transparent)"
+                    }
+                  }
+                )
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-2 md:grid-cols-4 gap-5", children: SOCIAL_CARDS.map((card, index2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            motion.a,
+            {
+              href: card.href,
+              target: "_blank",
+              rel: "noopener noreferrer",
+              "data-ocid": `social.${card.id}_card`,
+              initial: { opacity: 0, y: 30 },
+              whileInView: { opacity: 1, y: 0 },
+              viewport: { once: true },
+              transition: { duration: 0.5, delay: index2 * 0.1 },
+              className: "flex flex-col items-center gap-5 p-7 rounded-2xl transition-all duration-300 group",
+              style: {
+                background: "rgba(255,255,255,0.9)",
+                border: `1px solid ${card.brandColor}55`,
+                backdropFilter: "blur(16px)",
+                boxShadow: `0 4px 20px ${card.glowColor.replace("0.5", "0.15")}, 0 0 0 0.5px rgba(255,255,255,0.5)`
+              },
+              onMouseEnter: (e) => {
+                const el = e.currentTarget;
+                el.style.boxShadow = `0 0 40px ${card.glowColor}, 0 0 80px ${card.glowColor.replace("0.5", "0.1")}`;
+                el.style.border = `1px solid ${card.brandColor}88`;
+                el.style.transform = "translateY(-6px) scale(1.03)";
+              },
+              onMouseLeave: (e) => {
+                const el = e.currentTarget;
+                el.style.boxShadow = `0 0 20px ${card.glowColor.replace("0.5", "0.2")}`;
+                el.style.border = `1px solid ${card.brandColor}33`;
+                el.style.transform = "translateY(0) scale(1)";
+              },
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "div",
+                  {
+                    className: "rounded-2xl p-3",
+                    style: {
+                      background: `${card.brandColor}15`,
+                      boxShadow: `0 0 20px ${card.glowColor.replace("0.5", "0.3")}`
+                    },
+                    children: card.icon
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "span",
+                  {
+                    className: "font-bold text-lg",
+                    style: { color: card.brandColor },
+                    children: card.name
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "button",
+                  {
+                    type: "button",
+                    "data-ocid": `social.${card.id}_button`,
+                    className: "w-full py-2.5 px-4 rounded-xl text-sm font-semibold text-white transition-all duration-200",
+                    style: {
+                      background: `linear-gradient(135deg, ${card.brandColor}CC, ${card.brandColor}99)`,
+                      boxShadow: `0 0 12px ${card.glowColor}`
+                    },
+                    children: card.cta
+                  }
+                )
+              ]
+            },
+            card.id
+          )) })
         ] })
       ]
     }
@@ -80407,22 +81040,32 @@ function App() {
   const [loading2, setLoading] = reactExports.useState(true);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
     loading2 && /* @__PURE__ */ jsxRuntimeExports.jsx(LoadingScreen, { onComplete: () => setLoading(false) }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative min-h-screen", style: { background: "#050510" }, children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(ParticleCanvas, {}),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Navbar, {}),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "relative z-10", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(HeroSection, {}),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(FeaturesSection, {}),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(AboutSection, {}),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(JourneySection, {}),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(MenuSection, {}),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(ReviewsSection, {}),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(GallerySection, {}),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(ContactSection, {})
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Footer, {}),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(WhatsAppFloat, {})
-    ] })
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      "div",
+      {
+        className: "relative min-h-screen",
+        style: {
+          background: "linear-gradient(135deg, #1e1b3a 0%, #252045 50%, #1e1c38 100%)"
+        },
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(ParticleCanvas, {}),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Navbar, {}),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "relative z-10", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(HeroSection, {}),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(MenuSection, {}),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(FeaturesSection, {}),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(AboutSection, {}),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(JourneySection, {}),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(ReviewsSection, {}),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(GallerySection, {}),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(SocialMediaSection, {}),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(ContactSection, {})
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Footer, {}),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(WhatsAppFloat, {})
+        ]
+      }
+    )
   ] });
 }
 BigInt.prototype.toJSON = function() {

@@ -53,14 +53,16 @@ export default function ContactSection() {
       id="contact"
       data-ocid="contact.section"
       className="relative py-24 px-4"
-      style={{ background: "oklch(0.08 0.01 50)" }}
+      style={{
+        background: "#0d0b1e",
+      }}
     >
       {/* Ambient glow */}
       <div
-        className="pointer-events-none absolute inset-0 opacity-20"
+        className="pointer-events-none absolute inset-0 opacity-100"
         style={{
           background:
-            "radial-gradient(ellipse 70% 40% at 50% 100%, oklch(0.68 0.22 30 / 0.4), transparent)",
+            "radial-gradient(ellipse 70% 40% at 50% 100%, rgba(124,58,237,0.08), transparent)",
         }}
       />
 
@@ -75,14 +77,15 @@ export default function ContactSection() {
         >
           <span
             className="inline-block text-xs font-semibold tracking-[0.3em] uppercase mb-3"
-            style={{ color: "oklch(0.68 0.22 30)" }}
+            style={{ color: "#7C3AED" }}
           >
             Reach Us
           </span>
           <h2
-            className="font-display text-4xl md:text-5xl font-bold text-foreground"
+            className="font-display text-4xl md:text-5xl font-bold"
             style={{
-              textShadow: "0 0 30px oklch(0.68 0.22 30 / 0.4)",
+              color: "#f0f0ff",
+              textShadow: "0 0 30px rgba(0,245,255,0.25)",
             }}
           >
             Find Us &amp;{" "}
@@ -98,7 +101,12 @@ export default function ContactSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="glass-card rounded-2xl p-8 flex flex-col gap-7"
+            className="rounded-2xl p-8 flex flex-col gap-7"
+            style={{
+              background: "rgba(255,255,255,0.06)",
+              backdropFilter: "blur(20px)",
+              border: "1px solid rgba(124,58,237,0.3)",
+            }}
             data-ocid="contact.card"
           >
             {/* Phone */}
@@ -106,9 +114,8 @@ export default function ContactSection() {
               <div
                 className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
                 style={{
-                  background:
-                    "linear-gradient(135deg, oklch(0.68 0.22 30 / 0.25), oklch(0.62 0.26 25 / 0.15))",
-                  border: "1px solid oklch(0.68 0.22 30 / 0.3)",
+                  background: "rgba(124,58,237,0.1)",
+                  border: "1px solid rgba(124,58,237,0.25)",
                 }}
               >
                 <svg
@@ -117,7 +124,7 @@ export default function ContactSection() {
                   stroke="currentColor"
                   strokeWidth={2}
                   className="w-5 h-5"
-                  style={{ color: "oklch(0.68 0.22 30)" }}
+                  style={{ color: "#7C3AED" }}
                 >
                   <title>Phone</title>
                   <path
@@ -128,14 +135,17 @@ export default function ContactSection() {
                 </svg>
               </div>
               <div>
-                <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">
+                <p
+                  className="text-xs uppercase tracking-wider mb-1"
+                  style={{ color: "#9090c8" }}
+                >
                   Phone / WhatsApp
                 </p>
                 <a
                   href="tel:+918889431668"
                   data-ocid="contact.phone_link"
-                  className="text-xl font-semibold font-display text-foreground transition-smooth hover:text-shadow-glow"
-                  style={{ color: "oklch(0.68 0.22 30)" }}
+                  className="text-xl font-semibold font-display transition-smooth hover:opacity-80"
+                  style={{ color: "#7C3AED" }}
                 >
                   8889431668
                 </a>
@@ -147,9 +157,8 @@ export default function ContactSection() {
               <div
                 className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
                 style={{
-                  background:
-                    "linear-gradient(135deg, oklch(0.68 0.22 30 / 0.25), oklch(0.62 0.26 25 / 0.15))",
-                  border: "1px solid oklch(0.68 0.22 30 / 0.3)",
+                  background: "rgba(124,58,237,0.1)",
+                  border: "1px solid rgba(124,58,237,0.25)",
                 }}
               >
                 <svg
@@ -158,7 +167,7 @@ export default function ContactSection() {
                   stroke="currentColor"
                   strokeWidth={2}
                   className="w-5 h-5"
-                  style={{ color: "oklch(0.68 0.22 30)" }}
+                  style={{ color: "#7C3AED" }}
                 >
                   <title>Clock</title>
                   <circle cx="12" cy="12" r="10" />
@@ -166,11 +175,17 @@ export default function ContactSection() {
                 </svg>
               </div>
               <div>
-                <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">
+                <p
+                  className="text-xs uppercase tracking-wider mb-1"
+                  style={{ color: "#9090c8" }}
+                >
                   Opening Hours
                 </p>
-                <p className="text-lg font-semibold font-display text-foreground">
-                  Mon–Sun: 7:00 AM – 3:00 AM
+                <p
+                  className="text-lg font-semibold font-display"
+                  style={{ color: "#f0f0ff" }}
+                >
+                  Mon–Sun: 10:00 AM – 3:00 AM
                 </p>
               </div>
             </div>
@@ -180,13 +195,16 @@ export default function ContactSection() {
               className="h-px w-full"
               style={{
                 background:
-                  "linear-gradient(to right, transparent, oklch(0.68 0.22 30 / 0.3), transparent)",
+                  "linear-gradient(to right, transparent, rgba(124,58,237,0.3), transparent)",
               }}
             />
 
             {/* Social media row */}
             <div>
-              <p className="text-xs text-muted-foreground uppercase tracking-wider mb-4">
+              <p
+                className="text-xs uppercase tracking-wider mb-4"
+                style={{ color: "#9090c8" }}
+              >
                 Find Us On
               </p>
               <div className="flex flex-wrap gap-3">
@@ -225,10 +243,9 @@ export default function ContactSection() {
               target="_blank"
               rel="noopener noreferrer"
               data-ocid="contact.whatsapp_button"
-              className="mt-2 flex items-center justify-center gap-3 py-4 px-6 rounded-2xl font-bold text-lg font-display transition-smooth glow-orange"
+              className="mt-2 flex items-center justify-center gap-3 py-4 px-6 rounded-2xl font-bold text-lg font-display transition-smooth"
               style={{
-                background:
-                  "linear-gradient(135deg, oklch(0.68 0.22 30), oklch(0.62 0.26 25))",
+                background: "linear-gradient(135deg, #25D366, #128C7E)",
                 color: "#fff",
               }}
               onMouseEnter={(e) => {
@@ -257,15 +274,15 @@ export default function ContactSection() {
             transition={{ duration: 0.7, delay: 0.15 }}
             className="rounded-2xl overflow-hidden"
             style={{
-              border: "1px solid oklch(0.68 0.22 30 / 0.25)",
-              boxShadow: "0 0 30px oklch(0.68 0.22 30 / 0.15)",
+              border: "1px solid rgba(0,245,255,0.3)",
+              boxShadow: "0 8px 30px rgba(124,58,237,0.1)",
               minHeight: "420px",
             }}
             data-ocid="contact.map"
           >
             <iframe
               title="ChefZone Mandsaur Location"
-              src="https://maps.google.com/maps?q=33H9+2JQ,+Saket+Nagar,+Nai+Abaadi,+Mandsaur,+Madhya+Pradesh+458001&output=embed"
+              src="https://maps.google.com/maps?q=Chefzone+Mandsaur,+33H9%2B2JQ,+Saket+Nagar,+Nai+Abaadi,+Mandsaur,+Madhya+Pradesh+458001&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: "420px", display: "block" }}

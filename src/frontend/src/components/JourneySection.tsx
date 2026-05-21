@@ -15,8 +15,7 @@ export default function JourneySection() {
       data-ocid="journey.section"
       className="relative py-24 px-4 overflow-hidden"
       style={{
-        background:
-          "linear-gradient(180deg, #050510 0%, #050510 50%, #050510 100%)",
+        background: "#141428",
       }}
     >
       {/* Ambient purple glow blobs */}
@@ -62,7 +61,7 @@ export default function JourneySection() {
             className="font-display text-4xl md:text-5xl font-bold mt-3"
             style={{
               background:
-                "linear-gradient(135deg, #ffffff 0%, #00F5FF 50%, #D4AF37 100%)",
+                "linear-gradient(135deg, #c8c8f0 0%, #00F5FF 50%, #D4AF37 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",
@@ -93,14 +92,14 @@ export default function JourneySection() {
             <div
               className="rounded-2xl p-7 flex flex-col gap-5"
               style={{
-                background: "rgba(212,175,55,0.12)",
+                background: "rgba(255,255,255,0.07)",
                 backdropFilter: "blur(16px)",
-                border: "1px solid rgba(0,245,255,0.15)",
+                border: "1px solid rgba(0,245,255,0.25)",
               }}
             >
               <p
                 className="font-body text-base leading-relaxed"
-                style={{ color: "#B0E0E6" }}
+                style={{ color: "#d0d0ee" }}
               >
                 ChefZone ek passion-driven cloud kitchen hai, jo ghar ke swaad
                 aur quality ko har customer tak pahunchane ke vision ke saath
@@ -113,7 +112,7 @@ export default function JourneySection() {
               </p>
               <p
                 className="font-body text-base leading-relaxed"
-                style={{ color: "#B0E0E6" }}
+                style={{ color: "#d0d0ee" }}
               >
                 Food ke prati gehre lagav aur hospitality industry ke experience
                 ne is sapne ko janam diya.{" "}
@@ -126,7 +125,7 @@ export default function JourneySection() {
               </p>
               <p
                 className="font-body text-base leading-relaxed"
-                style={{ color: "#B0E0E6" }}
+                style={{ color: "#d0d0ee" }}
               >
                 <span className="font-semibold" style={{ color: "#00F5FF" }}>
                   10 February 2025
@@ -151,14 +150,14 @@ export default function JourneySection() {
                   transition={{ duration: 0.4, delay: i * 0.08 }}
                   className="flex items-center gap-3 px-4 py-3 rounded-xl"
                   style={{
-                    background: "rgba(212,175,55,0.15)",
-                    border: "1px solid rgba(212,175,55,0.3)",
+                    background: "rgba(255,255,255,0.07)",
+                    border: "1px solid rgba(124,58,237,0.4)",
                   }}
                 >
                   <span className="text-xl flex-shrink-0">{val.icon}</span>
                   <span
                     className="font-body text-sm font-medium"
-                    style={{ color: "#B0E0E6" }}
+                    style={{ color: "#d0d0ee" }}
                   >
                     {val.text}
                   </span>

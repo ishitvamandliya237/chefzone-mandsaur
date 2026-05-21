@@ -96,6 +96,9 @@ export default function HeroSection() {
       id="home"
       data-ocid="home.section"
       className="relative min-h-screen flex items-center overflow-hidden"
+      style={{
+        background: "#0f0f1a",
+      }}
     >
       {/* Warm gradient overlay */}
       <div

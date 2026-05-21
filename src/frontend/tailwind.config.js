@@ -66,7 +66,7 @@ export default {
           border: "oklch(var(--sidebar-border))",
           ring: "oklch(var(--sidebar-ring))",
         },
-        "chefzone-black": "oklch(0.08 0.008 50)",
+        "chefzone-black": "#FFFFFF",
         "chefzone-orange": "oklch(0.68 0.22 30)",
         "chefzone-red": "oklch(0.62 0.26 25)",
         "chefzone-warm": "oklch(0.75 0.18 45)",

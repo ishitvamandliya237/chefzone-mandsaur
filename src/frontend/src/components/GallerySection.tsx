@@ -9,7 +9,7 @@ export default function GallerySection() {
       id="gallery"
       data-ocid="gallery.section"
       className="py-24 px-4 relative overflow-hidden"
-      style={{ background: "#050510" }}
+      style={{ background: "#0d0b1e" }}
     >
       {/* bg glow */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -53,7 +53,7 @@ export default function GallerySection() {
             className="font-display text-4xl md:text-5xl font-bold mt-3"
             style={{
               background:
-                "linear-gradient(135deg, #ffffff 0%, #00F5FF 60%, #D4AF37 100%)",
+                "linear-gradient(135deg, #f0f0ff 0%, #00F5FF 60%, #D4AF37 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",
@@ -61,7 +61,7 @@ export default function GallerySection() {
           >
             Our Gallery
           </h2>
-          <p className="mt-3 text-base" style={{ color: "#B0E0E6" }}>
+          <p className="mt-3 text-base" style={{ color: "#b0b0d8" }}>
             Explore our delicious food and kitchen moments
           </p>
         </motion.div>
@@ -79,11 +79,11 @@ export default function GallerySection() {
             className="w-full max-w-lg rounded-3xl p-10 flex flex-col items-center gap-7 text-center"
             style={{
               background:
-                "linear-gradient(135deg, rgba(5,5,16,0.8) 0%, rgba(212,175,55,0.2) 100%)",
+                "linear-gradient(135deg, rgba(255,255,255,0.07) 0%, rgba(212,175,55,0.12) 100%)",
               backdropFilter: "blur(20px)",
-              border: "1px solid rgba(0,245,255,0.2)",
+              border: "1px solid rgba(0,245,255,0.35)",
               boxShadow:
-                "0 0 60px rgba(212,175,55,0.3), inset 0 1px 0 rgba(0,245,255,0.1)",
+                "0 8px 40px rgba(124,58,237,0.12), inset 0 1px 0 rgba(0,245,255,0.15)",
             }}
           >
             {/* Camera icon */}
@@ -121,11 +121,11 @@ export default function GallerySection() {
             <div>
               <h3
                 className="font-display font-bold text-2xl mb-2"
-                style={{ color: "#ffffff" }}
+                style={{ color: "#f0f0ff" }}
               >
                 ChefZone Gallery
               </h3>
-              <p className="font-body text-sm" style={{ color: "#B0E0E6" }}>
+              <p className="font-body text-sm" style={{ color: "#b0b0d8" }}>
                 Dive into our collection of food photography, kitchen visuals,
                 and delightful moments from ChefZone Mandsaur.
               </p>

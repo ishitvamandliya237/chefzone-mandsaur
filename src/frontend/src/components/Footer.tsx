@@ -83,7 +83,7 @@ export default function Footer() {
     <footer
       data-ocid="footer.section"
       className="relative pt-1"
-      style={{ background: "#050510" }}
+      style={{ background: "#0f0f1a" }}
     >
       {/* Animated top border shimmer */}
       <div

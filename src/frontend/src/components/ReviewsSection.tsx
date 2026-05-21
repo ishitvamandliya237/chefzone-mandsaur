@@ -105,6 +105,7 @@ export default function ReviewsSection() {
       id="reviews"
       data-ocid="reviews.section"
       className="py-20 px-4 relative overflow-hidden"
+      style={{ background: "#1a1a2e" }}
     >
       {/* bg glow */}
       <div className="absolute inset-0 pointer-events-none">
@@ -124,14 +125,21 @@ export default function ReviewsSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <span className="inline-block bg-gradient-to-r from-orange-500 to-red-600 text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-4">
+          <span
+            className="inline-block text-xs font-semibold tracking-[0.3em] uppercase mb-3 px-4 py-1.5 rounded-full"
+            style={{
+              background: "rgba(212,175,55,0.2)",
+              border: "1px solid rgba(0,245,255,0.3)",
+              color: "#7C3AED",
+            }}
+          >
             ⭐ Reviews
           </span>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">
-            What Our{" "}
-            <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">
-              Customers Say
-            </span>
+          <h2
+            className="font-display text-4xl md:text-5xl font-bold"
+            style={{ color: "#f0f0ff" }}
+          >
+            What Our <span className="gradient-warm-text">Customers Say</span>
           </h2>
         </motion.div>
 
@@ -150,16 +158,25 @@ export default function ReviewsSection() {
                 exit={{ opacity: 0, x: -60 }}
                 transition={{ duration: 0.4 }}
                 data-ocid={`reviews.card.${current + 1}`}
-                className="backdrop-blur-md bg-white/5 border border-white/10 rounded-2xl p-8 md:p-12"
+                className="rounded-2xl p-8 md:p-12"
                 style={{
+                  background: "rgba(255,255,255,0.07)",
+                  backdropFilter: "blur(16px)",
+                  border: "1px solid rgba(0,245,255,0.3)",
                   boxShadow:
-                    "0 8px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(251,113,20,0.15)",
+                    "0 8px 40px rgba(124,58,237,0.3), 0 0 0 1px rgba(0,245,255,0.15)",
                 }}
               >
-                <div className="text-6xl text-orange-400/30 font-display leading-none mb-4 select-none">
+                <div
+                  className="text-6xl font-display leading-none mb-4 select-none"
+                  style={{ color: "rgba(212,175,55,0.4)" }}
+                >
                   &ldquo;
                 </div>
-                <p className="text-foreground text-lg md:text-xl leading-relaxed mb-6 font-body italic">
+                <p
+                  className="text-lg md:text-xl leading-relaxed mb-6 font-body italic"
+                  style={{ color: "#d8d8f0" }}
+                >
                   {reviews[current].text}
                 </p>
                 <div className="flex items-center gap-4">
@@ -229,18 +246,26 @@ export default function ReviewsSection() {
           <button
             type="button"
             onClick={prev}
-            data-ocid="reviews.prev_button_mobile"
             aria-label="Previous review"
-            className="w-10 h-10 rounded-full bg-card border border-white/10 flex items-center justify-center text-foreground hover:border-orange-500 hover:text-orange-400 transition-colors"
+            className="w-10 h-10 rounded-full flex items-center justify-center transition-colors"
+            style={{
+              background: "#ffffff",
+              border: "1px solid #00F5FF",
+              color: "#1a1040",
+            }}
           >
             ←
           </button>
           <button
             type="button"
             onClick={next}
-            data-ocid="reviews.next_button_mobile"
             aria-label="Next review"
-            className="w-10 h-10 rounded-full bg-card border border-white/10 flex items-center justify-center text-foreground hover:border-orange-500 hover:text-orange-400 transition-colors"
+            className="w-10 h-10 rounded-full flex items-center justify-center transition-colors"
+            style={{
+              background: "#ffffff",
+              border: "1px solid #00F5FF",
+              color: "#1a1040",
+            }}
           >
             →
           </button>
