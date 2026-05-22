@@ -238,7 +238,7 @@ export default function HeroSection() {
           </Canvas>
           {/* Decorative label */}
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full glass-card border-glow text-xs text-primary font-semibold tracking-widest">
-            ChefZone Kitchen • 3D
+            ChefZone Kitchen
           </div>
         </motion.div>
       </div>

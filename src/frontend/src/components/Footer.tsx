@@ -111,8 +111,6 @@ export default function Footer() {
               <div
                 className="w-14 h-14 rounded-full shrink-0 flex items-center justify-center overflow-hidden"
                 style={{
-                  border: "2px solid rgba(212,175,55,0.5)",
-                  boxShadow: "0 0 16px rgba(212,175,55,0.3)",
                   background: "transparent",
                 }}
               >
@@ -124,8 +122,7 @@ export default function Footer() {
                     objectFit: "contain",
                     background: "transparent",
                     display: "block",
-                    mixBlendMode: "multiply",
-                    filter: "drop-shadow(0 0 8px rgba(212,175,55,0.6))",
+                    mixBlendMode: "screen",
                   }}
                   onError={(e) => {
                     const el = e.currentTarget.parentElement;
@@ -138,8 +135,8 @@ export default function Footer() {
               </div>
               <div>
                 <p
-                  className="font-display font-bold text-lg text-foreground"
-                  style={{ lineHeight: 1.2 }}
+                  className="font-display font-bold text-lg"
+                  style={{ lineHeight: 1.2, color: "#00F5FF" }}
                 >
                   ChefZone Mandsaur
                 </p>
@@ -167,15 +164,17 @@ export default function Footer() {
                   <a
                     href={link.href}
                     data-ocid={`footer.link_${link.label.toLowerCase()}`}
-                    className="text-sm text-muted-foreground transition-smooth relative group"
+                    className="text-sm transition-smooth relative group"
+                    style={{ color: "#00F5FF" }}
                     onMouseEnter={(e) => {
-                      (e.currentTarget as HTMLAnchorElement).style.color =
-                        "#00F5FF";
                       (e.currentTarget as HTMLAnchorElement).style.textShadow =
                         "0 0 10px #00F5FF80";
+                      (e.currentTarget as HTMLAnchorElement).style.color =
+                        "#7fffff";
                     }}
                     onMouseLeave={(e) => {
-                      (e.currentTarget as HTMLAnchorElement).style.color = "";
+                      (e.currentTarget as HTMLAnchorElement).style.color =
+                        "#00F5FF";
                       (e.currentTarget as HTMLAnchorElement).style.textShadow =
                         "none";
                     }}
