@@ -109,16 +109,24 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
               <div
-                className="w-14 h-14 rounded-full overflow-hidden shrink-0"
+                className="w-14 h-14 rounded-full shrink-0 flex items-center justify-center overflow-hidden"
                 style={{
-                  border: "2px solid #00F5FF80",
-                  boxShadow: "0 0 16px #00F5FF4D",
+                  border: "2px solid rgba(212,175,55,0.5)",
+                  boxShadow: "0 0 16px rgba(212,175,55,0.3)",
+                  background: "transparent",
                 }}
               >
                 <img
-                  src="/assets/logo.png"
+                  src="/assets/images/chefzone-logo.png"
                   alt="ChefZone logo"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full"
+                  style={{
+                    objectFit: "contain",
+                    background: "transparent",
+                    display: "block",
+                    mixBlendMode: "multiply",
+                    filter: "drop-shadow(0 0 8px rgba(212,175,55,0.6))",
+                  }}
                   onError={(e) => {
                     const el = e.currentTarget.parentElement;
                     if (el) {

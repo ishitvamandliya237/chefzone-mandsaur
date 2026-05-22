@@ -27221,17 +27221,25 @@ function Footer() {
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
                   "div",
                   {
-                    className: "w-14 h-14 rounded-full overflow-hidden shrink-0",
+                    className: "w-14 h-14 rounded-full shrink-0 flex items-center justify-center overflow-hidden",
                     style: {
-                      border: "2px solid #00F5FF80",
-                      boxShadow: "0 0 16px #00F5FF4D"
+                      border: "2px solid rgba(212,175,55,0.5)",
+                      boxShadow: "0 0 16px rgba(212,175,55,0.3)",
+                      background: "transparent"
                     },
                     children: /* @__PURE__ */ jsxRuntimeExports.jsx(
                       "img",
                       {
-                        src: "/assets/logo.png",
+                        src: "/assets/images/chefzone-logo.png",
                         alt: "ChefZone logo",
-                        className: "w-full h-full object-cover",
+                        className: "w-full h-full",
+                        style: {
+                          objectFit: "contain",
+                          background: "transparent",
+                          display: "block",
+                          mixBlendMode: "multiply",
+                          filter: "drop-shadow(0 0 8px rgba(212,175,55,0.6))"
+                        },
                         onError: (e) => {
                           const el = e.currentTarget.parentElement;
                           if (el) {
@@ -80009,19 +80017,22 @@ function Navbar() {
                 ) : /* @__PURE__ */ jsxRuntimeExports.jsx(
                   "div",
                   {
-                    className: "w-14 h-14 flex items-center justify-center",
-                    style: { background: "transparent" },
+                    className: "w-14 h-14 rounded-full overflow-hidden shrink-0 flex items-center justify-center",
+                    style: { background: "transparent", padding: 0 },
                     children: /* @__PURE__ */ jsxRuntimeExports.jsx(
                       "img",
                       {
                         src: "/assets/images/chefzone-logo.png",
                         alt: "ChefZone",
-                        className: "w-full h-full object-contain",
+                        className: "w-full h-full",
                         style: {
                           background: "transparent",
                           display: "block",
                           width: "100%",
-                          height: "100%"
+                          height: "100%",
+                          objectFit: "contain",
+                          mixBlendMode: "multiply",
+                          filter: "drop-shadow(0 0 8px rgba(212,175,55,0.6))"
                         },
                         onError: () => setLogoError(true)
                       }
@@ -80725,7 +80736,7 @@ const SOCIAL_CARDS = [
     id: "youtube",
     name: "YouTube",
     cta: "Subscribe",
-    href: "https://youtube.com/@chefzonemandsaur?si=-rCoBrG9CFGxLK7U",
+    href: "https://youtube.com/@chefzone_mandsaur?si=tuPByTAJLyf5YDKx",
     brandColor: "#FF0000",
     glowColor: "rgba(255,0,0,0.5)",
     glowHover: "rgba(255,0,0,0.8)",

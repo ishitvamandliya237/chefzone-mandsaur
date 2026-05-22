@@ -62,18 +62,21 @@ export default function Navbar() {
                   </div>
                 ) : (
                   <div
-                    className="w-14 h-14 flex items-center justify-center"
-                    style={{ background: "transparent" }}
+                    className="w-14 h-14 rounded-full overflow-hidden shrink-0 flex items-center justify-center"
+                    style={{ background: "transparent", padding: 0 }}
                   >
                     <img
                       src="/assets/images/chefzone-logo.png"
                       alt="ChefZone"
-                      className="w-full h-full object-contain"
+                      className="w-full h-full"
                       style={{
                         background: "transparent",
                         display: "block",
                         width: "100%",
                         height: "100%",
+                        objectFit: "contain",
+                        mixBlendMode: "multiply",
+                        filter: "drop-shadow(0 0 8px rgba(212,175,55,0.6))",
                       }}
                       onError={() => setLogoError(true)}
                     />

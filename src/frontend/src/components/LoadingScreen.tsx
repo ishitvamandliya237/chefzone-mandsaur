@@ -82,23 +82,26 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
           }
         `}</style>
         <div
-          className="w-28 h-28 rounded-full overflow-hidden ring-2 ring-[#22D3EE]"
+          className="w-28 h-28 rounded-full flex items-center justify-center overflow-hidden"
           style={{
-            border: "3px solid rgba(34,211,238,0.6)",
+            border: "3px solid rgba(212,175,55,0.6)",
             boxShadow:
-              "0 0 40px rgba(34,211,238,0.4), 0 0 80px rgba(34,211,238,0.2)",
+              "0 0 40px rgba(212,175,55,0.4), 0 0 80px rgba(212,175,55,0.2)",
             background: "transparent",
           }}
         >
           <img
             src="/assets/images/chefzone-logo.png"
             alt="ChefZone logo"
-            className="w-full h-full object-contain"
+            className="w-full h-full"
             style={{
+              objectFit: "contain",
               background: "transparent",
               display: "block",
               width: "100%",
               height: "100%",
+              mixBlendMode: "multiply",
+              filter: "drop-shadow(0 0 8px rgba(212,175,55,0.6))",
             }}
             onError={(e) => {
               const el = e.currentTarget.parentElement;

@@ -77,7 +77,7 @@ const SOCIAL_CARDS = [
     id: "youtube",
     name: "YouTube",
     cta: "Subscribe",
-    href: "https://youtube.com/@chefzonemandsaur?si=-rCoBrG9CFGxLK7U",
+    href: "https://youtube.com/@chefzone_mandsaur?si=tuPByTAJLyf5YDKx",
     brandColor: "#FF0000",
     glowColor: "rgba(255,0,0,0.5)",
     glowHover: "rgba(255,0,0,0.8)",
